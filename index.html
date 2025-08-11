@@ -89,18 +89,6 @@
              class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">
              WhatsApp
           </a>
-
-          <a href="tel:+351926691685" class="px-5 py-3 rounded-xl transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="cta.call">
-             Ligar
-          </a>
-
-          <a href="mailto:hugocgsilva@remax.pt" class="px-5 py-3 rounded-xl transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="cta.email">
-             Email
-          </a>
         </div>
 
         <!-- Contactos rápidos -->
@@ -110,9 +98,6 @@
           </a>
           <a href="tel:+351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
             📞 <span data-i18n="contacts.phone_text">926 691 685</span>
-          </a>
-          <a id="chip-wa" href="https://wa.me/351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            💬 <span data-i18n="contacts.whatsapp_text">WhatsApp</span>
           </a>
         </div>
 
@@ -311,40 +296,18 @@
 
   <script>
     // --- i18n core ---
-    const I18N_KEYS = [
-      "meta.title","meta.description","a11y.skip",
-      "nav.role","nav.services","nav.about","nav.book",
-      "hero.tagline","hero.title","hero.subtitle","hero.body",
-      "cta.book","cta.whatsapp","cta.call","cta.email",
-      "contacts.email_text","contacts.phone_text","contacts.whatsapp_text",
-      "social.facebook","social.instagram","social.linkedin",
-      "metrics.transactions_label","metrics.transactions_value",
-      "metrics.response_label","metrics.response_value",
-      "metrics.focus_label","metrics.focus_value",
-      "services.title","services.lead",
-      "services.card1.title","services.card1.body",
-      "services.card2.title","services.card2.body",
-      "services.card3.title","services.card3.body",
-      "about.title","about.body","about.bullets.0","about.bullets.1","about.bullets.2",
-      "about.cert_label","about.cert_value","about.cert_note","about.tags.0","about.tags.1",
-      "listing.title","listing.cta","listing.bullets.0","listing.bullets.1","listing.bullets.2",
-      "cta.title","cta.subtitle",
-      "footer.privacy","footer.terms","footer.legal"
-    ];
-
     const langSelect = document.getElementById("languageSwitcher");
     const saved = localStorage.getItem("siteLang") || "pt";
     langSelect.value = saved;
 
     function applyI18n(dict){
-      I18N_KEYS.forEach(k=>{
-        const el = document.querySelector(`[data-i18n="${k}"]`);
-        if(el && dict && dict[k] !== undefined){
-          if(el.tagName === "META"){
-            el.setAttribute("content", dict[k]);
-          } else {
-            el.textContent = dict[k];
-          }
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(!dict || dict[key] === undefined) return;
+        if(el.tagName === "META"){
+          el.setAttribute("content", dict[key]);
+        } else {
+          el.textContent = dict[key];
         }
       });
       // update <html lang="">
