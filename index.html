@@ -250,7 +250,7 @@
              target="_blank" rel="noopener"
              class="px-5 py-3 rounded-xl text-center hover:opacity-90 btn-gold" data-i18n="cta.book">Marcar reunião</a>
           <a href="mailto:hugocgsilva@remax.pt" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.email">Enviar email</a>
-          <a href="https://wa.me/351926691685" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.whatsapp">WhatsApp</a>
+          <a id="btn-wa-contact" href="https://wa.me/351926691685" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
       </div>
     </div>
@@ -296,12 +296,12 @@
       });
       // update <html lang="">
       document.documentElement.setAttribute("lang", dict["meta.lang"] || "pt-PT");
-      // WhatsApp CTA com mensagem por idioma (opcional)
+      // WhatsApp CTAs com mensagem por idioma (opcional)
       if (dict["cta.whatsapp_url"]) {
-        const wa = document.getElementById("btn-wa");
-        const chip = document.getElementById("chip-wa");
-        if(wa) wa.href = dict["cta.whatsapp_url"];
-        if(chip) chip.href = dict["cta.whatsapp_url_base"] || dict["cta.whatsapp_url"];
+        const waMain = document.getElementById("btn-wa");
+        const waContact = document.getElementById("btn-wa-contact");
+        if(waMain) waMain.href = dict["cta.whatsapp_url"];
+        if(waContact) waContact.href = dict["cta.whatsapp_url_base"] || dict["cta.whatsapp_url"];
       }
       // Title tag
       if (dict["meta.title"]) document.title = dict["meta.title"];
