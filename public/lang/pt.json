@@ -1,0 +1,71 @@
+{
+  "meta.lang": "pt-PT",
+  "meta.title": "Hugo Silva — Consultor Imobiliário",
+  "meta.description": "Mediação imobiliária exclusiva, com atenção ao detalhe e total discrição. Choose your Dream | Live in it.",
+  "a11y.skip": "Saltar para conteúdo",
+
+  "nav.role": "Consultor Imobiliário · RE/MAX Oceanus",
+  "nav.services": "Serviços",
+  "nav.about": "Sobre",
+  "nav.book": "Agendar",
+
+  "hero.tagline": "Grande Porto · Vila do Conde · Póvoa de Varzim",
+  "hero.title": "Choose your Dream | Live in it",
+  "hero.subtitle": "Um serviço que alia experiência sólida, discrição absoluta e atenção ao detalhe para concretizar as decisões mais importantes.",
+  "hero.body": "Experiência local, estratégias de marketing cuidadosamente seleccionadas e uma abordagem personalizada para alcançar resultados que excedem expectativas.",
+
+  "cta.book": "Marcar reunião",
+  "cta.whatsapp": "WhatsApp",
+  "cta.call": "Ligar",
+  "cta.email": "Email",
+
+  "cta.whatsapp_url": "https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde.",
+  "cta.whatsapp_url_base": "https://wa.me/351926691685",
+
+  "contacts.email_text": "hugocgsilva@remax.pt",
+  "contacts.phone_text": "926 691 685",
+  "contacts.whatsapp_text": "WhatsApp",
+
+  "social.facebook": "Facebook",
+  "social.instagram": "Instagram",
+  "social.linkedin": "LinkedIn",
+
+  "metrics.transactions_label": "Transações",
+  "metrics.transactions_value": "+12 acompanhadas",
+  "metrics.response_label": "Tempo médio de resposta",
+  "metrics.response_value": "< 2 horas",
+  "metrics.focus_label": "Especialização",
+  "metrics.focus_value": "Vila do Conde & Póvoa",
+
+  "services.title": "Estratégia e execução sem margem para erro",
+  "services.lead": "Cada ação é pensada para valorizar o seu imóvel e atrair o comprador certo.",
+  "services.card1.title": "Avaliação precisa",
+  "services.card1.body": "Preço suportado por dados locais e comparáveis recentes.",
+  "services.card2.title": "Marketing seletivo",
+  "services.card2.body": "Fotografia/vídeo profissional e promoção dirigida — sem desperdício.",
+  "services.card3.title": "Negociação estratégica",
+  "services.card3.body": "Proteção de preço, prazos e confidencialidade.",
+
+  "about.title": "Assinatura pessoal",
+  "about.body": "Consultor RE/MAX Oceanus, dedicado a um acompanhamento próximo e personalizado, assegurando que cada etapa do processo decorre com rigor, discrição e atenção ao detalhe.",
+  "about.bullets.0": "• Ética e transparência em todas as fases",
+  "about.bullets.1": "• Report claro e prazos definidos",
+  "about.bullets.2": "• Rede local e parceiros qualificados",
+  "about.cert_label": "Certificação",
+  "about.cert_value": "Licença AMI 10092 · RE/MAX Oceanus",
+  "about.cert_note": "Reconhecimento profissional e rede de parcerias de confiança.",
+  "about.tags.0": "Membro MLS",
+  "about.tags.1": "Parcerias jurídicas",
+
+  "listing.title": "Moradia Exclusiva",
+  "listing.cta": "Saber mais",
+  "listing.bullets.0": "• Localização privilegiada no centro histórico de Vila do Conde",
+  "listing.bullets.1": "• Vista deslumbrante sobre o Rio Ave",
+  "listing.bullets.2": "• Imóvel secular, palco da tradição naval de uma das famílias mais emblemáticas e tradicionais de Vila do Conde",
+
+  "cta.title": "Vamos falar sobre o seu próximo passo?",
+  "cta.subtitle": "Um primeiro encontro, com toda a discrição, para definir a melhor estratégia para o seu imóvel.",
+  "footer.privacy": "Privacidade",
+  "footer.terms": "Termos",
+  "footer.legal": "Licença AMI 10092 • RE/MAX Oceanus"
+}
