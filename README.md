@@ -15,3 +15,6 @@ Site estático (GitHub Pages).
 - grupo-dragao.svg
 - HugoSilva.png
 - destaque1.jpg, destaque2.jpg, destaque3.jpg
+
+## Testes
+Nenhum teste automatizado está configurado.
