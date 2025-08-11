@@ -9,7 +9,7 @@ Site estático (GitHub Pages).
 4. Settings → Pages → Source: Deploy from a branch (main, root)
 
 ## Assets necessários em /public
-- assinatura-hugo-solid.svg
+- assinatura-hugo.svg
 - remax-balao.svg
 - remax-oceanus.svg
 - grupo-dragao.svg
