@@ -16,15 +16,10 @@
 
   "cta.book": "Book a meeting",
   "cta.whatsapp": "WhatsApp",
-  "cta.call": "Call",
-  "cta.email": "Email",
 
   "cta.whatsapp_url": "https://wa.me/351926691685?text=Hello%20Hugo%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20exclusive%20house%20in%20Vila%20do%20Conde%27s%20historic%20center.",
   "cta.whatsapp_url_base": "https://wa.me/351926691685",
 
-  "contacts.email_text": "hugocgsilva@remax.pt",
-  "contacts.phone_text": "+351 926 691 685",
-  "contacts.whatsapp_text": "WhatsApp",
 
   "social.facebook": "Facebook",
   "social.instagram": "Instagram",

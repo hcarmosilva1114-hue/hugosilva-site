@@ -16,15 +16,10 @@
 
   "cta.book": "Marcar reunião",
   "cta.whatsapp": "WhatsApp",
-  "cta.call": "Ligar",
-  "cta.email": "Email",
 
   "cta.whatsapp_url": "https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde.",
   "cta.whatsapp_url_base": "https://wa.me/351926691685",
 
-  "contacts.email_text": "hugocgsilva@remax.pt",
-  "contacts.phone_text": "926 691 685",
-  "contacts.whatsapp_text": "WhatsApp",
 
   "social.facebook": "Facebook",
   "social.instagram": "Instagram",
