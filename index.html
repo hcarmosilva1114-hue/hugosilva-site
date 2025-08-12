@@ -28,7 +28,7 @@
   <meta name="twitter:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
 
   <!-- UI -->
-  <link rel="icon" href="./public/assinatura-hugo-stroke.svg" type="image/svg+xml">
+  <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -36,6 +36,16 @@
     body{color:var(--text)}
     .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-hover)}
     .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
+
+    /* Barra de marca (assinatura + logos) */
+    .brand-strip{background:var(--warm); border:1px solid #E6E1D6; border-radius:16px;}
+    .brand-signature{height:84px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-4px);}
+    @media (min-width:768px){ .brand-signature{height:96px;} }
+    .brand-logo{height:32px; width:auto; object-fit:contain; flex:0 0 auto;}
+    @media (min-width:768px){ .brand-logo{height:36px;} }
+
+    /* Fallback: força a preto se algum SVG vier a cores (remover se não precisares) */
+    .force-black{ filter:grayscale(1) brightness(0); }
   </style>
 
   <!-- Schema.org -->
@@ -47,7 +57,7 @@
     "url":"https://hcarmosilva1114-hue.github.io/hugosilva-site/",
     "areaServed":["Vila do Conde","Póvoa de Varzim","Grande Porto"],
     "image":"https://hcarmosilva1114-hue.github.io/hugosilva-site/public/HugoSilva.png",
-    "logo":"https://hcarmosilva1114-hue.github.io/hugosilva-site/public/assinatura-hugo-stroke.svg",
+    "logo":"https://hcarmosilva1114-hue.github.io/hugosilva-site/public/assinatura-hugo-stroke-optimized.svg",
     "email":"mailto:hugocgsilva@remax.pt",
     "telephone":"+351926691685",
     "sameAs":[
@@ -168,7 +178,7 @@
       <!-- Foto -->
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
-          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" width="800" height="1000"/>
+          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" width="800" height="1000" />
         </div>
       </div>
     </div>
@@ -226,15 +236,14 @@
   <section id="destaque">
     <div class="mx-auto max-w-5xl px-4 py-14">
 
-      <!-- Assinatura + Logos com base bege -->
-      <div class="mb-6 rounded-2xl p-4 md:p-5" style="background:var(--warm); border:1px solid #E6E1D6">
+      <!-- Assinatura + Logos com base bege (assinatura optimizada + logos pretos) -->
+      <div class="mb-6 brand-strip p-4 md:p-5">
         <div class="flex items-center justify-between gap-6">
-          <img src="./public/assinatura-hugo-stroke.svg" alt="Assinatura Hugo Silva"
-               class="h-8 md:h-10 w-auto object-contain" />
+          <img src="./public/assinatura-hugo-stroke-optimized.svg" alt="Assinatura Hugo Silva" class="brand-signature select-none" />
           <div class="flex items-center gap-6 md:gap-8">
-            <img src="./public/remax-balao.svg"    alt="RE/MAX"              class="h-7 md:h-8 w-auto object-contain" />
-            <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"      class="h-7 md:h-8 w-auto object-contain" />
-            <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão" class="h-7 md:h-8 w-auto object-contain" />
+            <img src="./public/remax-balao-preto.svg"    alt="RE/MAX"              class="brand-logo select-none" />
+            <img src="./public/remax-oceanus-preto.svg"  alt="RE/MAX Oceanus"      class="brand-logo select-none" />
+            <img src="./public/grupo-dragao-preto.svg"   alt="Grupo RE/MAX Dragão" class="brand-logo select-none" />
           </div>
         </div>
       </div>
