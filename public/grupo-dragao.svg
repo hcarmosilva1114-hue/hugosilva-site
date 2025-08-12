@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60">
-  <text x="0" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0054A6">GRUPO</text>
-  <text x="120" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#E11B22">DRAGÃO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80">
+  <text x="0" y="54"
+    font-family="system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif"
+    font-size="32" font-weight="800" fill="currentColor" letter-spacing="1.2">
+    GRUPO DRAGÃO
+  </text>
 </svg>

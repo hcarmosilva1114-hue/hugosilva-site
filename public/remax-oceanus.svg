@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
-  <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" font-weight="bold">
-    <tspan fill="#E11B22">RE</tspan><tspan fill="#0054A6">/MAX</tspan>
-    <tspan fill="#0054A6" font-size="32" font-weight="normal" dx="10">OCEANUS</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80">
+  <text x="0" y="55"
+    font-family="system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif"
+    font-size="36" font-weight="800" fill="currentColor" letter-spacing="1.5">
+    RE/MAX OCEANUS
   </text>
 </svg>
