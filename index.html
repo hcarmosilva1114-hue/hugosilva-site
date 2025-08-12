@@ -314,7 +314,11 @@
         applyI18n(dict);
       }catch(e){
         console.warn("Falha a carregar idioma, fallback PT", e);
-        if(lang!=="pt") loadLang("pt");
+        if(lang!=="pt"){
+          langSelect.value = "pt";
+          localStorage.setItem("siteLang","pt");
+          loadLang("pt");
+        }
       }
     }
 
