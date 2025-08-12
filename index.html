@@ -7,13 +7,13 @@
   <meta name="description" data-i18n="meta.description"
         content="Mediação imobiliária exclusiva, com atenção ao detalhe e total discrição. Choose your Dream | Live in it." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/public/assinatura-hugo.svg" type="image/svg+xml">
+  <link rel="icon" href="./public/assinatura-hugo-stroke.svg.svg" type="image/svg+xml">
   <style>
-    :root { --gold:#C9A44F; --gold-hover:#B8943A; --warm:#F5F1E6; --text:#3E3A36; --dark:#1E1C1A; --whatsapp:#25D366; }
-    body { color:var(--text); }
-    .btn-gold{ background:var(--gold); color:#fff }
-    .btn-gold:hover{ background:var(--gold-hover) }
-    .btn-outline-gold{ border:1px solid var(--gold); color:var(--gold) }
+    :root{--gold:#C9A44F;--gold-hover:#B8943A;--warm:#F5F1E6;--text:#3E3A36;--dark:#1E1C1A;--whatsapp:#25D366;}
+    body{color:var(--text)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--gold-hover)}
+    .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
   </style>
   <script type="application/ld+json" id="org-schema">
   {
@@ -34,7 +34,8 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b" style="border-color:#EDEAE3">
     <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between" aria-label="Navegação principal">
       <div class="flex items-center gap-4">
-        <img src="./public/assinatura-hugo.svg" alt="Hugo Silva — Consultor Imobiliário"
+        <!-- Assinatura original (stroke), mantém cor e tamanho -->
+        <img src="./public/assinatura-hugo-stroke.svg.svg" alt="Hugo Silva — Consultor Imobiliário"
              class="h-8 md:h-9 w-auto object-contain select-none" />
         <div class="leading-tight">
           <p class="font-semibold">Hugo Silva</p>
@@ -86,22 +87,23 @@
              target="_blank" rel="noopener" data-i18n="cta.book">Marcar reunião</a>
 
           <a id="btn-wa" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde."
-             class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">
-             WhatsApp
-          </a>
+             class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
 
-        <!-- Contactos rápidos -->
+        <!-- Contactos rápidos (sem ícones duplicados) -->
         <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
           <a href="mailto:hugocgsilva@remax.pt" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            ✉️ <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
+            <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
           </a>
           <a href="tel:+351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            📞 <span data-i18n="contacts.phone_text">926 691 685</span>
+            <span data-i18n="contacts.phone_text">926 691 685</span>
+          </a>
+          <a id="chip-wa" href="https://wa.me/351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
+            <span data-i18n="contacts.whatsapp_text">WhatsApp</span>
           </a>
         </div>
 
-        <!-- Redes sociais -->
+        <!-- Redes sociais (uma única linha) -->
         <div class="mt-3 flex flex-wrap items-center gap-3 text-sm">
           <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener"
              class="px-4 py-2 rounded-lg transition btn-outline-gold"
@@ -136,7 +138,7 @@
         </ul>
       </div>
 
-      <!-- Foto ajustada: object-contain -->
+      <!-- Foto ajustada -->
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
           <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" />
@@ -180,20 +182,6 @@
           <li data-i18n="about.bullets.1">• Report claro e prazos definidos</li>
           <li data-i18n="about.bullets.2">• Rede local e parceiros qualificados</li>
         </ul>
-        <div class="mt-6 flex gap-3 text-sm">
-          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.facebook">Facebook</a>
-          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.instagram">Instagram</a>
-          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.linkedin">LinkedIn</a>
-        </div>
       </div>
       <div class="rounded-2xl p-6" style="border:1px solid #E6E1D6">
         <p class="text-[11px]" style="color:#6B665F" data-i18n="about.cert_label">Certificação</p>
@@ -207,13 +195,13 @@
     </div>
   </section>
 
-  <!-- Credenciais -->
+  <!-- Credenciais (logos originais, sem filtros) -->
   <section aria-label="Afiliações e credenciais" class="py-10" style="background:var(--warm)">
     <div class="mx-auto max-w-5xl px-4">
       <div class="flex items-center justify-center gap-8 md:gap-12">
-        <img src="./public/remax-balao.svg"    alt="RE/MAX"               class="h-8 md:h-9 object-contain" />
-        <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"       class="h-8 md:h-9 object-contain" />
-        <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão"  class="h-8 md:h-9 object-contain" />
+        <img src="./public/remax-balao.svg"    alt="RE/MAX"              class="h-8 md:h-10 w-auto object-contain" />
+        <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"      class="h-8 md:h-10 w-auto object-contain" />
+        <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão" class="h-8 md:h-10 w-auto object-contain" />
       </div>
     </div>
   </section>
@@ -259,8 +247,8 @@
           <a href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
              target="_blank" rel="noopener"
              class="px-5 py-3 rounded-xl text-center hover:opacity-90 btn-gold" data-i18n="cta.book">Marcar reunião</a>
-          <a href="mailto:hugocgsilva@remax.pt" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.email">Enviar email</a>
-          <a href="https://wa.me/351926691685" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.whatsapp">WhatsApp</a>
+          <a href="mailto:hugocgsilva@remax.pt" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.email">Email</a>
+          <a id="btn-wa-contact" href="https://wa.me/351926691685" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
       </div>
     </div>
@@ -279,15 +267,9 @@
     <div style="background:var(--dark)">
       <div class="mx-auto max-w-5xl px-4 py-6">
         <div class="flex items-center justify-center gap-6 md:gap-10">
-          <span class="inline-flex items-center justify-center bg-white rounded-lg px-3 py-2">
-            <img src="./public/remax-balao.svg"    alt="RE/MAX"               class="h-7 md:h-8 object-contain" />
-          </span>
-        <span class="inline-flex items-center justify-center bg-white rounded-lg px-3 py-2">
-            <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"       class="h-7 md:h-8 object-contain" />
-          </span>
-          <span class="inline-flex items-center justify-center bg-white rounded-lg px-3 py-2">
-            <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão"  class="h-7 md:h-8 object-contain" />
-          </span>
+          <img src="./public/remax-balao.svg"    alt="RE/MAX"              class="h-7 md:h-8 object-contain" />
+          <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"      class="h-7 md:h-8 object-contain" />
+          <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão" class="h-7 md:h-8 object-contain" />
         </div>
         <p class="mt-4 text-center text-[11px]" style="color:#CFCAC1" data-i18n="footer.legal">Licença AMI 10092 • RE/MAX Oceanus</p>
       </div>
@@ -295,7 +277,7 @@
   </footer>
 
   <script>
-    // --- i18n core ---
+    // i18n
     const langSelect = document.getElementById("languageSwitcher");
     const saved = localStorage.getItem("siteLang") || "pt";
     langSelect.value = saved;
@@ -304,22 +286,16 @@
       document.querySelectorAll('[data-i18n]').forEach(el=>{
         const key = el.getAttribute('data-i18n');
         if(!dict || dict[key] === undefined) return;
-        if(el.tagName === "META"){
-          el.setAttribute("content", dict[key]);
-        } else {
-          el.textContent = dict[key];
-        }
+        if(el.tagName === "META"){ el.setAttribute("content", dict[key]); }
+        else { el.textContent = dict[key]; }
       });
-      // update <html lang="">
       document.documentElement.setAttribute("lang", dict["meta.lang"] || "pt-PT");
-      // WhatsApp CTA com mensagem por idioma (opcional)
       if (dict["cta.whatsapp_url"]) {
-        const wa = document.getElementById("btn-wa");
-        const chip = document.getElementById("chip-wa");
-        if(wa) wa.href = dict["cta.whatsapp_url"];
-        if(chip) chip.href = dict["cta.whatsapp_url_base"] || dict["cta.whatsapp_url"];
+        const waMain = document.getElementById("btn-wa");
+        const waContact = document.getElementById("btn-wa-contact");
+        if(waMain) waMain.href = dict["cta.whatsapp_url"];
+        if(waContact) waContact.href = dict["cta.whatsapp_url_base"] || dict["cta.whatsapp_url"];
       }
-      // Title tag
       if (dict["meta.title"]) document.title = dict["meta.title"];
     }
 
@@ -340,7 +316,6 @@
       loadLang(lang);
     });
 
-    // boot
     loadLang(saved);
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
