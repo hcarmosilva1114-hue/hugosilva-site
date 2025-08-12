@@ -28,21 +28,24 @@
   <meta name="twitter:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
 
   <!-- UI -->
-  <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     :root{--gold:#C9A44F;--gold-hover:#B8943A;--warm:#F5F1E6;--text:#3E3A36;--dark:#1E1C1A;--whatsapp:#25D366;}
     body{color:var(--text)}
-    .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-hover)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--gold-hover)}
     .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
 
-    /* Barra de marca (assinatura + logos) */
+    /* Barra de marca (assinatura + logos) — tamanhos aumentados */
     .brand-strip{background:var(--warm); border:1px solid #E6E1D6; border-radius:16px;}
-    .brand-signature{height:84px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-4px);}
-    @media (min-width:768px){ .brand-signature{height:96px;} }
-    .brand-logo{height:32px; width:auto; object-fit:contain; flex:0 0 auto;}
-    @media (min-width:768px){ .brand-logo{height:36px;} }
+    .brand-signature{height:100px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-2px);}
+    .brand-logo{height:48px; width:auto; object-fit:contain; flex:0 0 auto;}
+    @media (min-width:768px){
+      .brand-signature{height:120px;}
+      .brand-logo{height:60px;}
+    }
 
     /* Fallback: força a preto se algum SVG vier a cores (remover se não precisares) */
     .force-black{ filter:grayscale(1) brightness(0); }
@@ -236,14 +239,14 @@
   <section id="destaque">
     <div class="mx-auto max-w-5xl px-4 py-14">
 
-      <!-- Assinatura + Logos com base bege (assinatura optimizada + logos pretos) -->
+      <!-- Assinatura + Logos com base bege (AGORA MAIORES e com mais espaçamento) -->
       <div class="mb-6 brand-strip p-4 md:p-5">
-        <div class="flex items-center justify-between gap-6">
-          <img src="./public/assinatura-hugo-stroke-optimized.svg?v=3" alt="Assinatura Hugo Silva" class="brand-signature select-none" />
-          <div class="flex items-center gap-6 md:gap-8">
-            <img src="./public/remax-balao-preto.svg?v=3"    alt="RE/MAX"              class="brand-logo select-none" />
-            <img src="./public/remax-oceanus-preto.svg?v=3"  alt="RE/MAX Oceanus"      class="brand-logo select-none" />
-            <img src="./public/grupo-dragao-preto.svg?v=3"   alt="Grupo RE/MAX Dragão" class="brand-logo select-none" />
+        <div class="flex items-center justify-between gap-10">
+          <img src="./public/assinatura-hugo-stroke-optimized.svg" alt="Assinatura Hugo Silva" class="brand-signature select-none" />
+          <div class="flex items-center gap-10 md:gap-12">
+            <img src="./public/remax-balao-preto.svg"    alt="RE/MAX"              class="brand-logo select-none" />
+            <img src="./public/remax-oceanus-preto.svg"  alt="RE/MAX Oceanus"      class="brand-logo select-none" />
+            <img src="./public/grupo-dragao-preto.svg"   alt="Grupo RE/MAX Dragão" class="brand-logo select-none" />
           </div>
         </div>
       </div>
