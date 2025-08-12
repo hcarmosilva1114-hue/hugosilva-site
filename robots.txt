@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hcarmosilva1114-hue.github.io/hugosilva-site/sitemap.xml
