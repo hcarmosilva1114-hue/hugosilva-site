@@ -34,7 +34,7 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b" style="border-color:#EDEAE3">
     <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between" aria-label="Navegação principal">
       <div class="flex items-center gap-4">
-        <!-- Monograma HS (sem assinatura no header) -->
+        <!-- Monograma HS -->
         <div class="h-8 md:h-9 w-8 md:w-9 rounded-xl bg-[color:var(--dark)] text-white grid place-items-center font-bold select-none">HS</div>
         <div class="leading-tight">
           <p class="font-semibold">Hugo Silva</p>
@@ -89,7 +89,7 @@
              class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
 
-        <!-- Contactos rápidos -->
+        <!-- Contactos rápidos (sem Marketplace) -->
         <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
           <a href="mailto:hugocgsilva@remax.pt" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
             <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
@@ -97,12 +97,9 @@
           <a href="tel:+351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
             <span data-i18n="contacts.phone_text">926 691 685</span>
           </a>
-          <a id="chip-wa" href="https://wa.me/351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            <span data-i18n="contacts.whatsapp_text">WhatsApp</span>
-          </a>
         </div>
 
-        <!-- Redes sociais (apenas aqui, sem duplicados) -->
+        <!-- Redes sociais -->
         <div class="mt-3 flex flex-wrap items-center gap-3 text-sm">
           <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener"
              class="px-4 py-2 rounded-lg transition btn-outline-gold"
@@ -137,7 +134,7 @@
         </ul>
       </div>
 
-      <!-- Foto ajustada -->
+      <!-- Foto -->
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
           <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" />
@@ -198,14 +195,16 @@
   <section id="destaque">
     <div class="mx-auto max-w-5xl px-4 py-14">
 
-      <!-- Assinatura + Logos acima do título -->
-      <div class="mb-6 flex items-center justify-between gap-6">
-        <img src="./public/assinatura-hugo-stroke.svg" alt="Assinatura Hugo Silva"
-             class="h-8 md:h-10 w-auto object-contain" />
-        <div class="flex items-center gap-6 md:gap-8">
-          <img src="./public/remax-balao.svg"    alt="RE/MAX"              class="h-7 md:h-8 w-auto object-contain" />
-          <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"      class="h-7 md:h-8 w-auto object-contain" />
-          <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão" class="h-7 md:h-8 w-auto object-contain" />
+      <!-- Assinatura + Logos com base bege -->
+      <div class="mb-6 rounded-2xl p-4 md:p-5" style="background:var(--warm); border:1px solid #E6E1D6">
+        <div class="flex items-center justify-between gap-6">
+          <img src="./public/assinatura-hugo-stroke.svg" alt="Assinatura Hugo Silva"
+               class="h-8 md:h-10 w-auto object-contain" />
+          <div class="flex items-center gap-6 md:gap-8">
+            <img src="./public/remax-balao.svg"    alt="RE/MAX"              class="h-7 md:h-8 w-auto object-contain" />
+            <img src="./public/remax-oceanus.svg"  alt="RE/MAX Oceanus"      class="h-7 md:h-8 w-auto object-contain" />
+            <img src="./public/grupo-dragao.svg"   alt="Grupo RE/MAX Dragão" class="h-7 md:h-8 w-auto object-contain" />
+          </div>
         </div>
       </div>
 
