@@ -3,27 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="meta.title">Hugo Silva — Consultor Imobiliário</title>
-  <meta name="description" data-i18n="meta.description"
-        content="Mediação imobiliária exclusiva, com atenção ao detalhe e total discrição. Choose your Dream | Live in it." />
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Hugo Silva — Consultor Imobiliário no Grande Porto, Vila do Conde e Póvoa</title>
+  <meta name="description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe. Choose your Dream | Live in it." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/" />
+
+  <!-- hreflang -->
+  <link rel="alternate" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/" hreflang="pt-PT" />
+  <link rel="alternate" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/?lang=en" hreflang="en" />
+  <link rel="alternate" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/?lang=fr" hreflang="fr" />
+  <link rel="alternate" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/" hreflang="x-default" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hugo Silva — Consultor Imobiliário" />
+  <meta property="og:title" content="Hugo Silva — Consultor Imobiliário no Grande Porto, Vila do Conde e Póvoa" />
+  <meta property="og:description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe." />
+  <meta property="og:url" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/" />
+  <meta property="og:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hugo Silva — Consultor Imobiliário" />
+  <meta name="twitter:description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe." />
+  <meta name="twitter:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
+
+  <!-- UI -->
   <link rel="icon" href="./public/assinatura-hugo-stroke.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     :root{--gold:#C9A44F;--gold-hover:#B8943A;--warm:#F5F1E6;--text:#3E3A36;--dark:#1E1C1A;--whatsapp:#25D366;}
     body{color:var(--text)}
-    .btn-gold{background:var(--gold);color:#fff}
-    .btn-gold:hover{background:var(--gold-hover)}
+    .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-hover)}
     .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
   </style>
-  <script type="application/ld+json" id="org-schema">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"RealEstateAgent",
     "name":"Hugo Silva",
-    "url":"https://hcarmosilva1114-hue.github.io/hugosilva-site",
+    "url":"https://hcarmosilva1114-hue.github.io/hugosilva-site/",
     "areaServed":["Vila do Conde","Póvoa de Varzim","Grande Porto"],
-    "email":"hugocgsilva@remax.pt",
-    "telephone":"+351 926 691 685"
+    "image":"https://hcarmosilva1114-hue.github.io/hugosilva-site/public/HugoSilva.png",
+    "logo":"https://hcarmosilva1114-hue.github.io/hugosilva-site/public/assinatura-hugo-stroke.svg",
+    "email":"mailto:hugocgsilva@remax.pt",
+    "telephone":"+351926691685",
+    "sameAs":[
+      "https://www.facebook.com/profile.php?id=61569159142853",
+      "https://www.instagram.com/hugocgsilva_realestate_advisor/",
+      "https://www.linkedin.com/in/hugo-silva-72b35031/"
+    ]
   }
   </script>
 </head>
@@ -89,7 +120,7 @@
              class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
 
-        <!-- Contactos rápidos (sem Marketplace) -->
+        <!-- Contactos rápidos -->
         <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
           <a href="mailto:hugocgsilva@remax.pt" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
             <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
@@ -137,7 +168,7 @@
       <!-- Foto -->
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
-          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" />
+          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" width="800" height="1000"/>
         </div>
       </div>
     </div>
@@ -216,17 +247,21 @@
 
       <div class="mt-6 grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-          <img src="./public/destaque1.jpg" alt="Moradia Exclusiva — imagem 1" class="w-full h-64 object-cover" />
+          <img src="./public/destaque1.jpg" alt="Moradia Exclusiva — imagem 1"
+               class="w-full h-64 object-cover" loading="lazy" width="1200" height="640" />
         </div>
         <div class="grid gap-6">
           <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-            <img src="./public/destaque2.jpg" alt="Moradia Exclusiva — imagem 2" class="w-full h-44 object-cover" />
+            <img src="./public/destaque2.jpg" alt="Moradia Exclusiva — imagem 2"
+                 class="w-full h-44 object-cover" loading="lazy" width="1200" height="600" />
           </div>
           <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-            <img src="./public/destaque3.jpg" alt="Moradia Exclusiva — imagem 3" class="w-full h-44 object-cover" />
+            <img src="./public/destaque3.jpg" alt="Moradia Exclusiva — imagem 3"
+                 class="w-full h-44 object-cover" loading="lazy" width="1200" height="600" />
           </div>
         </div>
       </div>
+
       <ul class="mt-6 space-y-2">
         <li data-i18n="listing.bullets.0">• Localização privilegiada no centro histórico de Vila do Conde</li>
         <li data-i18n="listing.bullets.1">• Vista deslumbrante sobre o Rio Ave</li>
