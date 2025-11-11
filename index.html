@@ -1,4 +1,6 @@
-<!doctype html><html lang="pt-PT"><head>
+<!doctype html>
+<html lang="pt-PT">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hugo Silva — Real Estate Advisor no Grande Porto, Vila do Conde e Póvoa</title>
@@ -28,20 +30,21 @@
   <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     :root{--gold:#C9A44F;--gold-hover:#B8943A;--warm:#F5F1E6;--text:#3E3A36;--dark:#1E1C1A;--whatsapp:#25D366;}
     body{color:var(--text)}
-    .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-hover)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--gold-hover)}
     .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
-    /* Barra de marca */
+
     .brand-strip{background:var(--warm); border:1px solid #E6E1D6; border-radius:16px;}
-    .brand-signature{height:100px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-2px);}
+    .brand-signature{height:100px; width:auto; object-fit:contain; flex:0 0 auto;}
     .brand-logo{height:48px; width:auto; object-fit:contain; flex:0 0 auto;}
     @media (min-width:768px){
       .brand-signature{height:120px;}
       .brand-logo{height:60px;}
     }
-    .force-black{ filter:grayscale(1) brightness(0); }
   </style>
 
   <!-- Schema.org -->
@@ -63,27 +66,30 @@
     ]
   }
   </script>
-</head><body class="min-h-screen bg-white">
-  <a href="#servicos" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-[color:var(--dark)] text-white px-3 py-2 rounded-md" data-i18n="a11y.skip">Saltar para conteúdo</a>
+</head>
 
-  <!-- NavBar -->
+<body class="min-h-screen bg-white">
+
+  <a href="#servicos" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-[color:var(--dark)] text-white px-3 py-2 rounded-md">Saltar para conteúdo</a>
+
+  <!-- NAVBAR -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b" style="border-color:#EDEAE3">
-    <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between" aria-label="Navegação principal">
+    <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-4">
         <div class="h-8 md:h-9 w-8 md:w-9 rounded-xl bg-[color:var(--dark)] text-white grid place-items-center font-bold select-none">HS</div>
         <div class="leading-tight">
           <p class="font-semibold">Hugo Silva</p>
-          <p class="text-[11px]" style="color:#6B665F" data-i18n="nav.role">Real Estate Advisor · RE/MAX Elegance</p>
+          <p class="text-[11px]" style="color:#6B665F">Real Estate Advisor · RE/MAX Elegance</p>
         </div>
       </div>
+
       <div class="hidden md:flex items-center gap-3 text-sm">
-        <a href="#servicos" class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)" data-i18n="nav.services">Serviços</a>
-        <a href="#sobre"    class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)" data-i18n="nav.about">Sobre</a>
+        <a href="#servicos" class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)">Serviços</a>
+        <a href="#sobre" class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)">Sobre</a>
         <a href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
-           class="px-4 py-2 rounded-xl text-white hover:opacity-90 btn-gold"
-           target="_blank" rel="noopener" data-i18n="nav.book">Agendar</a>
-        <select id="languageSwitcher"
-                class="px-2 py-1 rounded-lg border text-sm"
+           class="px-4 py-2 rounded-xl text-white hover:opacity-90 btn-gold" target="_blank">Agendar</a>
+
+        <select id="languageSwitcher" class="px-2 py-1 rounded-lg border text-sm"
                 style="border-color:#E6E1D6; background:white; color:var(--text)">
           <option value="pt">🇵🇹 PT</option>
           <option value="en">🇬🇧 EN</option>
@@ -93,250 +99,200 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="relative">
     <div class="mx-auto max-w-5xl px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+
       <div>
-        <p class="text-xs font-medium tracking-wide uppercase" style="color:#6B665F" data-i18n="hero.tagline">
-          Grande Porto · Vila do Conde · Póvoa de Varzim
-        </p>
-        <h1 class="mt-4 text-[38px] md:text-[46px] leading-[1.15] font-extrabold tracking-tight" data-i18n="hero.title">
+        <p class="text-xs font-medium tracking-wide uppercase" style="color:#6B665F">Grande Porto · Vila do Conde · Póvoa de Varzim</p>
+
+        <h1 class="mt-4 text-[38px] md:text-[46px] leading-[1.15] font-extrabold tracking-tight">
           Choose your Dream | Live in it
         </h1>
-        <p class="mt-4 text-lg font-semibold" data-i18n="hero.subtitle">
+
+        <p class="mt-4 text-lg font-semibold">
           Um serviço que alia experiência sólida, discrição absoluta e atenção ao detalhe para concretizar as decisões mais importantes.
         </p>
-        <p class="mt-2" style="color:#6B665F" data-i18n="hero.body">
+
+        <p class="mt-2" style="color:#6B665F">
           Experiência local, estratégias de marketing cuidadosamente seleccionadas e uma abordagem personalizada para alcançar resultados que excedem expectativas.
         </p>
 
         <div class="mt-6 flex flex-wrap gap-3">
           <a id="btn-book" href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
-             class="px-5 py-3 rounded-xl text-white transition btn-gold"
-             target="_blank" rel="noopener" data-i18n="cta.book">Marcar reunião</a>
-          <a id="btn-wa" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde."
-             class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">WhatsApp</a>
+             class="px-5 py-3 rounded-xl text-white transition btn-gold" target="_blank">Marcar reunião</a>
+
+          <a id="btn-wa" href="https://wa.me/351926691685?text=Olá%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva."
+             class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)">WhatsApp</a>
         </div>
 
         <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
           <a href="mailto:hugocgsilva@remax.pt" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
+            hugocgsilva@remax.pt
           </a>
           <a href="tel:+351926691685" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
-            <span data-i18n="contacts.phone_text">926 691 685</span>
+            926 691 685
           </a>
         </div>
-
-        <div class="mt-3 flex flex-wrap items-center gap-3 text-sm">
-          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.facebook">Facebook</a>
-          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.instagram">Instagram</a>
-          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener"
-             class="px-4 py-2 rounded-lg transition btn-outline-gold"
-             onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
-             onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.linkedin">LinkedIn</a>
-        </div>
-
-        <ul class="mt-6 grid grid-cols-3 gap-4 text-sm">
-          <li class="rounded-xl p-3" style="background:var(--warm); border:1px solid #E6E1D6">
-            <p class="text-[11px]" style="color:#6B665F" data-i18n="metrics.transactions_label">Transações</p>
-            <p class="font-semibold" data-i18n="metrics.transactions_value">+12 acompanhadas</p>
-          </li>
-          <li class="rounded-xl p-3" style="background:var(--warm); border:1px solid #E6E1D6">
-            <p class="text-[11px]" style="color:#6B665F" data-i18n="metrics.response_label">Tempo médio de resposta</p>
-            <p class="font-semibold" data-i18n="metrics.response_value">&lt; 2 horas</p>
-          </li>
-          <li class="rounded-xl p-3" style="background:var(--warm); border:1px solid #E6E1D6">
-            <p class="text-[11px]" style="color:#6B665F" data-i18n="metrics.focus_label">Especialização</p>
-            <p class="font-semibold" data-i18n="metrics.focus_value">Vila do Conde &amp; Póvoa</p>
-          </li>
-        </ul>
       </div>
 
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
-          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" width="800" height="1000" />
+          <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" />
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Serviços -->
+  <!-- SERVIÇOS -->
   <section id="servicos" class="py-14" style="background:var(--warm)">
     <div class="mx-auto max-w-5xl px-4">
-      <h2 class="text-2xl md:text-3xl font-extrabold" data-i18n="services.title">Estratégia e execução sem margem para erro</h2>
-      <p class="mt-2" style="color:#6B665F" data-i18n="services.lead">Cada ação é pensada para valorizar o seu imóvel e atrair o comprador certo.</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold">Estratégia e execução sem margem para erro</h2>
+      <p class="mt-2" style="color:#6B665F">Cada ação é pensada para valorizar o seu imóvel e atrair o comprador certo.</p>
+
       <div class="mt-8 grid md:grid-cols-3 gap-6">
+
         <article class="rounded-2xl bg-white p-6 shadow-sm" style="border:1px solid #E6E1D6">
-          <h3 class="font-semibold" data-i18n="services.card1.title">Avaliação precisa</h3>
-          <p class="text-sm mt-1" style="color:#6B665F" data-i18n="services.card1.body">Preço suportado por dados locais e comparáveis recentes.</p>
+          <h3 class="font-semibold">Avaliação precisa</h3>
+          <p class="text-sm mt-1" style="color:#6B665F">Preço suportado por dados locais e comparáveis recentes.</p>
         </article>
+
         <article class="rounded-2xl bg-white p-6 shadow-sm" style="border:1px solid #E6E1D6">
-          <h3 class="font-semibold" data-i18n="services.card2.title">Marketing seletivo</h3>
-          <p class="text-sm mt-1" style="color:#6B665F" data-i18n="services.card2.body">Fotografia/vídeo profissional e promoção dirigida — sem desperdício.</p>
+          <h3 class="font-semibold">Marketing seletivo</h3>
+          <p class="text-sm mt-1" style="color:#6B665F">Fotografia/vídeo profissional e promoção dirigida — sem desperdício.</p>
         </article>
+
         <article class="rounded-2xl bg-white p-6 shadow-sm" style="border:1px solid #E6E1D6">
-          <h3 class="font-semibold" data-i18n="services.card3.title">Negociação estratégica</h3>
-          <p class="text-sm mt-1" style="color:#6B665F" data-i18n="services.card3.body">Proteção de preço, prazos e confidencialidade.</p>
+          <h3 class="font-semibold">Negociação estratégica</h3>
+          <p class="text-sm mt-1" style="color:#6B665F">Proteção de preço, prazos e confidencialidade.</p>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Sobre -->
+  <!-- SOBRE -->
   <section id="sobre">
     <div class="mx-auto max-w-5xl px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+
       <div>
-        <h2 class="text-2xl md:text-3xl font-extrabold" data-i18n="about.title">Assinatura pessoal</h2>
-        <p class="mt-3" style="color:#6B665F" data-i18n="about.body">
-          Real Estate Advisor na RE/MAX Elegance, dedicado a um acompanhamento próximo e personalizado, assegurando que cada etapa do processo decorre com rigor, discrição e atenção ao detalhe.
+        <h2 class="text-2xl md:text-3xl font-extrabold">Assinatura pessoal</h2>
+
+        <p class="mt-3" style="color:#6B665F">
+          Real Estate Advisor na RE/MAX Elegance, dedicado a um acompanhamento próximo e personalizado, assegurando que cada etapa decorre com rigor, discrição e atenção ao detalhe.
         </p>
+
         <ul class="mt-4 text-sm space-y-2">
-          <li data-i18n="about.bullets.0">• Ética e transparência em todas as fases</li>
-          <li data-i18n="about.bullets.1">• Report claro e prazos definidos</li>
-          <li data-i18n="about.bullets.2">• Rede local e parceiros qualificados</li>
+          <li>• Ética e transparência em todas as fases</li>
+          <li>• Report claro e prazos definidos</li>
+          <li>• Rede local e parceiros qualificados</li>
         </ul>
       </div>
+
       <div class="rounded-2xl p-6" style="border:1px solid #E6E1D6">
-        <p class="text:[11px]" style="color:#6B665F" data-i18n="about.cert_label">Certificação</p>
-        <p class="font-semibold" data-i18n="about.cert_value">Licença AMI 23852 · RE/MAX Elegance</p>
-        <p class="mt-1 text-xs" style="color:#8A847B" data-i18n="about.cert_note">Reconhecimento profissional e rede de parcerias de confiança.</p>
-        <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
-          <div class="rounded-xl" style="background:var(--warm)"><div class="p-3" data-i18n="about.tags.0">Membro MLS</div></div>
-          <div class="rounded-xl" style="background:var(--warm)"><div class="p-3" data-i18n="about.tags.1">Parcerias jurídicas</div></div>
-        </div>
+        <p class="text-[11px]" style="color:#6B665F">Certificação</p>
+        <p class="font-semibold">Licença AMI 23852 · RE/MAX Elegance</p>
+        <p class="mt-1 text-xs" style="color:#8A847B">Reconhecimento profissional e rede de parcerias de confiança.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- Imóvel em destaque -->
+  <!-- DESTAQUE -->
   <section id="destaque">
     <div class="mx-auto max-w-5xl px-4 py-14">
 
-      <!-- Assinatura + Logos -->
       <div class="mb-6 brand-strip p-4 md:p-5">
         <div class="flex items-center justify-between gap-10">
-          <img src="./public/assinatura-hugo-stroke-optimized.svg" alt="Assinatura Hugo Silva" class="brand-signature select-none" />
+          <img src="./public/assinatura-hugo-stroke-optimized.svg" class="brand-signature" />
           <div class="flex items-center gap-10 md:gap-12">
-            <img src="./public/remax-balao-preto.svg" alt="RE/MAX" class="brand-logo select-none" />
-            <img src="./public/remax-elegance-preto.svg?v=2" alt="RE/MAX Elegance" class="brand-logo select-none" />
+            <img src="./public/remax-balao-preto.svg" class="brand-logo" />
+            <img src="./public/remax-elegance-preto.svg" class="brand-logo" />
           </div>
         </div>
       </div>
 
       <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl md:text-3xl font-extrabold" data-i18n="listing.title">Moradia Exclusiva</h2>
-        <a href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde."
-           class="text-sm underline underline-offset-4" data-i18n="listing.cta">Saber mais</a>
+        <h2 class="text-2xl md:text-3xl font-extrabold">Moradia Exclusiva</h2>
+        <a href="https://wa.me/351926691685" class="text-sm underline underline-offset-4">Saber mais</a>
       </div>
 
       <div class="mt-6 grid md:grid-cols-2 gap-6">
+
         <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-          <img src="./public/destaque1.jpg" alt="Moradia Exclusiva — imagem 1"
-               class="w-full h-64 object-cover" loading="lazy" width="1200" height="640" />
+          <img src="./public/destaque1.jpg" class="w-full h-64 object-cover" />
         </div>
+
         <div class="grid gap-6">
           <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-            <img src="./public/destaque2.jpg" alt="Moradia Exclusiva — imagem 2"
-                 class="w-full h-44 object-cover" loading="lazy" width="1200" height="600" />
+            <img src="./public/destaque2.jpg" class="w-full h-44 object-cover" />
           </div>
           <div class="rounded-2xl overflow-hidden" style="border:1px solid #E6E1D6">
-            <img src="./public/destaque3.jpg" alt="Moradia Exclusiva — imagem 3"
-                 class="w-full h-44 object-cover" loading="lazy" width="1200" height="600" />
+            <img src="./public/destaque3.jpg" class="w-full h-44 object-cover" />
           </div>
         </div>
+
       </div>
 
-      <ul class="mt-6 space-y-2">
-        <li data-i18n="listing.bullets.0">• Localização privilegiada no centro histórico de Vila do Conde</li>
-        <li data-i18n="listing.bullets.1">• Vista deslumbrante sobre o Rio Ave</li>
-        <li data-i18n="listing.bullets.2">• Imóvel secular, palco da tradição naval de uma das famílias mais emblemáticas e tradicionais de Vila do Conde</li>
+      <ul class="mt-6 space-y-2 text-sm">
+        <li>• Localização privilegiada no centro histórico de Vila do Conde</li>
+        <li>• Vista deslumbrante sobre o Rio Ave</li>
+        <li>• Imóvel secular, palco da tradição naval</li>
       </ul>
+
     </div>
   </section>
 
   <!-- CTA -->
-  <section id="contacto" class="relative" style="background:var(--dark); color:white">
+  <section id="contacto" style="background:var(--dark); color:white">
     <div class="mx-auto max-w-5xl px-4 py-14">
-      <div class="rounded-3xl p-8 md:p-10 grid md:grid-cols-3 gap-6 items-center" style="background:transparent; border:1px solid rgba(255,255,255,.1)">
+
+      <div class="rounded-3xl p-8 md:p-10"
+           style="background:transparent; border:1px solid rgba(255,255,255,.1)">
+
         <div class="md:col-span-2">
-          <h2 class="text-2xl md:text-3xl font-bold" data-i18n="cta.title">Vamos falar sobre o seu próximo passo?</h2>
-          <p class="mt-2 text-sm" style="color:#CFCAC1" data-i18n="cta.subtitle">Um primeiro encontro, com toda a discrição, para definir a melhor estratégia para o seu imóvel.</p>
+          <h2 class="text-2xl md:text-3xl font-bold">Vamos falar sobre o seu próximo passo?</h2>
+          <p class="mt-2 text-sm" style="color:#CFCAC1">Um primeiro encontro, com toda a discrição.</p>
         </div>
-        <div class="flex flex-col gap-3">
-          <a href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
-             target="_blank" rel="noopener"
-             class="px-5 py-3 rounded-xl text-center hover:opacity-90 btn-gold" data-i18n="cta.book">Marcar reunião</a>
-          <a href="mailto:hugocgsilva@remax.pt" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.email">Email</a>
-          <a id="btn-wa-contact" href="https://wa.me/351926691685" class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)" data-i18n="cta.whatsapp">WhatsApp</a>
+
+        <div class="flex flex-col gap-3 mt-6">
+          <a href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous"
+             class="px-5 py-3 rounded-xl text-center hover:opacity-90 btn-gold" target="_blank">Marcar reunião</a>
+
+          <a href="mailto:hugocgsilva@remax.pt"
+             class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)">Email</a>
+
+          <a href="https://wa.me/351926691685"
+             class="px-5 py-3 rounded-xl text-center" style="border:1px solid rgba(255,255,255,.25)">WhatsApp</a>
         </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <div class="mx-auto max-w-5xl px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4" style="border-top:1px solid #EDEAE3">
+    <div class="mx-auto max-w-5xl px-4 py-8 text-sm flex flex-col md:flex-row items-center justify-between gap-4"
+         style="border-top:1px solid #EDEAE3">
       <p>© <span id="year"></span> Hugo Silva</p>
-      <nav class="flex items-center gap-4" aria-label="Rodapé">
-        <a href="privacidade.html" class="underline underline-offset-4" target="_blank" rel="noopener" data-i18n="footer.privacy">Privacidade</a>
-        <a href="termos.html" class="underline underline-offset-4" target="_blank" rel="noopener" data-i18n="footer.terms">Termos</a>
+      <nav class="flex items-center gap-4">
+        <a href="privacidade.html" class="underline underline-offset-4" target="_blank">Privacidade</a>
+        <a href="termos.html" class="underline underline-offset-4" target="_blank">Termos</a>
       </nav>
     </div>
+
     <div style="background:var(--dark)">
       <div class="mx-auto max-w-5xl px-4 py-6">
-        <p class="mt-0 text-center text-[11px]" style="color:#CFCAC1" data-i18n="footer.legal">Licença AMI 23852 • RE/MAX Elegance</p>
+        <p class="text-[11px]" style="color:#CFCAC1">Licença AMI 23852 • RE/MAX Elegance</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // i18n
-    const langSelect = document.getElementById("languageSwitcher");
-    const saved = localStorage.getItem("siteLang") || "pt";
-    langSelect.value = saved;
-
-    function applyI18n(dict){
-      document.querySelectorAll('[data-i18n]').forEach(el=>{
-        const key = el.getAttribute('data-i18n');
-        if(!dict || dict[key] === undefined) return;
-        if(el.tagName === "META"){ el.setAttribute("content", dict[key]); }
-        else { el.textContent = dict[key]; }
-      });
-      document.documentElement.setAttribute("lang", dict["meta.lang"] || "pt-PT");
-      if (dict["cta.whatsapp_url"]) {
-        const waMain = document.getElementById("btn-wa");
-        const waContact = document.getElementById("btn-wa-contact");
-        if(waMain) waMain.href = dict["cta.whatsapp_url"];
-        if(waContact) waContact.href = dict["cta.whatsapp_url_base"] || dict["cta.whatsapp_url"];
-      }
-      if (dict["meta.title"]) document.title = dict["meta.title"];
-    }
-
-    async function loadLang(lang){
-      try{
-        const res = await fetch(`public/lang/${lang}.json?cachebust=${Date.now()}`);
-        const dict = await res.json();
-        applyI18n(dict);
-      }catch(e){
-        console.warn("Falha a carregar idioma, fallback PT", e);
-        if(lang!=="pt") loadLang("pt");
-      }
-    }
-
-    langSelect.addEventListener("change", e=>{
-      const lang = e.target.value;
-      localStorage.setItem("siteLang", lang);
-      loadLang(lang);
-    });
-
-    loadLang(saved);
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-</body></html>
 
+</body>
+</html>
