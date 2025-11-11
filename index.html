@@ -1,10 +1,7 @@
-<!doctype html>
-<html lang="pt-PT">
-<head>
+<!doctype html><html lang="pt-PT"><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Hugo Silva — Consultor Imobiliário no Grande Porto, Vila do Conde e Póvoa</title>
+  <title>Hugo Silva — Real Estate Advisor no Grande Porto, Vila do Conde e Póvoa</title>
   <meta name="description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe. Choose your Dream | Live in it." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://hcarmosilva1114-hue.github.io/hugosilva-site/" />
@@ -17,37 +14,36 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Hugo Silva — Consultor Imobiliário" />
-  <meta property="og:title" content="Hugo Silva — Consultor Imobiliário no Grande Porto, Vila do Conde e Póvoa" />
+  <meta property="og:site_name" content="Hugo Silva — Real Estate Advisor" />
+  <meta property="og:title" content="Hugo Silva — Real Estate Advisor no Grande Porto, Vila do Conde e Póvoa" />
   <meta property="og:description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe." />
   <meta property="og:url" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/" />
   <meta property="og:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hugo Silva — Consultor Imobiliário" />
+  <meta name="twitter:title" content="Hugo Silva — Real Estate Advisor" />
   <meta name="twitter:description" content="Mediação imobiliária exclusiva, com discrição e atenção ao detalhe." />
   <meta name="twitter:image" content="https://hcarmosilva1114-hue.github.io/hugosilva-site/public/destaque1.jpg" />
 
   <!-- UI -->
+  <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./public/assinatura-hugo-stroke-optimized.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     :root{--gold:#C9A44F;--gold-hover:#B8943A;--warm:#F5F1E6;--text:#3E3A36;--dark:#1E1C1A;--whatsapp:#25D366;}
     body{color:var(--text)}
-    .btn-gold{background:var(--gold);color:#fff}
-    .btn-gold:hover{background:var(--gold-hover)}
+    .btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-hover)}
     .btn-outline-gold{border:1px solid var(--gold);color:var(--gold)}
-
-    /* Barra de marca (assinatura + logos) — tamanhos aumentados */
     .brand-strip{background:var(--warm); border:1px solid #E6E1D6; border-radius:16px;}
+    .brand-signature{height:84px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-4px);}
+    @media (min-width:768px){ .brand-signature{height:96px;} }
+    .brand-logo{height:32px; width:auto; object-fit:contain; flex:0 0 auto;}
+    @media (min-width:768px){ .brand-logo{height:36px;} }
     .brand-signature{height:100px; width:auto; object-fit:contain; flex:0 0 auto; transform:translateX(-2px);}
     .brand-logo{height:48px; width:auto; object-fit:contain; flex:0 0 auto;}
     @media (min-width:768px){
       .brand-signature{height:120px;}
       .brand-logo{height:60px;}
     }
-
-    /* Fallback: força a preto se algum SVG vier a cores (remover se não precisares) */
     .force-black{ filter:grayscale(1) brightness(0); }
   </style>
 
@@ -70,30 +66,25 @@
     ]
   }
   </script>
-</head>
-<body class="min-h-screen bg-white">
+</head><body class="min-h-screen bg-white">
   <a href="#servicos" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-[color:var(--dark)] text-white px-3 py-2 rounded-md" data-i18n="a11y.skip">Saltar para conteúdo</a>
 
   <!-- NavBar -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b" style="border-color:#EDEAE3">
     <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between" aria-label="Navegação principal">
       <div class="flex items-center gap-4">
-        <!-- Monograma HS -->
         <div class="h-8 md:h-9 w-8 md:w-9 rounded-xl bg-[color:var(--dark)] text-white grid place-items-center font-bold select-none">HS</div>
         <div class="leading-tight">
           <p class="font-semibold">Hugo Silva</p>
-          <p class="text-[11px]" style="color:#6B665F" data-i18n="nav.role">Consultor Imobiliário · RE/MAX Oceanus</p>
+          <p class="text-[11px]" style="color:#6B665F" data-i18n="nav.role">Real Estate Advisor · RE/MAX Elegance</p>
         </div>
       </div>
-
       <div class="hidden md:flex items-center gap-3 text-sm">
         <a href="#servicos" class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)" data-i18n="nav.services">Serviços</a>
         <a href="#sobre"    class="px-3 py-2 rounded-lg hover:opacity-90" style="color:var(--text)" data-i18n="nav.about">Sobre</a>
         <a href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
            class="px-4 py-2 rounded-xl text-white hover:opacity-90 btn-gold"
            target="_blank" rel="noopener" data-i18n="nav.book">Agendar</a>
-
-        <!-- Selector de Idioma -->
         <select id="languageSwitcher"
                 class="px-2 py-1 rounded-lg border text-sm"
                 style="border-color:#E6E1D6; background:white; color:var(--text)">
@@ -115,7 +106,6 @@
         <h1 class="mt-4 text-[38px] md:text-[46px] leading-[1.15] font-extrabold tracking-tight" data-i18n="hero.title">
           Choose your Dream | Live in it
         </h1>
-
         <p class="mt-4 text-lg font-semibold" data-i18n="hero.subtitle">
           Um serviço que alia experiência sólida, discrição absoluta e atenção ao detalhe para concretizar as decisões mais importantes.
         </p>
@@ -123,17 +113,14 @@
           Experiência local, estratégias de marketing cuidadosamente seleccionadas e uma abordagem personalizada para alcançar resultados que excedem expectativas.
         </p>
 
-        <!-- Ações -->
         <div class="mt-6 flex flex-wrap gap-3">
           <a id="btn-book" href="https://outlook.office.com/bookwithme/user/d02df2ea17354cc4b4b50971ba452fff@thomas-furniture.pt?anonymous&ismsaljsauthenabled&ep=plink"
              class="px-5 py-3 rounded-xl text-white transition btn-gold"
              target="_blank" rel="noopener" data-i18n="cta.book">Marcar reunião</a>
-
           <a id="btn-wa" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20moradia%20exclusiva%20no%20centro%20hist%C3%B3rico%20de%20Vila%20do%20Conde."
              class="px-5 py-3 rounded-xl text-white transition" style="background:var(--whatsapp)" data-i18n="cta.whatsapp">WhatsApp</a>
         </div>
 
-        <!-- Contactos rápidos -->
         <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
           <a href="mailto:hugocgsilva@remax.pt" class="px-3 py-2 rounded-lg" style="background:var(--warm); border:1px solid #E6E1D6">
             <span data-i18n="contacts.email_text">hugocgsilva@remax.pt</span>
@@ -143,25 +130,21 @@
           </a>
         </div>
 
-        <!-- Redes sociais -->
         <div class="mt-3 flex flex-wrap items-center gap-3 text-sm">
           <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener"
              class="px-4 py-2 rounded-lg transition btn-outline-gold"
              onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
              onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.facebook">Facebook</a>
-
           <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener"
              class="px-4 py-2 rounded-lg transition btn-outline-gold"
              onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
              onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.instagram">Instagram</a>
-
           <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener"
              class="px-4 py-2 rounded-lg transition btn-outline-gold"
              onmouseover="this.classList.remove('btn-outline-gold'); this.classList.add('btn-gold')"
              onmouseout="this.classList.add('btn-outline-gold'); this.classList.remove('btn-gold')" data-i18n="social.linkedin">LinkedIn</a>
         </div>
 
-        <!-- Métricas -->
         <ul class="mt-6 grid grid-cols-3 gap-4 text-sm">
           <li class="rounded-xl p-3" style="background:var(--warm); border:1px solid #E6E1D6">
             <p class="text-[11px]" style="color:#6B665F" data-i18n="metrics.transactions_label">Transações</p>
@@ -178,7 +161,6 @@
         </ul>
       </div>
 
-      <!-- Foto -->
       <div class="relative">
         <div class="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-lg" style="background:var(--warm)">
           <img src="./public/HugoSilva.png" alt="Hugo Silva" class="w-full h-full object-contain p-2" loading="eager" decoding="async" width="800" height="1000" />
@@ -215,7 +197,7 @@
       <div>
         <h2 class="text-2xl md:text-3xl font-extrabold" data-i18n="about.title">Assinatura pessoal</h2>
         <p class="mt-3" style="color:#6B665F" data-i18n="about.body">
-          Consultor RE/MAX Oceanus, dedicado a um acompanhamento próximo e personalizado, assegurando que cada etapa do processo decorre com rigor, discrição e atenção ao detalhe.
+          Real Estate Advisor na RE/MAX Elegance, dedicado a um acompanhamento próximo e personalizado, assegurando que cada etapa do processo decorre com rigor, discrição e atenção ao detalhe.
         </p>
         <ul class="mt-4 text-sm space-y-2">
           <li data-i18n="about.bullets.0">• Ética e transparência em todas as fases</li>
@@ -225,7 +207,7 @@
       </div>
       <div class="rounded-2xl p-6" style="border:1px solid #E6E1D6">
         <p class="text-[11px]" style="color:#6B665F" data-i18n="about.cert_label">Certificação</p>
-        <p class="font-semibold" data-i18n="about.cert_value">Licença AMI 10092 · RE/MAX Oceanus</p>
+        <p class="font-semibold" data-i18n="about.cert_value">Licença AMI 23852 · RE/MAX Elegance</p>
         <p class="mt-1 text-xs" style="color:#8A847B" data-i18n="about.cert_note">Reconhecimento profissional e rede de parcerias de confiança.</p>
         <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
           <div class="rounded-xl" style="background:var(--warm)"><div class="p-3" data-i18n="about.tags.0">Membro MLS</div></div>
@@ -239,14 +221,13 @@
   <section id="destaque">
     <div class="mx-auto max-w-5xl px-4 py-14">
 
-      <!-- Assinatura + Logos com base bege (AGORA MAIORES e com mais espaçamento) -->
+      <!-- Assinatura + Logos -->
       <div class="mb-6 brand-strip p-4 md:p-5">
         <div class="flex items-center justify-between gap-10">
           <img src="./public/assinatura-hugo-stroke-optimized.svg" alt="Assinatura Hugo Silva" class="brand-signature select-none" />
           <div class="flex items-center gap-10 md:gap-12">
-            <img src="./public/remax-balao-preto.svg"    alt="RE/MAX"              class="brand-logo select-none" />
-            <img src="./public/remax-oceanus-preto.svg"  alt="RE/MAX Oceanus"      class="brand-logo select-none" />
-            <img src="./public/grupo-dragao-preto.svg"   alt="Grupo RE/MAX Dragão" class="brand-logo select-none" />
+            <img src="./public/remax-balao-preto.svg" alt="RE/MAX" class="brand-logo select-none" />
+            <img src="./public/remax-elegance-preto.svg" alt="RE/MAX Elegance" class="brand-logo select-none" />
           </div>
         </div>
       </div>
@@ -310,10 +291,9 @@
         <a href="termos.html" class="underline underline-offset-4" target="_blank" rel="noopener" data-i18n="footer.terms">Termos</a>
       </nav>
     </div>
-
     <div style="background:var(--dark)">
       <div class="mx-auto max-w-5xl px-4 py-6">
-        <p class="mt-0 text-center text-[11px]" style="color:#CFCAC1" data-i18n="footer.legal">Licença AMI 10092 • RE/MAX Oceanus</p>
+        <p class="mt-0 text-center text-[11px]" style="color:#CFCAC1" data-i18n="footer.legal">Licença AMI 23852 • RE/MAX Elegance</p>
       </div>
     </div>
   </footer>
@@ -361,5 +341,4 @@
     loadLang(saved);
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-</body>
-</html>
+</body></html>
