@@ -1,26 +1,270 @@
 <!doctype html>
 <html lang="pt">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Análise ao Imóvel | Hugo Silva</title>
-<meta name="description" content="Peça uma análise inicial ao seu imóvel.">
-<link rel="stylesheet" href="/hugosilva-site/assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Análise ao Imóvel | Hugo Silva</title>
+  <meta name="description" content="Peça uma análise inicial ao seu imóvel para enquadrar melhor o posicionamento, o contexto de mercado e a estratégia mais ajustada.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="/hugosilva-site/"><span class="brand-mark">HS</span><span><strong>Hugo Silva</strong><small>Consultoria Imobiliária</small></span></a><nav class="main-nav"><a href="/hugosilva-site/">Início</a><a href="/hugosilva-site/imoveis.html">Imóveis</a><a href="/hugosilva-site/servicos.html">Serviços</a><a href="/hugosilva-site/analise-imovel.html">Análise ao Imóvel</a><a href="/hugosilva-site/comprar-em-portugal.html">Comprar em Portugal</a><a href="/hugosilva-site/viver-em-vila-do-conde.html">Viver em Vila do Conde</a><a href="/hugosilva-site/investimento.html">Investimento</a><a href="/hugosilva-site/sobre.html">Sobre Mim</a><a href="/hugosilva-site/contactos.html">Contactos</a></nav><div class="lang-switch"><a href="/hugosilva-site/">PT</a><a href="/hugosilva-site/en/">EN</a><a href="/hugosilva-site/fr/">FR</a></div></div></header>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Hugo Silva">
+      <img class="brand-balloon" src="public/remax-balao-preto.svg" alt="RE/MAX">
+      <div class="brand-copy">
+        <strong>Hugo Silva</strong>
+        <small>Consultor Imobiliário</small>
+        <span>RE/MAX Elegance</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="imoveis.html">Imóveis</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="analise-imovel.html">Análise ao Imóvel</a>
+      <a href="comprar-em-portugal.html">Comprar em Portugal</a>
+      <a href="viver-em-vila-do-conde.html">Viver em Vila do Conde</a>
+      <a href="investimento.html">Investimento</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="contactos.html">Contactos</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switch" aria-label="Idiomas">
+        <a href="analise-imovel.html" aria-current="page">PT</a>
+        <a href="en/property-review.html">EN</a>
+        <a href="fr/analyse-du-bien.html">FR</a>
+      </div>
+      <a class="btn btn-header" href="contactos.html">Agendar conversa</a>
+    </div>
+  </div>
+</header>
+
 <main>
-<section class="simple-hero"><div class="container"><span class="kicker">Análise ao Imóvel</span><h1>Peça uma análise inicial ao seu imóvel</h1><p class="muted">Se está a ponderar vender, o primeiro passo não é definir um preço ao acaso. É perceber o posicionamento do imóvel, o contexto do mercado e a estratégia mais ajustada para avançar com maior segurança.</p><div class="actions"><a class="btn primary" href="#form">Pedir análise</a><a class="btn secondary" href="/hugosilva-site/contactos.html">Agendar conversa inicial</a></div></div></section>
-<section class="section alt"><div class="container"><h2>Antes de vender, três coisas fazem diferença</h2><div class="grid-3"><article class="card"><h3>Posicionamento no mercado</h3><p>Localização, tipologia, estado e oferta concorrente influenciam diretamente o modo como o imóvel compete.</p></article><article class="card"><h3>Proteção do valor</h3><p>Entrar em mercado sem estrutura pode gerar ruído, visitas pouco úteis e perda de força negocial.</p></article><article class="card"><h3>Comunicação adequada</h3><p>Há imóveis que beneficiam de maior exposição. Outros exigem mais controlo e uma abordagem mais dirigida.</p></article></div></div></section>
-<section class="section"><div class="container grid-2"><div><h2>O que inclui esta análise inicial</h2><ul class="list-clean"><li>Contexto da localização</li><li>Posicionamento comercial</li><li>Concorrência comparável</li><li>Potencial de valorização</li><li>Lógica de entrada em mercado</li><li>Próximos passos possíveis</li></ul></div><div class="card form-card" id="form"><h3>Pedir análise</h3><label>Nome<input type="text"></label><label>Telefone<input type="text"></label><label>Email<input type="email"></label><label>Localização do imóvel<input type="text"></label><label>Tipologia<input type="text"></label><label>Mensagem<textarea></textarea></label><p class="muted">Substitui este formulário por um Google Form quando ligares a captação.</p><a class="btn primary" href="/hugosilva-site/contactos.html">Enviar pedido</a></div></div></section>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="kicker">Análise ao Imóvel</span>
+        <h1>Peça uma análise inicial ao seu imóvel</h1>
+        <p class="lead">
+          Se está a ponderar vender, o primeiro passo não é definir um preço ao acaso.
+          É perceber o posicionamento do imóvel, o contexto do mercado e a estratégia
+          mais ajustada para avançar com maior segurança.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="#form-analise">Pedir análise</a>
+          <a class="btn secondary" href="contactos.html">Agendar conversa inicial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading section-heading-wide">
+        <span class="kicker">Antes de vender</span>
+        <h2>Há três coisas que fazem diferença logo no início</h2>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Posicionamento de mercado</h3>
+          <p class="muted">
+            Nem todos os imóveis competem da mesma forma. Localização, tipologia,
+            estado, contexto de oferta e perfil da procura influenciam o enquadramento.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Proteção de valor</h3>
+          <p class="muted">
+            Entrar mal em mercado pode gerar ruído, visitas pouco úteis e reduzir a
+            força negocial do imóvel.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Estratégia de exposição</h3>
+          <p class="muted">
+            Há imóveis que beneficiam de maior visibilidade e outros que exigem mais
+            controlo, filtragem e uma abordagem comercial mais pensada.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <div class="section-heading">
+          <span class="kicker">O que recebe</span>
+          <h2>Uma leitura inicial mais útil do que um número solto</h2>
+        </div>
+
+        <p class="muted">
+          A análise inicial permite enquadrar melhor o imóvel e perceber que abordagem
+          comercial faz mais sentido em função do mercado, da localização e do objetivo.
+        </p>
+
+        <ul class="list-clean">
+          <li>Contexto da localização</li>
+          <li>Posicionamento comercial</li>
+          <li>Concorrência comparável</li>
+          <li>Perceção de valor</li>
+          <li>Lógica de entrada em mercado</li>
+          <li>Próximos passos possíveis</li>
+        </ul>
+      </div>
+
+      <div class="card method-card">
+        <h3>Esta análise é especialmente útil se…</h3>
+        <ul class="list-clean">
+          <li>Está a ponderar vender e quer perceber melhor o mercado</li>
+          <li>Tem dúvidas sobre o valor e o posicionamento do imóvel</li>
+          <li>Quer evitar uma entrada em mercado desorganizada</li>
+          <li>Procura uma abordagem mais estratégica e menos improvisada</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <span class="kicker">Como funciona</span>
+        <h2>Um processo simples e direto</h2>
+      </div>
+
+      <div class="grid-4">
+        <article class="card card-target">
+          <h3>1. Contacto inicial</h3>
+          <p>Preencha o formulário com os dados essenciais do imóvel.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>2. Primeira leitura</h3>
+          <p>Faço uma leitura inicial do imóvel, da localização e do contexto de mercado.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>3. Conversa de análise</h3>
+          <p>Entrarei em contacto para partilhar uma primeira visão e perceber o seu objetivo.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>4. Próximos passos</h3>
+          <p>Se fizer sentido avançar, enquadramos a estratégia mais ajustada ao seu caso.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="form-analise">
+    <div class="container grid-2">
+      <div>
+        <div class="section-heading">
+          <span class="kicker">Pedir análise</span>
+          <h2>Peça a sua análise inicial</h2>
+        </div>
+
+        <p class="muted">
+          Preencha os dados abaixo e entrarei em contacto consigo para um primeiro
+          enquadramento, sem compromisso.
+        </p>
+      </div>
+
+      <div class="card">
+        <form class="form-card">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="O seu nome">
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" type="text" placeholder="+351 ...">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="email@exemplo.com">
+
+          <label for="localizacao">Localização do imóvel</label>
+          <input id="localizacao" name="localizacao" type="text" placeholder="Ex.: Vila do Conde">
+
+          <label for="tipologia">Tipologia</label>
+          <input id="tipologia" name="tipologia" type="text" placeholder="Ex.: T2, moradia, terreno">
+
+          <label for="estado">Estado do imóvel</label>
+          <input id="estado" name="estado" type="text" placeholder="Ex.: usado, novo, renovado">
+
+          <label for="objetivo">Objetivo</label>
+          <select id="objetivo" name="objetivo">
+            <option>Vender</option>
+            <option>Arrendar</option>
+            <option>Analisar mercado</option>
+          </select>
+
+          <label for="prazo">Prazo previsto</label>
+          <input id="prazo" name="prazo" type="text" placeholder="Ex.: nos próximos 3 meses">
+
+          <label for="mensagem">Observações</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Informação adicional sobre o imóvel"></textarea>
+
+          <div class="actions">
+            <button class="btn primary" type="submit">Pedir análise</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-grid">
+      <div>
+        <h2>Quer perceber melhor como posicionar o seu imóvel?</h2>
+        <p class="muted">
+          Fale comigo diretamente para enquadrar a situação do seu imóvel e perceber
+          qual o caminho mais ajustado para avançar.
+        </p>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary light" href="contactos.html">Agendar conversa inicial</a>
+        <a class="btn secondary light" href="mailto:hugocgsilva@remax.pt">Contactar diretamente</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><h3>Hugo Silva</h3><p>Consultor Imobiliário · RE/MAX Elegance</p><p>Licença AMI 23852</p></div>
-    <div><p><strong>Telefone</strong><br>+351 926 691 685</p><p><strong>Email</strong><br>hugocgsilva@remax.pt</p></div>
-    <div><p><strong>Morada</strong><br>Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>4480-668 Vila do Conde</p></div>
-    <div><p><strong>Redes</strong><br>Instagram · Facebook · LinkedIn</p><p class="tagline">Choose Your Dream | Live in it</p></div>
+    <div>
+      <h3>Hugo Silva</h3>
+      <p>Consultor Imobiliário</p>
+      <p>RE/MAX Elegance</p>
+      <div class="footer-brand">
+        <img src="public/remax-balao-preto.svg" alt="RE/MAX">
+      </div>
+      <p>Licença AMI 23852</p>
+    </div>
+
+    <div>
+      <p><strong>Telefone</strong><br>+351 926 691 685</p>
+      <p><strong>Email</strong><br>hugocgsilva@remax.pt</p>
+    </div>
+
+    <div>
+      <p><strong>Morada</strong><br>
+        Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>
+        4480-668 Vila do Conde
+      </p>
+    </div>
+
+    <div>
+      <p><strong>Redes</strong><br>Instagram · Facebook · LinkedIn</p>
+      <p class="tagline">Choose Your Dream | Live in it</p>
+    </div>
   </div>
 </footer>
 
