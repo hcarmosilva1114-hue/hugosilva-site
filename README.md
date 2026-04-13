@@ -1,17 +1,7 @@
-# hugosilva-site
+# Hugo Silva Site Starter
 
-Site estático (GitHub Pages).
-
-## Publicação
-1. Repo: `hugosilva-site` na conta `hcarmosilva1114-hue`
-2. Colar `index.html`, `privacidade.html`, `termos.html`, `README.md` e criar `.nojekyll` (vazio)
-3. Criar pasta `public/` e adicionar os SVGs (ver abaixo)
-4. Settings → Pages → Source: Deploy from a branch (main, root)
-
-## Assets necessários em /public
-- assinatura-hugo.svg
-- remax-balao.svg
-- remax-oceanus.svg
-- grupo-dragao.svg
-- HugoSilva.png
-- destaque1.jpg, destaque2.jpg, destaque3.jpg
+1. Cria uma branch `novo-site` no GitHub.
+2. Faz upload destes ficheiros para a branch `novo-site`.
+3. Vai a Settings → Pages.
+4. Muda a publicação de `main` para `novo-site`.
+5. Guarda e testa o site online.
