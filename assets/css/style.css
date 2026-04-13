@@ -208,19 +208,19 @@ img{
 
 /* HERO */
 .hero{
-  padding:78px 0 62px;
+  padding:64px 0 52px;
   background:linear-gradient(180deg, #fbfaf7 0%, #f3eee6 100%);
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1.06fr .94fr;
-  gap:40px;
+  grid-template-columns:1.02fr .98fr;
+  gap:42px;
   align-items:center;
 }
 
 .hero-copy{
-  max-width:780px;
+  max-width:700px;
 }
 
 .kicker{
@@ -235,17 +235,18 @@ img{
 
 .hero h1{
   margin:0 0 18px;
-  font-size:clamp(2.7rem, 5vw, 5.15rem);
-  line-height:.97;
-  letter-spacing:-0.035em;
+  font-size:clamp(2.4rem, 4.2vw, 4.35rem);
+  line-height:1.02;
+  letter-spacing:-0.03em;
   font-weight:700;
+  max-width:700px;
 }
 
 .lead{
-  font-size:1.08rem;
-  line-height:1.78;
+  font-size:1.05rem;
+  line-height:1.72;
   color:var(--muted);
-  max-width:760px;
+  max-width:640px;
 }
 
 .actions{
@@ -278,21 +279,21 @@ img{
 .hero-visual{
   display:flex;
   justify-content:center;
-  align-items:flex-end;
+  align-items:center;
 }
 
 .hero-photo-frame{
   width:100%;
-  max-width:560px;
-  min-height:520px;
+  max-width:540px;
+  min-height:470px;
   background:linear-gradient(180deg,#f8f6f1,#eee6da);
   border:1px solid rgba(198,164,106,.38);
   border-radius:28px;
   box-shadow:0 18px 40px rgba(20,35,59,.05);
   display:flex;
-  align-items:flex-end;
+  align-items:center;
   justify-content:center;
-  padding:28px 22px 0;
+  padding:34px 24px 0;
   position:relative;
   overflow:hidden;
 }
@@ -307,8 +308,11 @@ img{
 }
 
 .hero-photo{
-  width:min(100%, 405px);
+  width:min(100%, 360px);
   height:auto;
+  object-fit:contain;
+  object-position:center bottom;
+  margin-top:24px;
 }
 
 /* SECTIONS */
@@ -325,21 +329,21 @@ img{
 }
 
 .section-heading-wide h2{
-  max-width:980px;
+  max-width:920px;
 }
 
 h2{
-  font-size:clamp(2rem, 3vw, 3.25rem);
-  line-height:1.04;
-  letter-spacing:-0.03em;
+  font-size:clamp(1.9rem, 2.8vw, 3rem);
+  line-height:1.06;
+  letter-spacing:-0.025em;
   margin:0;
   font-weight:700;
 }
 
 h3{
-  font-size:clamp(1.25rem, 1.6vw, 1.65rem);
-  line-height:1.16;
-  letter-spacing:-0.015em;
+  font-size:clamp(1.2rem, 1.45vw, 1.5rem);
+  line-height:1.18;
+  letter-spacing:-0.01em;
   margin:0 0 14px;
   font-weight:700;
 }
@@ -358,7 +362,7 @@ p{
 
 .quote{
   margin:0 0 12px;
-  font-size:1.45rem;
+  font-size:1.35rem;
   line-height:1.28;
   font-weight:700;
 }
@@ -392,12 +396,12 @@ p{
 }
 
 .card-target{
-  min-height:292px;
+  min-height:270px;
 }
 
 .card-target p{
-  font-size:1.02rem;
-  line-height:1.72;
+  font-size:1rem;
+  line-height:1.7;
   color:#2f3743;
 }
 
@@ -516,6 +520,10 @@ p{
   .cta-grid{
     grid-template-columns:1fr;
   }
+
+  .hero h1{
+    font-size:clamp(2.3rem, 4vw, 3.8rem);
+  }
 }
 
 @media (max-width:980px){
@@ -529,11 +537,12 @@ p{
 
   .hero-photo-frame{
     min-height:unset;
-    padding:22px 18px 0;
+    padding:24px 18px 0;
   }
 
   .hero-photo{
     width:min(100%,300px);
+    margin-top:8px;
   }
 }
 
@@ -546,16 +555,16 @@ p{
   }
 
   h2{
-    font-size:2.15rem;
+    font-size:2rem;
     line-height:1.08;
   }
 
   h3{
-    font-size:1.35rem;
+    font-size:1.28rem;
   }
 
   .quote{
-    font-size:1.22rem;
+    font-size:1.18rem;
   }
 
   .lang-switch{
@@ -565,5 +574,10 @@ p{
   .lang-switch a{
     width:40px;
     height:40px;
+  }
+
+  .hero h1{
+    font-size:2.55rem;
+    line-height:1.03;
   }
 }
