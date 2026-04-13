@@ -5,13 +5,379 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hugo Silva | Consultor Imobiliário</title>
   <meta name="description" content="Consultoria imobiliária com visão estratégica em Vila do Conde, Póvoa de Varzim e Grande Porto.">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --text:#1d2430;
+      --muted:#5f6876;
+      --line:#d9dde3;
+      --card:#ffffff;
+      --accent:#0d223f;
+      --accent-2:#caa15a;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .container{
+      width:min(1120px,92%);
+      margin:0 auto;
+    }
+
+    .site-header{
+      position:sticky;
+      top:0;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(140%) blur(8px);
+      border-bottom:1px solid var(--line);
+      z-index:20;
+    }
+
+    .header-inner{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-height:76px;
+      padding:10px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:280px;
+    }
+
+    .brand-balloon{
+      width:42px;
+      height:42px;
+      object-fit:contain;
+      flex-shrink:0;
+    }
+
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:.88rem;
+    }
+
+    .main-nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      font-size:.95rem;
+    }
+
+    .main-nav a{
+      padding:8px 0;
+      color:var(--muted);
+    }
+
+    .lang-switch{
+      margin-left:auto;
+      display:flex;
+      gap:10px;
+      font-size:.9rem;
+    }
+
+    .lang-switch a{
+      padding:6px 8px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+    }
+
+    .hero{
+      padding:64px 0 52px;
+      background:linear-gradient(180deg,#fff,#f5f6f8);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr 0.85fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .hero-copy{
+      max-width:760px;
+    }
+
+    .hero h1{
+      font-size:clamp(2rem,4vw,3.4rem);
+      line-height:1.08;
+      margin:0 0 18px;
+    }
+
+    .lead{
+      font-size:1.08rem;
+      color:var(--muted);
+      max-width:850px;
+    }
+
+    .kicker{
+      display:inline-block;
+      margin-bottom:10px;
+      color:var(--accent-2);
+      font-weight:700;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      font-size:.82rem;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:24px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 18px;
+      border-radius:12px;
+      border:1px solid var(--accent);
+      font-weight:700;
+    }
+
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+    }
+
+    .btn.secondary{
+      background:#fff;
+      color:var(--accent);
+    }
+
+    .hero-brand-row{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:24px;
+    }
+
+    .hero-logo{
+      height:46px;
+      width:auto;
+    }
+
+    .hero-tagline{
+      margin:0;
+      font-weight:700;
+      color:var(--accent);
+    }
+
+    .hero-visual{
+      background:linear-gradient(180deg,#ffffff,#f2f4f7);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      min-height:100%;
+      box-shadow:0 8px 24px rgba(13,34,63,.04);
+    }
+
+    .hero-photo{
+      width:min(100%,360px);
+      height:auto;
+    }
+
+    .section{
+      padding:56px 0;
+    }
+
+    .section.alt{
+      background:#fff;
+    }
+
+    h2{
+      font-size:clamp(1.5rem,2.4vw,2.3rem);
+      line-height:1.15;
+      margin:0 0 12px;
+    }
+
+    h3{
+      font-size:1.15rem;
+      margin:0 0 10px;
+    }
+
+    p{
+      margin:0 0 16px;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    .quote{
+      font-size:1.35rem;
+      font-weight:700;
+      line-height:1.25;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:22px;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:22px;
+    }
+
+    .grid-4{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 8px 24px rgba(13,34,63,.04);
+    }
+
+    .placeholder{
+      display:grid;
+      place-items:center;
+      aspect-ratio:5/4;
+      background:#e8ecf1;
+      border:1px dashed #bcc3cd;
+      border-radius:12px;
+      color:#5f6876;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+
+    .list-clean{
+      padding-left:18px;
+      margin:0;
+    }
+
+    .cta-band{
+      padding:42px 0;
+      background:var(--accent);
+      color:#fff;
+    }
+
+    .cta-band .muted{
+      color:rgba(255,255,255,.82);
+    }
+
+    .site-footer{
+      background:#111823;
+      color:#dbe0e7;
+      padding:40px 0;
+      margin-top:40px;
+    }
+
+    .site-footer h3{
+      color:#fff;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .footer-logos{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin:12px 0;
+    }
+
+    .footer-logos img{
+      height:34px;
+      width:auto;
+      filter:brightness(0) invert(1);
+      opacity:.95;
+    }
+
+    .tagline{
+      color:#fff;
+      font-weight:700;
+    }
+
+    @media (max-width:980px){
+      .header-inner{
+        flex-wrap:wrap;
+      }
+
+      .main-nav{
+        width:100%;
+        order:3;
+      }
+
+      .lang-switch{
+        margin-left:0;
+      }
+
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero-visual{
+        order:-1;
+      }
+
+      .hero-photo{
+        width:min(100%,290px);
+      }
+
+      .grid-4{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+
+      .footer-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:720px){
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand brand-logo" href="index.html">
+    <a class="brand" href="index.html">
       <img class="brand-balloon" src="public/remax-balao-preto.svg" alt="RE/MAX">
       <span>
         <strong>Hugo Silva</strong>
@@ -40,7 +406,7 @@
 </header>
 
 <main>
-  <section class="hero hero-split">
+  <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="kicker">Consultoria Imobiliária</span>
@@ -62,7 +428,7 @@
         </div>
       </div>
 
-      <div class="hero-visual card">
+      <div class="hero-visual">
         <img class="hero-photo" src="public/HugoSilva.png" alt="Hugo Silva">
       </div>
     </div>
@@ -113,7 +479,7 @@
       <span class="kicker">Imóveis em destaque</span>
       <h2>Uma montra simples para os teus imóveis</h2>
 
-      <div class="grid-3 property-list">
+      <div class="grid-3">
         <article class="card">
           <div class="placeholder">Imagem do imóvel</div>
           <h3>T2 com terraço em Árvore</h3>
