@@ -9,11 +9,10 @@
   <style>
     :root{
       --bg:#f5f2eb;
-      --bg-soft:#f8f5ef;
-      --surface:#fcfbf8;
+      --surface:#fbf8f2;
       --text:#1d2430;
       --muted:#5e6673;
-      --line:#e3ddd2;
+      --line:#e2dbcf;
       --card:#fcfbf8;
       --accent:#14233b;
       --accent-2:#c6a46a;
@@ -48,7 +47,6 @@
       margin:0 auto;
     }
 
-    /* HEADER */
     .site-header{
       position:sticky;
       top:0;
@@ -208,7 +206,6 @@
       background:rgba(20,35,59,.05);
     }
 
-    /* HERO */
     .hero{
       padding:78px 0 44px;
       background:var(--bg);
@@ -253,7 +250,6 @@
       margin-top:14px;
     }
 
-    /* CONTENT */
     .section{
       padding:28px 0 74px;
       background:var(--bg);
@@ -307,7 +303,6 @@
       color:var(--text);
     }
 
-    /* FINAL CTA */
     .final-cta-band{
       background:var(--cta-beige);
       color:var(--text);
@@ -369,7 +364,6 @@
       border-color:var(--accent);
     }
 
-    /* FOOTER */
     .final-footer{
       background:var(--footer);
       color:var(--white);
@@ -407,14 +401,21 @@
     }
 
     .footer-logo-wrap{
+      display:inline-flex;
+      align-items:center;
+      justify-content:flex-start;
       width:340px;
       max-width:100%;
       margin:18px 0 14px;
+      background:#ffffff;
+      border-radius:14px;
+      padding:14px 18px;
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
     }
 
     .footer-agency-logo{
       display:block;
-      width:340px;
+      width:280px;
       max-width:100%;
       height:auto;
       background:transparent;
@@ -422,6 +423,24 @@
       box-shadow:none;
       object-fit:contain;
       object-position:left center;
+    }
+
+    .footer-social-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      line-height:1.8;
+    }
+
+    .footer-social-links a{
+      color:#ffffff;
+      opacity:.9;
+      border-bottom:1px solid transparent;
+    }
+
+    .footer-social-links a:hover{
+      opacity:1;
+      border-bottom-color:rgba(255,255,255,.6);
     }
 
     .footer-tagline{
@@ -495,10 +514,11 @@
 
       .footer-logo-wrap{
         width:260px;
+        padding:12px 14px;
       }
 
       .footer-agency-logo{
-        width:260px;
+        width:220px;
       }
     }
   </style>
@@ -632,7 +652,13 @@
 
       <div class="final-footer-col">
         <h4>Redes</h4>
-        <p>Instagram · Facebook · LinkedIn</p>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener">Instagram</a>
+          <span>·</span>
+          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener">Facebook</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
         <p class="footer-tagline">Choose Your Dream | Live in it</p>
       </div>
     </div>
