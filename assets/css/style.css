@@ -490,8 +490,8 @@ p{
 
 /* FINAL CTA + FOOTER */
 .final-cta-band {
-  background: #142b4d;
-  color: #ffffff;
+  background: #d8c9b2;
+  color: #1d2430;
   padding: 72px 0 56px;
   margin: 0;
   border: 0;
@@ -509,13 +509,13 @@ p{
   font-size: clamp(2.2rem, 4vw, 4rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: #14233b;
 }
 
 .final-cta-copy p {
   margin: 0;
   max-width: 700px;
-  color: rgba(255, 255, 255, 0.88);
+  color: #4a5360;
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -528,26 +528,27 @@ p{
 }
 
 .btn-light-solid {
-  background: #ffffff;
-  color: #132745;
-  border: 1px solid #ffffff;
+  background: #14233b;
+  color: #ffffff;
+  border: 1px solid #14233b;
 }
 
 .btn-light-solid:hover {
-  background: #f3f3f3;
-  color: #132745;
+  background: #1d3153;
+  color: #ffffff;
+  border-color: #1d3153;
 }
 
 .btn-outline-light {
   background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255,255,255,0.55);
+  color: #14233b;
+  border: 1px solid rgba(20,35,59,0.35);
 }
 
 .btn-outline-light:hover {
-  background: rgba(255,255,255,0.08);
-  color: #ffffff;
-  border-color: rgba(255,255,255,0.8);
+  background: rgba(20,35,59,0.06);
+  color: #14233b;
+  border-color: #14233b;
 }
 
 .final-footer {
@@ -555,7 +556,7 @@ p{
   color: #ffffff;
   padding: 52px 0 38px;
   margin: 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: none;
 }
 
 .final-cta-band + .final-footer {
@@ -592,11 +593,12 @@ p{
 
 .footer-agency-logo {
   display: block;
-  width: 132px;
+  width: 220px;
   max-width: 100%;
-  height: auto;
-  margin: 16px 0 14px;
+  height: 72px;
+  margin: 18px 0 10px;
   object-fit: contain;
+  object-position: left center;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -709,6 +711,7 @@ p{
 
   .footer-agency-logo {
     width: 120px;
+    height: auto;
   }
 }
 
