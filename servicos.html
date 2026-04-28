@@ -22,6 +22,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
@@ -45,7 +46,6 @@
       margin:0 auto;
     }
 
-    /* HEADER */
     .site-header{
       position:sticky;
       top:0;
@@ -205,7 +205,6 @@
       background:rgba(20,35,59,.05);
     }
 
-    /* HERO */
     .hero{
       padding:78px 0 44px;
       background:var(--bg);
@@ -250,7 +249,6 @@
       margin-top:14px;
     }
 
-    /* CONTENT */
     .section{
       padding:28px 0 74px;
       background:var(--bg);
@@ -304,7 +302,6 @@
       color:var(--text);
     }
 
-    /* FINAL CTA */
     .final-cta-band{
       background:var(--cta-beige);
       color:var(--text);
@@ -366,7 +363,6 @@
       border-color:var(--accent);
     }
 
-    /* FOOTER */
     .final-footer{
       background:var(--footer);
       color:var(--white);
@@ -403,29 +399,28 @@
       line-height:1.72;
     }
 
-    .footer-logo-wrap{
-      display:inline-flex;
-      align-items:center;
-      justify-content:flex-start;
-      width:360px;
-      max-width:100%;
+    /* CROP VISUAL DO LOGO SEM DEPENDER DO PNG ESTAR BEM CORTADO */
+    .footer-logo-crop{
+      width:280px;
+      height:76px;
+      overflow:hidden;
       margin:18px 0 14px;
       background:#ffffff;
-      border-radius:16px;
-      padding:16px 18px;
+      border-radius:14px;
       box-shadow:0 8px 22px rgba(0,0,0,.12);
+      display:flex;
+      align-items:flex-start;
+      justify-content:flex-start;
+      padding:0;
     }
 
     .footer-agency-logo{
       display:block;
-      width:300px;
-      max-width:100%;
+      width:680px;
+      max-width:none;
       height:auto;
-      background:transparent;
-      border:0;
-      box-shadow:none;
-      object-fit:contain;
-      object-position:left center;
+      margin-left:-10px;
+      margin-top:-6px;
     }
 
     .footer-social-links{
@@ -434,8 +429,6 @@
       align-items:flex-start;
       gap:10px;
       margin-top:4px;
-      position:relative;
-      z-index:5;
     }
 
     .footer-social-links a{
@@ -444,7 +437,6 @@
       opacity:1;
       text-decoration:underline;
       text-underline-offset:3px;
-      pointer-events:auto;
       cursor:pointer;
     }
 
@@ -456,7 +448,6 @@
       margin-top:18px !important;
       font-weight:700;
       color:#ffffff !important;
-      white-space:normal;
       max-width:260px;
     }
 
@@ -523,13 +514,15 @@
         padding:42px 0 28px;
       }
 
-      .footer-logo-wrap{
-        width:280px;
-        padding:12px 14px;
+      .footer-logo-crop{
+        width:240px;
+        height:68px;
       }
 
       .footer-agency-logo{
-        width:230px;
+        width:585px;
+        margin-left:-8px;
+        margin-top:-5px;
       }
     }
   </style>
@@ -565,7 +558,7 @@
           <a href="en/services.html">EN</a>
           <a href="fr/services.html">FR</a>
         </div>
-        <a class="btn btn-header" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa." target="_blank" rel="noopener">Agendar conversa</a>
+        <a class="btn btn-header" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa." target="_blank" rel="noopener noreferrer">Agendar conversa</a>
       </div>
     </div>
   </header>
@@ -582,7 +575,7 @@
           </p>
 
           <div class="actions">
-            <a class="btn primary" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener">Agendar conversa inicial</a>
+            <a class="btn primary" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener noreferrer">Agendar conversa inicial</a>
             <a class="btn secondary" href="analise-imovel.html">Pedir análise ao imóvel</a>
           </div>
         </div>
@@ -625,7 +618,7 @@
 
         <div class="final-cta-actions">
           <a class="btn btn-light-solid" href="analise-imovel.html">Pedir análise ao imóvel</a>
-          <a class="btn btn-outline-light" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener">Agendar uma conversa inicial</a>
+          <a class="btn btn-outline-light" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener noreferrer">Agendar uma conversa inicial</a>
         </div>
       </div>
     </section>
@@ -638,7 +631,7 @@
         <p>Consultor Imobiliário</p>
         <p>RE/MAX Elegance</p>
 
-        <div class="footer-logo-wrap">
+        <div class="footer-logo-crop">
           <img src="assets/images/brand/remax-elegance.png" alt="RE/MAX Elegance" class="footer-agency-logo">
         </div>
 
