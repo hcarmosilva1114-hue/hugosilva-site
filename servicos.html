@@ -8,17 +8,18 @@
 
   <style>
     :root{
-      --bg:#f5f2eb;
-      --bg-soft:#f8f5ef;
-      --surface:#fbf9f4;
+      --bg:#f7f5f0;
+      --bg-soft:#faf8f3;
+      --surface:#fcfbf8;
       --text:#1d2430;
       --muted:#5e6673;
-      --line:#ddd6cb;
+      --line:#e3ddd2;
       --card:#fcfbf8;
       --accent:#14233b;
       --accent-2:#c6a46a;
       --white:#ffffff;
       --footer:#0b1d36;
+      --cta-beige:#f7f5f0;
     }
 
     *{box-sizing:border-box}
@@ -51,7 +52,7 @@
     .site-header{
       position:sticky;
       top:0;
-      background:rgba(245,242,235,.97);
+      background:rgba(247,245,240,.97);
       backdrop-filter:saturate(140%) blur(10px);
       border-bottom:1px solid rgba(20,35,59,.08);
       z-index:50;
@@ -60,7 +61,7 @@
     .site-header::after{
       content:"";
       display:block;
-      height:2px;
+      height:1px;
       background:linear-gradient(90deg,var(--accent-2),transparent 42%);
     }
 
@@ -282,8 +283,8 @@
     }
 
     .method-card{
-      background:#f8f5ef;
-      border:1px solid rgba(198,164,106,.26);
+      background:#fbf9f4;
+      border:1px solid rgba(198,164,106,.22);
       border-radius:22px;
       padding:28px 30px;
       min-height:255px;
@@ -308,7 +309,7 @@
 
     /* FINAL CTA */
     .final-cta-band{
-      background:#f5f2eb;
+      background:var(--cta-beige);
       color:var(--text);
       padding:74px 0 58px;
       margin:0;
@@ -379,7 +380,7 @@
 
     .final-footer-grid{
       display:grid;
-      grid-template-columns:1.35fr 1fr 1.2fr 1fr;
+      grid-template-columns:1.45fr 1fr 1.2fr 1fr;
       gap:34px;
       align-items:start;
     }
@@ -406,22 +407,21 @@
     }
 
     .footer-logo-wrap{
-      width:280px;
+      width:340px;
       max-width:100%;
-      overflow:visible;
       margin:18px 0 14px;
     }
 
     .footer-agency-logo{
       display:block;
-      width:280px;
-      max-width:none;
+      width:340px;
+      max-width:100%;
       height:auto;
       background:transparent;
       border:0;
       box-shadow:none;
-      transform:scale(1.22);
-      transform-origin:left center;
+      object-fit:contain;
+      object-position:left center;
     }
 
     .footer-tagline{
@@ -494,12 +494,11 @@
       }
 
       .footer-logo-wrap{
-        width:220px;
+        width:260px;
       }
 
       .footer-agency-logo{
-        width:220px;
-        transform:scale(1.18);
+        width:260px;
       }
     }
   </style>
