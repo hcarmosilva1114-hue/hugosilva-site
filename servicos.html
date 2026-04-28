@@ -13,7 +13,6 @@
       --text:#1d2430;
       --muted:#5e6673;
       --line:#e2dbcf;
-      --card:#fcfbf8;
       --accent:#14233b;
       --accent-2:#c6a46a;
       --white:#ffffff;
@@ -23,7 +22,6 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
@@ -38,8 +36,8 @@
     }
 
     img{
-      max-width:100%;
       display:block;
+      max-width:100%;
     }
 
     .container{
@@ -47,6 +45,7 @@
       margin:0 auto;
     }
 
+    /* HEADER */
     .site-header{
       position:sticky;
       top:0;
@@ -206,6 +205,7 @@
       background:rgba(20,35,59,.05);
     }
 
+    /* HERO */
     .hero{
       padding:78px 0 44px;
       background:var(--bg);
@@ -250,6 +250,7 @@
       margin-top:14px;
     }
 
+    /* CONTENT */
     .section{
       padding:28px 0 74px;
       background:var(--bg);
@@ -303,6 +304,7 @@
       color:var(--text);
     }
 
+    /* FINAL CTA */
     .final-cta-band{
       background:var(--cta-beige);
       color:var(--text);
@@ -364,6 +366,7 @@
       border-color:var(--accent);
     }
 
+    /* FOOTER */
     .final-footer{
       background:var(--footer);
       color:var(--white);
@@ -374,7 +377,7 @@
 
     .final-footer-grid{
       display:grid;
-      grid-template-columns:1.45fr 1fr 1.2fr 1fr;
+      grid-template-columns:1.55fr 1fr 1.2fr 1.2fr;
       gap:34px;
       align-items:start;
     }
@@ -404,18 +407,18 @@
       display:inline-flex;
       align-items:center;
       justify-content:flex-start;
-      width:340px;
+      width:360px;
       max-width:100%;
       margin:18px 0 14px;
       background:#ffffff;
-      border-radius:14px;
-      padding:14px 18px;
+      border-radius:16px;
+      padding:16px 18px;
       box-shadow:0 8px 22px rgba(0,0,0,.12);
     }
 
     .footer-agency-logo{
       display:block;
-      width:280px;
+      width:300px;
       max-width:100%;
       height:auto;
       background:transparent;
@@ -427,26 +430,34 @@
 
     .footer-social-links{
       display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      line-height:1.8;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:10px;
+      margin-top:4px;
+      position:relative;
+      z-index:5;
     }
 
     .footer-social-links a{
+      display:inline-block;
       color:#ffffff;
-      opacity:.9;
-      border-bottom:1px solid transparent;
+      opacity:1;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      pointer-events:auto;
+      cursor:pointer;
     }
 
     .footer-social-links a:hover{
-      opacity:1;
-      border-bottom-color:rgba(255,255,255,.6);
+      color:#d9e6ff;
     }
 
     .footer-tagline{
       margin-top:18px !important;
       font-weight:700;
       color:#ffffff !important;
+      white-space:normal;
+      max-width:260px;
     }
 
     .license{
@@ -513,12 +524,12 @@
       }
 
       .footer-logo-wrap{
-        width:260px;
+        width:280px;
         padding:12px 14px;
       }
 
       .footer-agency-logo{
-        width:220px;
+        width:230px;
       }
     }
   </style>
@@ -653,11 +664,9 @@
       <div class="final-footer-col">
         <h4>Redes</h4>
         <div class="footer-social-links">
-          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener">Instagram</a>
-          <span>·</span>
-          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener">Facebook</a>
-          <span>·</span>
-          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
         <p class="footer-tagline">Choose Your Dream | Live in it</p>
       </div>
