@@ -399,10 +399,10 @@
       line-height:1.72;
     }
 
-    /* CROP VISUAL DO LOGO SEM DEPENDER DO PNG ESTAR BEM CORTADO */
+    /* LOGO */
     .footer-logo-crop{
-      width:280px;
-      height:76px;
+      width:250px;
+      height:60px;
       overflow:hidden;
       margin:18px 0 14px;
       background:#ffffff;
@@ -411,19 +411,21 @@
       display:flex;
       align-items:flex-start;
       justify-content:flex-start;
-      padding:0;
     }
 
     .footer-agency-logo{
       display:block;
-      width:680px;
+      width:980px;
       max-width:none;
       height:auto;
-      margin-left:-10px;
-      margin-top:-6px;
+      margin:0;
+      transform:none;
     }
 
+    /* LINKS */
     .footer-social-links{
+      position:relative;
+      z-index:10;
       display:flex;
       flex-direction:column;
       align-items:flex-start;
@@ -434,10 +436,10 @@
     .footer-social-links a{
       display:inline-block;
       color:#ffffff;
-      opacity:1;
       text-decoration:underline;
       text-underline-offset:3px;
       cursor:pointer;
+      pointer-events:auto;
     }
 
     .footer-social-links a:hover{
@@ -445,10 +447,12 @@
     }
 
     .footer-tagline{
+      display:block;
       margin-top:18px !important;
       font-weight:700;
       color:#ffffff !important;
       max-width:260px;
+      line-height:1.5;
     }
 
     .license{
@@ -515,14 +519,12 @@
       }
 
       .footer-logo-crop{
-        width:240px;
-        height:68px;
+        width:220px;
+        height:54px;
       }
 
       .footer-agency-logo{
-        width:585px;
-        margin-left:-8px;
-        margin-top:-5px;
+        width:860px;
       }
     }
   </style>
@@ -661,7 +663,7 @@
           <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-        <p class="footer-tagline">Choose Your Dream | Live in it</p>
+        <span class="footer-tagline">Choose Your Dream | Live in it</span>
       </div>
     </div>
   </footer>
