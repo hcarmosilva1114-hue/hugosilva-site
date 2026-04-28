@@ -30,8 +30,15 @@
       line-height:1.6;
     }
 
-    a{color:inherit;text-decoration:none}
-    img{display:block;max-width:100%}
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
 
     .container{
       width:min(1160px, 92%);
@@ -50,8 +57,8 @@
 
     .site-header::after{
       content:"";
-      height:1px;
       display:block;
+      height:1px;
       background:linear-gradient(90deg,var(--accent-2),transparent 42%);
     }
 
@@ -66,23 +73,35 @@
 
     .brand{
       display:flex;
-      gap:14px;
       align-items:center;
+      gap:14px;
       min-width:270px;
     }
 
     .brand-balloon{
       width:48px;
       height:48px;
+      object-fit:contain;
+      flex-shrink:0;
       background:#fff;
       border-radius:10px;
       padding:4px;
-      object-fit:contain;
       border:1px solid rgba(20,35,59,.08);
     }
 
-    .brand-copy strong{display:block;font-size:1.08rem}
-    .brand-copy small{display:block;color:var(--muted);margin-top:4px}
+    .brand-copy strong{
+      display:block;
+      font-size:1.08rem;
+      line-height:1.1;
+    }
+
+    .brand-copy small{
+      display:block;
+      color:var(--muted);
+      font-size:.92rem;
+      margin-top:4px;
+    }
+
     .brand-copy span{
       display:block;
       color:var(--accent-2);
@@ -95,18 +114,25 @@
     .main-nav{
       display:flex;
       flex-wrap:wrap;
-      gap:16px 20px;
       justify-content:center;
+      gap:16px 20px;
       font-size:.98rem;
     }
 
-    .main-nav a{color:var(--muted)}
-    .main-nav a:hover{color:var(--accent)}
+    .main-nav a{
+      color:var(--muted);
+      padding:6px 0;
+      transition:.2s ease;
+    }
+
+    .main-nav a:hover{
+      color:var(--accent);
+    }
 
     .header-right{
       display:flex;
-      gap:14px;
       align-items:center;
+      gap:14px;
     }
 
     .lang-switch{
@@ -115,15 +141,22 @@
     }
 
     .lang-switch a{
-      width:44px;
-      height:44px;
-      border-radius:999px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
+      width:44px;
+      height:44px;
       border:1px solid var(--line);
+      border-radius:999px;
       background:var(--surface);
       font-weight:700;
+      transition:.2s ease;
+    }
+
+    .lang-switch a:hover{
+      border-color:var(--accent-2);
+      color:var(--accent);
+      background:#fff9ef;
     }
 
     .btn{
@@ -133,15 +166,20 @@
       min-height:52px;
       padding:0 20px;
       border-radius:14px;
-      font-weight:700;
       border:1px solid var(--accent);
-      cursor:pointer;
+      font-weight:700;
       transition:.2s ease;
+      cursor:pointer;
     }
 
     .btn.primary{
       background:var(--accent);
-      color:#fff;
+      color:var(--white);
+    }
+
+    .btn.primary:hover{
+      background:#1b3050;
+      border-color:#1b3050;
     }
 
     .btn.secondary{
@@ -150,157 +188,490 @@
       border-color:rgba(20,35,59,.18);
     }
 
+    .btn.secondary:hover{
+      background:rgba(20,35,59,.05);
+      border-color:var(--accent-2);
+    }
+
+    .btn-header{
+      min-height:48px;
+      padding:0 18px;
+      background:transparent;
+      color:var(--accent);
+      border-color:rgba(20,35,59,.18);
+    }
+
+    .btn-header:hover{
+      background:rgba(20,35,59,.05);
+    }
+
     /* HERO */
-    .hero{padding:78px 0 44px}
-    .hero-copy{max-width:760px}
+    .hero{
+      padding:78px 0 44px;
+      background:var(--bg);
+    }
+
+    .hero-copy{
+      max-width:760px;
+    }
 
     .kicker{
+      display:inline-block;
+      margin-bottom:14px;
       color:var(--accent-2);
+      font-weight:700;
       letter-spacing:.08em;
       text-transform:uppercase;
-      font-weight:700;
       font-size:.88rem;
     }
 
     .hero h1{
-      margin:18px 0 22px;
-      font-size:clamp(2.8rem,5vw,5rem);
-      line-height:.98;
-      letter-spacing:-.03em;
+      margin:0 0 22px;
+      font-size:clamp(2.8rem, 5vw, 5rem);
+      line-height:0.98;
+      letter-spacing:-0.03em;
+      font-weight:700;
       color:#1f2b40;
+      max-width:760px;
     }
 
     .lead{
+      font-size:1.04rem;
+      line-height:1.8;
       color:var(--muted);
       max-width:760px;
+      margin:0 0 28px;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:14px;
+    }
+
+    /* CONTENT */
+    .section{
+      padding:28px 0 74px;
+      background:var(--bg);
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:34px;
+      align-items:start;
+    }
+
+    .section-copy h2{
+      margin:0 0 18px;
+      font-size:clamp(2.2rem,4vw,4rem);
+      line-height:1.02;
+      letter-spacing:-0.03em;
+      color:#1f2b40;
+      max-width:720px;
+    }
+
+    .section-copy p{
+      margin:0 0 24px;
+      max-width:760px;
+      color:var(--muted);
+      line-height:1.8;
+    }
+
+    .method-card{
+      background:#fbf9f4;
+      border:1px solid rgba(198,164,106,.22);
+      border-radius:22px;
+      padding:28px 30px;
+      min-height:255px;
+    }
+
+    .method-card h3{
+      margin:0 0 16px;
+      font-size:1.9rem;
+      color:#1f2b40;
+      line-height:1.08;
+    }
+
+    .method-card ul{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .method-card li{
+      margin-bottom:12px;
+      color:var(--text);
+    }
+
+    /* FINAL CTA */
+    .final-cta-band{
+      background:var(--cta-beige);
+      color:var(--text);
+      padding:74px 0 58px;
+      margin:0;
+      border:0;
+    }
+
+    .final-cta-grid{
+      display:grid;
+      grid-template-columns:1.45fr 1fr;
+      gap:46px;
+      align-items:center;
+    }
+
+    .final-cta-copy h2{
+      margin:0 0 14px;
+      font-size:clamp(2.35rem,4.2vw,4.2rem);
+      line-height:1.02;
+      letter-spacing:-0.03em;
+      color:var(--accent);
+      max-width:760px;
+    }
+
+    .final-cta-copy p{
+      margin:0;
+      max-width:720px;
+      color:#4f5865;
+      font-size:1rem;
+      line-height:1.75;
+    }
+
+    .final-cta-actions{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+      align-items:flex-start;
+    }
+
+    .btn-light-solid{
+      background:var(--accent);
+      color:var(--white);
+      border:1px solid var(--accent);
+    }
+
+    .btn-light-solid:hover{
+      background:#1b3050;
+      border-color:#1b3050;
+    }
+
+    .btn-outline-light{
+      background:transparent;
+      color:var(--accent);
+      border:1px solid rgba(20,35,59,.28);
+    }
+
+    .btn-outline-light:hover{
+      background:rgba(20,35,59,.05);
+      border-color:var(--accent);
     }
 
     /* FOOTER */
     .final-footer{
       background:var(--footer);
-      color:#fff;
+      color:var(--white);
       padding:54px 0 40px;
+      margin:0;
+      border:0;
     }
 
     .final-footer-grid{
       display:grid;
       grid-template-columns:1.55fr 1fr 1.2fr 1.2fr;
       gap:34px;
+      align-items:start;
+    }
+
+    .final-footer-col h3,
+    .final-footer-col h4{
+      margin:0 0 12px;
+      color:var(--white);
     }
 
     .final-footer-col h3{
       font-size:2rem;
-      margin:0 0 10px;
+      line-height:1.08;
     }
 
     .final-footer-col h4{
-      margin:0 0 10px;
+      font-size:1rem;
     }
 
     .final-footer-col p{
       margin:0 0 10px;
-      line-height:1.7;
-      opacity:.9;
+      color:rgba(255,255,255,.88);
+      line-height:1.72;
     }
 
-    /* LOGO CORRIGIDO */
     .footer-logo-wrap{
       display:inline-flex;
       align-items:center;
-      background:#fff;
-      border-radius:14px;
-      padding:14px 16px;
-      margin:18px 0 10px;
+      justify-content:flex-start;
+      width:360px;
       max-width:100%;
-      box-shadow:0 6px 18px rgba(0,0,0,.12);
+      margin:18px 0 14px;
+      background:#ffffff;
+      border-radius:16px;
+      padding:16px 18px;
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
     }
 
     .footer-agency-logo{
-      width:220px;
+      display:block;
+      width:300px;
+      max-width:100%;
       height:auto;
+      background:transparent;
+      border:0;
+      box-shadow:none;
       object-fit:contain;
-    }
-
-    /* FRASE CORRIGIDA */
-    .footer-tagline{
-      margin-top:18px;
-      font-weight:700;
-      white-space:nowrap;
-      line-height:1.4;
+      object-position:left center;
     }
 
     .footer-social-links{
       display:flex;
       flex-direction:column;
+      align-items:flex-start;
       gap:10px;
+      margin-top:4px;
+      position:relative;
+      z-index:5;
     }
 
     .footer-social-links a{
+      display:inline-block;
+      color:#ffffff;
+      opacity:1;
       text-decoration:underline;
+      text-underline-offset:3px;
+      pointer-events:auto;
+      cursor:pointer;
     }
 
-    .license{margin-top:12px;font-size:.9rem}
+    .footer-social-links a:hover{
+      color:#d9e6ff;
+    }
+
+    .footer-tagline{
+      margin-top:18px !important;
+      font-weight:700;
+      color:#ffffff !important;
+      white-space:normal;
+      max-width:260px;
+    }
+
+    .license{
+      margin-top:12px !important;
+    }
+
+    .final-cta-band::before,
+    .final-cta-band::after,
+    .final-footer::before,
+    .final-footer::after{
+      display:none !important;
+      content:none !important;
+    }
+
+    hr,
+    .separator,
+    .section-separator,
+    .footer-divider,
+    .footer-spacer,
+    .divider{
+      display:none !important;
+    }
 
     @media (max-width:1100px){
-      .final-footer-grid{grid-template-columns:1fr}
+      .header-inner{
+        grid-template-columns:1fr;
+        gap:16px;
+      }
+
+      .main-nav{
+        justify-content:flex-start;
+      }
+
+      .header-right{
+        justify-content:flex-start;
+      }
+
+      .grid-2,
+      .final-cta-grid,
+      .final-footer-grid{
+        grid-template-columns:1fr;
+      }
     }
 
     @media (max-width:768px){
-      .footer-agency-logo{width:200px}
-      .footer-tagline{white-space:normal}
+      .container{
+        width:min(100% - 32px, 1160px);
+      }
+
+      .hero{
+        padding:58px 0 30px;
+      }
+
+      .section{
+        padding:18px 0 54px;
+      }
+
+      .final-cta-band{
+        padding:56px 0 42px;
+      }
+
+      .final-footer{
+        padding:42px 0 28px;
+      }
+
+      .footer-logo-wrap{
+        width:280px;
+        padding:12px 14px;
+      }
+
+      .footer-agency-logo{
+        width:230px;
+      }
     }
   </style>
 </head>
-
 <body>
 
-<main>
-  <!-- conteúdo mantém-se igual -->
-</main>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hugo Silva">
+        <img class="brand-balloon" src="public/remax-balao-preto.svg" alt="RE/MAX">
+        <div class="brand-copy">
+          <strong>Hugo Silva</strong>
+          <small>Consultor Imobiliário</small>
+          <span>RE/MAX Elegance</span>
+        </div>
+      </a>
 
-<footer class="final-footer">
-  <div class="container final-footer-grid">
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="imoveis.html">Imóveis</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="analise-imovel.html">Análise ao Imóvel</a>
+        <a href="comprar-em-portugal.html">Comprar em Portugal</a>
+        <a href="viver-em-vila-do-conde.html">Viver em Vila do Conde</a>
+        <a href="investimento.html">Investimento</a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="contactos.html">Contactos</a>
+      </nav>
 
-    <div class="final-footer-col">
-      <h3>Hugo Silva</h3>
-      <p>Consultor Imobiliário</p>
-      <p>RE/MAX Elegance</p>
+      <div class="header-right">
+        <div class="lang-switch" aria-label="Idiomas">
+          <a href="servicos.html" aria-current="page">PT</a>
+          <a href="en/services.html">EN</a>
+          <a href="fr/services.html">FR</a>
+        </div>
+        <a class="btn btn-header" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa." target="_blank" rel="noopener">Agendar conversa</a>
+      </div>
+    </div>
+  </header>
 
-      <div class="footer-logo-wrap">
-        <img src="assets/images/brand/remax-elegance.png" alt="RE/MAX Elegance" class="footer-agency-logo">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <span class="kicker">Serviços</span>
+          <h1>Serviços imobiliários orientados por estratégia, contexto e resultado</h1>
+          <p class="lead">
+            Cada cliente e cada imóvel exigem uma abordagem própria. O meu trabalho passa por
+            estruturar o processo com critério, desde a análise inicial até à concretização do negócio.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener">Agendar conversa inicial</a>
+            <a class="btn secondary" href="analise-imovel.html">Pedir análise ao imóvel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="section-copy">
+          <span class="kicker">Abordagem</span>
+          <h2>Serviços orientados por estratégia, contexto e resultado</h2>
+          <p>
+            Mais do que intermediação, procuro enquadrar o processo de forma sólida e coerente.
+            O objetivo não é apenas expor um imóvel ou acompanhar uma procura. É criar melhores
+            condições de decisão e de concretização.
+          </p>
+          <a class="btn primary" href="servicos.html">Conhecer os serviços</a>
+        </div>
+
+        <div class="method-card">
+          <h3>Como trabalho</h3>
+          <ul>
+            <li>Análise e enquadramento</li>
+            <li>Preparação e valorização</li>
+            <li>Comercialização orientada</li>
+            <li>Negociação e concretização</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-band">
+      <div class="container final-cta-grid">
+        <div class="final-cta-copy">
+          <h2>Tem um imóvel para vender, procura comprar ou pretende investir?</h2>
+          <p>
+            Fale comigo para analisar o seu objetivo e perceber qual o próximo passo mais ajustado à sua situação.
+          </p>
+        </div>
+
+        <div class="final-cta-actions">
+          <a class="btn btn-light-solid" href="analise-imovel.html">Pedir análise ao imóvel</a>
+          <a class="btn btn-outline-light" href="https://wa.me/351926691685?text=Ol%C3%A1%20Hugo%2C%20pretendo%20agendar%20uma%20conversa%20inicial." target="_blank" rel="noopener">Agendar uma conversa inicial</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="final-footer">
+    <div class="container final-footer-grid">
+      <div class="final-footer-col">
+        <h3>Hugo Silva</h3>
+        <p>Consultor Imobiliário</p>
+        <p>RE/MAX Elegance</p>
+
+        <div class="footer-logo-wrap">
+          <img src="assets/images/brand/remax-elegance.png" alt="RE/MAX Elegance" class="footer-agency-logo">
+        </div>
+
+        <p class="license">Licença AMI 23852</p>
       </div>
 
-      <p class="license">Licença AMI 23852</p>
-    </div>
+      <div class="final-footer-col">
+        <h4>Telefone</h4>
+        <p>+351 926 691 685</p>
 
-    <div class="final-footer-col">
-      <h4>Telefone</h4>
-      <p>+351 926 691 685</p>
-      <h4>Email</h4>
-      <p>hugocgsilva@remax.pt</p>
-    </div>
-
-    <div class="final-footer-col">
-      <h4>Morada</h4>
-      <p>
-        Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>
-        4480-668 Vila do Conde
-      </p>
-    </div>
-
-    <div class="final-footer-col">
-      <h4>Redes</h4>
-      <div class="footer-social-links">
-        <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank">Facebook</a>
-        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank">LinkedIn</a>
+        <h4>Email</h4>
+        <p>hugocgsilva@remax.pt</p>
       </div>
 
-      <p class="footer-tagline">Choose Your Dream | Live in it</p>
-    </div>
+      <div class="final-footer-col">
+        <h4>Morada</h4>
+        <p>
+          Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>
+          4480-668 Vila do Conde
+        </p>
+      </div>
 
-  </div>
-</footer>
+      <div class="final-footer-col">
+        <h4>Redes</h4>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="footer-tagline">Choose Your Dream | Live in it</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
