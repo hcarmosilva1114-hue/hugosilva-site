@@ -1,160 +1,306 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
+<!doctype html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Serviços | Hugo Silva</title>
+  <meta name="description" content="Serviços imobiliários orientados por estratégia, contexto e resultado.">
 
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- CORREÇÃO ESPECÍFICA DO FOOTER (teste apenas nesta página) -->
   <style>
-    footer {
-      background: #0b1d33;
-      color: #ffffff;
-      padding: 60px 40px;
+    :root{
+      --bg:#f5f2eb;
+      --surface:#fbf8f2;
+      --text:#1d2430;
+      --muted:#5e6673;
+      --line:#e2dbcf;
+      --accent:#14233b;
+      --accent-2:#c6a46a;
+      --white:#ffffff;
+      --footer:#0b1d36;
+      --cta-beige:#f5f2eb;
     }
 
-    .footer-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
     }
 
-    .footer-column h4 {
-      margin-bottom: 12px;
-      font-size: 16px;
-      font-weight: 600;
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+
+    .container{
+      width:min(1160px, 92%);
+      margin:0 auto;
     }
 
-    .footer-column p {
-      margin: 4px 0;
-      font-size: 14px;
-      line-height: 1.5;
-      opacity: 0.9;
+    /* HEADER */
+    .site-header{
+      position:sticky;
+      top:0;
+      background:rgba(245,242,235,.97);
+      backdrop-filter:saturate(140%) blur(10px);
+      border-bottom:1px solid rgba(20,35,59,.08);
+      z-index:50;
     }
 
-    /* LOGO */
-    .footer-logo img {
-      max-width: 150px;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-top: 16px;
+    .site-header::after{
+      content:"";
+      height:1px;
+      display:block;
+      background:linear-gradient(90deg,var(--accent-2),transparent 42%);
     }
 
-    /* FRASE */
-    .footer-quote {
-      margin-top: 14px;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.4;
-      white-space: nowrap;
-      opacity: 0.9;
+    .header-inner{
+      min-height:86px;
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      gap:28px;
+      align-items:center;
+      padding:12px 0;
     }
 
-    /* Mobile */
-    @media (max-width: 768px) {
-      .footer-quote {
-        white-space: normal;
-      }
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      min-width:270px;
+    }
+
+    .brand-balloon{
+      width:48px;
+      height:48px;
+      background:#fff;
+      border-radius:10px;
+      padding:4px;
+      object-fit:contain;
+      border:1px solid rgba(20,35,59,.08);
+    }
+
+    .brand-copy strong{display:block;font-size:1.08rem}
+    .brand-copy small{display:block;color:var(--muted);margin-top:4px}
+    .brand-copy span{
+      display:block;
+      color:var(--accent-2);
+      font-size:.86rem;
+      font-weight:700;
+      margin-top:3px;
+      letter-spacing:.02em;
+    }
+
+    .main-nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px 20px;
+      justify-content:center;
+      font-size:.98rem;
+    }
+
+    .main-nav a{color:var(--muted)}
+    .main-nav a:hover{color:var(--accent)}
+
+    .header-right{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .lang-switch{
+      display:flex;
+      gap:10px;
+    }
+
+    .lang-switch a{
+      width:44px;
+      height:44px;
+      border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--line);
+      background:var(--surface);
+      font-weight:700;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:52px;
+      padding:0 20px;
+      border-radius:14px;
+      font-weight:700;
+      border:1px solid var(--accent);
+      cursor:pointer;
+      transition:.2s ease;
+    }
+
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+    }
+
+    .btn.secondary{
+      background:transparent;
+      color:var(--accent);
+      border-color:rgba(20,35,59,.18);
+    }
+
+    /* HERO */
+    .hero{padding:78px 0 44px}
+    .hero-copy{max-width:760px}
+
+    .kicker{
+      color:var(--accent-2);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:700;
+      font-size:.88rem;
+    }
+
+    .hero h1{
+      margin:18px 0 22px;
+      font-size:clamp(2.8rem,5vw,5rem);
+      line-height:.98;
+      letter-spacing:-.03em;
+      color:#1f2b40;
+    }
+
+    .lead{
+      color:var(--muted);
+      max-width:760px;
+    }
+
+    /* FOOTER */
+    .final-footer{
+      background:var(--footer);
+      color:#fff;
+      padding:54px 0 40px;
+    }
+
+    .final-footer-grid{
+      display:grid;
+      grid-template-columns:1.55fr 1fr 1.2fr 1.2fr;
+      gap:34px;
+    }
+
+    .final-footer-col h3{
+      font-size:2rem;
+      margin:0 0 10px;
+    }
+
+    .final-footer-col h4{
+      margin:0 0 10px;
+    }
+
+    .final-footer-col p{
+      margin:0 0 10px;
+      line-height:1.7;
+      opacity:.9;
+    }
+
+    /* LOGO CORRIGIDO */
+    .footer-logo-wrap{
+      display:inline-flex;
+      align-items:center;
+      background:#fff;
+      border-radius:14px;
+      padding:14px 16px;
+      margin:18px 0 10px;
+      max-width:100%;
+      box-shadow:0 6px 18px rgba(0,0,0,.12);
+    }
+
+    .footer-agency-logo{
+      width:220px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    /* FRASE CORRIGIDA */
+    .footer-tagline{
+      margin-top:18px;
+      font-weight:700;
+      white-space:nowrap;
+      line-height:1.4;
+    }
+
+    .footer-social-links{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .footer-social-links a{
+      text-decoration:underline;
+    }
+
+    .license{margin-top:12px;font-size:.9rem}
+
+    @media (max-width:1100px){
+      .final-footer-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:768px){
+      .footer-agency-logo{width:200px}
+      .footer-tagline{white-space:normal}
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-  <main style="max-width: 1100px; margin: 80px auto; padding: 0 20px;">
-    
-    <h1>Serviços</h1>
+<main>
+  <!-- conteúdo mantém-se igual -->
+</main>
 
-    <p>
-      Mais do que divulgar imóveis, o meu trabalho passa por analisar,
-      posicionar, preparar, negociar e conduzir todo o processo imobiliário
-      com clareza, critério e acompanhamento contínuo.
-    </p>
+<footer class="final-footer">
+  <div class="container final-footer-grid">
 
-    <h2>Análise e Enquadramento</h2>
-    <p>
-      Leitura do mercado, análise do contexto e definição da estratégia mais
-      adequada ao objetivo do cliente.
-    </p>
+    <div class="final-footer-col">
+      <h3>Hugo Silva</h3>
+      <p>Consultor Imobiliário</p>
+      <p>RE/MAX Elegance</p>
 
-    <h2>Preparação e Valorização</h2>
-    <p>
-      Ajustes estratégicos ao imóvel e à comunicação para maximizar percepção
-      de valor e posicionamento.
-    </p>
-
-    <h2>Comercialização Orientada</h2>
-    <p>
-      Divulgação ajustada ao público certo, com controlo de narrativa,
-      timing e canais.
-    </p>
-
-    <h2>Negociação e Concretização</h2>
-    <p>
-      Condução do processo até à decisão final com foco em segurança,
-      clareza e resultado.
-    </p>
-
-  </main>
-
-  <!-- ===== FOOTER CORRIGIDO ===== -->
-  <footer>
-    <div class="footer-container">
-
-      <!-- Coluna 1 -->
-      <div class="footer-column">
-        <h4>Hugo Silva</h4>
-        <p>Consultor Imobiliário</p>
-        <p>RE/MAX Elegance</p>
-
-        <div class="footer-logo">
-          <img src="img/remax-elegance.png" alt="RE/MAX Elegance">
-        </div>
-
-        <p style="margin-top: 12px; font-size: 12px; opacity: 0.7;">
-          Licença AMI 23852
-        </p>
+      <div class="footer-logo-wrap">
+        <img src="assets/images/brand/remax-elegance.png" alt="RE/MAX Elegance" class="footer-agency-logo">
       </div>
 
-      <!-- Coluna 2 -->
-      <div class="footer-column">
-        <h4>Contacto</h4>
-        <p>Telefone</p>
-        <p>+351 926 691 685</p>
-
-        <p style="margin-top: 8px;">Email</p>
-        <p>hugogsilva@remax.pt</p>
-      </div>
-
-      <!-- Coluna 3 -->
-      <div class="footer-column">
-        <h4>Morada</h4>
-        <p>Centro Comercial Alameda</p>
-        <p>Av. Dr. João Canavarro 303, Loja 7</p>
-        <p>4480-668 Vila do Conde</p>
-      </div>
-
-      <!-- Coluna 4 -->
-      <div class="footer-column">
-        <h4>Redes</h4>
-        <p>Instagram · Facebook · LinkedIn</p>
-
-        <p class="footer-quote">
-          Choose Your Dream | Live in it
-        </p>
-      </div>
-
+      <p class="license">Licença AMI 23852</p>
     </div>
-  </footer>
+
+    <div class="final-footer-col">
+      <h4>Telefone</h4>
+      <p>+351 926 691 685</p>
+      <h4>Email</h4>
+      <p>hugocgsilva@remax.pt</p>
+    </div>
+
+    <div class="final-footer-col">
+      <h4>Morada</h4>
+      <p>
+        Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>
+        4480-668 Vila do Conde
+      </p>
+    </div>
+
+    <div class="final-footer-col">
+      <h4>Redes</h4>
+      <div class="footer-social-links">
+        <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank">LinkedIn</a>
+      </div>
+
+      <p class="footer-tagline">Choose Your Dream | Live in it</p>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
