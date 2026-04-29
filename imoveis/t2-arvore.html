@@ -6,6 +6,43 @@
   <title>T2 com amplo terraço privativo em Árvore | Hugo Silva</title>
   <meta name="description" content="Apartamento T2 em Árvore, Vila do Conde, com amplo terraço privativo, box fechada e excelente funcionalidade.">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .property-cover{
+      overflow:hidden;
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:12px;
+    }
+    .property-cover img{
+      width:100%;
+      aspect-ratio:5/4;
+      object-fit:cover;
+      border-radius:14px;
+      display:block;
+    }
+    .property-gallery{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:24px;
+    }
+    .property-gallery .card{
+      padding:12px;
+    }
+    .property-gallery img{
+      width:100%;
+      aspect-ratio:4/3;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    @media (max-width:900px){
+      .property-gallery{grid-template-columns:repeat(2, minmax(0,1fr));}
+    }
+    @media (max-width:640px){
+      .property-gallery{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
 
@@ -64,8 +101,8 @@
 
   <section class="section section-soft">
     <div class="container grid-2">
-      <div class="card">
-        <img src="../assets/images/imoveis/t2-arvore/1.png" alt="Sala do apartamento T2 em Árvore" style="width:100%; border-radius:14px;">
+      <div class="card property-cover">
+        <img src="../assets/images/imoveis/t2-arvore/1.png" alt="Sala do apartamento T2 em Árvore">
       </div>
 
       <div>
@@ -205,15 +242,15 @@
         <h2>Imagens do imóvel</h2>
       </div>
 
-      <div class="grid-3">
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/1.png" alt="Sala do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/2.png" alt="Terraço do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/3.png" alt="Cozinha do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/4.png" alt="Sala de jantar do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/5.png" alt="Quarto principal do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/6.png" alt="Segundo quarto do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/7.png" alt="Casa de banho da suite do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t2-arvore/8.png" alt="Casa de banho de serviço do apartamento T2 em Árvore" style="width:100%; border-radius:12px;"></div>
+      <div class="property-gallery">
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/1.png" alt="Sala do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/2.png" alt="Terraço do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/3.png" alt="Cozinha do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/4.png" alt="Sala de jantar do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/5.png" alt="Quarto principal do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/6.png" alt="Segundo quarto do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/7.png" alt="Casa de banho da suite do apartamento T2 em Árvore"></div>
+        <div class="card"><img src="../assets/images/imoveis/t2-arvore/8.png" alt="Casa de banho de serviço do apartamento T2 em Árvore"></div>
       </div>
     </div>
   </section>
