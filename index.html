@@ -6,6 +6,30 @@
   <title>Hugo Silva | Consultor Imobiliário</title>
   <meta name="description" content="Consultoria imobiliária com visão estratégica em Vila do Conde, Póvoa de Varzim e Grande Porto.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .property-card{
+      display:flex;
+      flex-direction:column;
+    }
+    .property-card-image{
+      margin-bottom:14px;
+      overflow:hidden;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#ffffff;
+      padding:10px;
+    }
+    .property-card-image img{
+      width:100%;
+      aspect-ratio:5/4;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    .property-card .actions{
+      margin-top:auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -125,24 +149,36 @@
 
       <div class="grid-3">
         <article class="card property-card">
-          <div class="placeholder">Imagem do imóvel</div>
+          <div class="property-card-image">
+            <img src="assets/images/imoveis/t2-arvore/2.png" alt="T2 com terraço em Árvore">
+          </div>
           <h3>T2 com terraço em Árvore</h3>
           <p class="muted">Apartamento com funcionalidade, espaço exterior e boa luminosidade.</p>
-          <a class="btn secondary" href="imoveis/t2-arvore.html">Ver imóvel</a>
+          <div class="actions">
+            <a class="btn secondary" href="imoveis/t2-arvore.html">Ver imóvel</a>
+          </div>
         </article>
 
         <article class="card property-card">
-          <div class="placeholder">Imagem do imóvel</div>
+          <div class="property-card-image">
+            <img src="assets/images/imoveis/moradia-t5-caxinas/1.png" alt="Moradia em Caxinas">
+          </div>
           <h3>Moradia em Caxinas</h3>
           <p class="muted">Opção com potencial residencial e enquadramento de investimento.</p>
-          <a class="btn secondary" href="imoveis/moradia-t5-caxinas.html">Ver imóvel</a>
+          <div class="actions">
+            <a class="btn secondary" href="imoveis/moradia-t5-caxinas.html">Ver imóvel</a>
+          </div>
         </article>
 
         <article class="card property-card">
-          <div class="placeholder">Imagem do imóvel</div>
-          <h3>Imóvel em destaque</h3>
-          <p class="muted">Substitui este bloco pelos teus principais imóveis em comercialização.</p>
-          <a class="btn secondary" href="imoveis.html">Ver imóvel</a>
+          <div class="property-card-image">
+            <img src="assets/images/imoveis/conjunto-imobiliario-rio-ave/1.png" alt="Conjunto imobiliário com vista rio">
+          </div>
+          <h3>Conjunto imobiliário com vista rio</h3>
+          <p class="muted">Ativo com escala, localização e potencial raro em Vila do Conde.</p>
+          <div class="actions">
+            <a class="btn secondary" href="imoveis/conjunto-imobiliario-rio-ave.html">Ver imóvel</a>
+          </div>
         </article>
       </div>
     </div>
@@ -210,9 +246,11 @@
     </div>
     <div class="final-footer-col">
       <h4>Redes</h4>
-      <p><a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+      <p>
+        <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
         <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a> ·
-        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
       <p class="footer-tagline">Choose Your Dream | Live in it</p>
     </div>
   </div>
