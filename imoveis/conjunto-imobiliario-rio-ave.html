@@ -4,8 +4,71 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conjunto imobiliário com vista sobre o Rio Ave | Hugo Silva</title>
-  <meta name="description" content="Conjunto imobiliário com vista sobre o Rio Ave em Vila do Conde, com moradia principal, T2 independente e armazém, ideal para reabilitação residencial, turística ou empresarial.">
+  <meta name="description" content="Conjunto imobiliário com vista sobre o Rio Ave em Vila do Conde, com moradia principal, moradia adicional e armazém, ideal para reabilitação residencial, turística ou empresarial.">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .property-top-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);
+      gap:32px;
+      align-items:start;
+    }
+
+    .property-cover{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:12px;
+      overflow:hidden;
+      align-self:start;
+      aspect-ratio:5/4;
+    }
+
+    .property-cover img{
+      display:block;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:18px;
+    }
+
+    .property-gallery{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:24px;
+    }
+
+    .property-gallery-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      aspect-ratio:1/1;
+    }
+
+    .property-gallery-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    @media (max-width:980px){
+      .property-top-grid{
+        grid-template-columns:1fr;
+      }
+
+      .property-gallery{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:640px){
+      .property-gallery{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -48,11 +111,11 @@
     <div class="container">
       <div class="hero-copy">
         <span class="kicker">Conjunto imobiliário</span>
-        <h1>Conjunto imobiliário com vista sobre o Rio Ave e elevado potencial de reabilitação</h1>
+        <h1>Conjunto imobiliário com vista rio e elevado potencial de reabilitação</h1>
         <p class="lead">
-          Um ativo raro em Vila do Conde, composto por moradia principal, moradia T2 independente e armazém,
-          com vistas panorâmicas sobre o Rio Ave e forte enquadramento para projeto residencial, turístico
-          ou empresarial.
+          Um ativo raro em Vila do Conde, composto por moradia principal, segunda casa e armazém,
+          com vistas abertas sobre o Rio Ave e forte enquadramento para reabilitação residencial,
+          turística ou empresarial.
         </p>
 
         <div class="actions">
@@ -64,9 +127,9 @@
   </section>
 
   <section class="section section-soft">
-    <div class="container grid-2">
-      <div class="card">
-        <img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/1.png" alt="Conjunto imobiliário com vista rio em Vila do Conde" style="width:100%; border-radius:14px;">
+    <div class="container property-top-grid">
+      <div class="property-cover">
+        <img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg" alt="Vista geral da casa principal do conjunto imobiliário com vista rio">
       </div>
 
       <div>
@@ -77,13 +140,13 @@
 
         <p><strong>Preço:</strong> 750.000 €</p>
         <p><strong>Localização:</strong> Vila do Conde</p>
-        <p><strong>Tipologia anunciada:</strong> Moradia T4</p>
+        <p><strong>Tipologia anunciada:</strong> Conjunto imobiliário</p>
         <p><strong>Área útil:</strong> 436 m²</p>
         <p><strong>Área bruta:</strong> 446 m²</p>
         <p><strong>Área do lote:</strong> 312 m²</p>
-        <p><strong>Quartos:</strong> 4</p>
-        <p><strong>Casas de banho:</strong> 3</p>
-        <p><strong>Estacionamento:</strong> 3+ lugares</p>
+        <p><strong>Composição:</strong> Casa principal, segunda casa e armazém</p>
+        <p><strong>Enquadramento:</strong> Zona histórica com vista rio</p>
+        <p><strong>Potencial:</strong> Reabilitação residencial, turística ou mista</p>
         <p><strong>Ano de construção:</strong> 1937</p>
         <p><strong>Elevador:</strong> Não</p>
       </div>
@@ -98,20 +161,19 @@
       </div>
 
       <p class="muted narrow">
-        Este imóvel não deve ser lido como uma simples moradia. Trata-se de um conjunto imobiliário com forte
-        identidade patrimonial, inserido numa das zonas mais emblemáticas de Vila do Conde e com vistas abertas
-        sobre o Rio Ave, a Nau e a Capela de Nossa Senhora do Socorro.
+        Este ativo não deve ser lido como uma simples moradia. Trata-se de um conjunto imobiliário com forte identidade,
+        inserido numa das zonas mais emblemáticas de Vila do Conde e com relação direta ao Rio Ave e à frente ribeirinha.
       </p>
 
       <p class="muted narrow">
-        O enquadramento histórico e a composição do ativo tornam-no particularmente interessante para quem procura
-        um projeto de reabilitação com visão de médio e longo prazo, seja numa lógica residencial, turística
-        ou empresarial.
+        A composição do conjunto, aliada à localização e à vista aberta, torna-o particularmente interessante
+        para quem procura um projeto de reabilitação com visão de médio e longo prazo, seja numa lógica residencial,
+        turística ou empresarial.
       </p>
 
       <p class="muted narrow">
-        A localização privilegiada, aliada à raridade do conjunto e à relação com o património urbano e fluvial
-        da cidade, reforça o seu potencial de valorização futura.
+        A raridade deste enquadramento, associada à presença de espaços exteriores amplos, áreas interiores com escala
+        e frente visual sobre o rio, reforça claramente o seu potencial de valorização futura.
       </p>
     </div>
   </section>
@@ -125,24 +187,23 @@
 
       <div class="grid-3">
         <article class="card">
-          <h3>Moradia principal</h3>
+          <h3>Casa principal</h3>
           <p class="muted">
-            7 divisões distribuídas por dois pisos, com 124 m² no rés do chão e 134 m² no primeiro andar,
-            acrescidos de sótão.
+            Espaço residencial com várias divisões, vista sobre o rio e forte potencial para reabilitação e reposicionamento.
           </p>
         </article>
 
         <article class="card">
-          <h3>Moradia T2 independente</h3>
+          <h3>Segunda casa</h3>
           <p class="muted">
-            Fração com 68 m², composta por rés do chão e sótão, com entrada independente pela Rua do Socorro.
+            Um corpo adicional que acrescenta autonomia, versatilidade e margem para diferentes leituras do ativo.
           </p>
         </article>
 
         <article class="card">
-          <h3>Armazém / espaço industrial</h3>
+          <h3>Armazém / garagem</h3>
           <p class="muted">
-            Espaço com 110 m², localizado no Largo da Alfândega, acrescentando versatilidade ao conjunto.
+            Área complementar com dimensão útil para apoio, armazenamento, estacionamento ou integração em projeto mais amplo.
           </p>
         </article>
       </div>
@@ -158,50 +219,33 @@
 
       <div class="grid-3">
         <article class="card">
-          <h3>Vista rio e património</h3>
-          <p class="muted">
-            Enquadramento visual raro sobre o Rio Ave, a Nau e a Capela do Socorro, com possibilidade de ver
-            também o Mosteiro de Santa Clara.
-          </p>
+          <h3>Vista rio</h3>
+          <p class="muted">Um enquadramento raro em Vila do Conde, com relação direta à frente ribeirinha e grande força visual.</p>
         </article>
 
         <article class="card">
-          <h3>Zona histórica e turística</h3>
-          <p class="muted">
-            Uma localização emblemática, com forte valor identitário e excelente enquadramento para projetos
-            diferenciadores.
-          </p>
+          <h3>Zona histórica</h3>
+          <p class="muted">Localização com forte identidade urbana, patrimonial e turística, difícil de replicar.</p>
         </article>
 
         <article class="card">
-          <h3>Múltiplas possibilidades de desenvolvimento</h3>
-          <p class="muted">
-            Reabilitação residencial, exploração turística, alojamento local ou solução mista com várias frentes
-            de utilização.
-          </p>
+          <h3>Escala de ativo</h3>
+          <p class="muted">A presença de casa principal, segunda casa e armazém permite pensar o imóvel de forma mais ampla e estratégica.</p>
         </article>
 
         <article class="card">
-          <h3>Escala e versatilidade</h3>
-          <p class="muted">
-            A combinação entre moradia principal, T2 independente e armazém permite pensar o ativo de forma
-            mais ampla e estratégica.
-          </p>
+          <h3>Espaço exterior amplo</h3>
+          <p class="muted">Terraços e áreas exteriores com forte potencial de valorização no contexto de um projeto de reabilitação.</p>
         </article>
 
         <article class="card">
-          <h3>Excelente exposição solar</h3>
-          <p class="muted">
-            Um elemento importante para a valorização futura e para a atratividade do imóvel em qualquer
-            solução de reabilitação.
-          </p>
+          <h3>Potencial turístico ou misto</h3>
+          <p class="muted">Enquadramento particularmente relevante para exploração turística, alojamento ou solução mista.</p>
         </article>
 
         <article class="card">
-          <h3>Potencial de valorização</h3>
-          <p class="muted">
-            Um ativo raro, numa localização com forte componente histórica, turística e patrimonial.
-          </p>
+          <h3>Ativo raro no mercado</h3>
+          <p class="muted">Um produto difícil de encontrar pelo conjunto de localização, vista, escala e potencial futuro.</p>
         </article>
       </div>
     </div>
@@ -217,13 +261,12 @@
 
         <p class="muted">
           Este imóvel faz sentido para investidores, promotores ou compradores com visão patrimonial,
-          capazes de reconhecer o valor da localização, da composição do conjunto e do seu potencial
-          de transformação.
+          capazes de reconhecer o valor da localização, da composição do conjunto e do seu potencial de transformação.
         </p>
 
         <p class="muted">
-          Mais do que um imóvel pronto a habitar, está aqui um ativo com identidade, história e uma lógica
-          muito clara de reabilitação e valorização.
+          Mais do que um imóvel pronto a habitar, está aqui um ativo com identidade, história
+          e uma lógica clara de reabilitação e valorização.
         </p>
       </div>
 
@@ -246,16 +289,18 @@
         <h2>Galeria do imóvel</h2>
       </div>
 
-      <div class="grid-3">
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/1.png" alt="Conjunto imobiliário Rio Ave - imagem 1" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/2.png" alt="Conjunto imobiliário Rio Ave - imagem 2" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/3.png" alt="Conjunto imobiliário Rio Ave - imagem 3" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/4.png" alt="Conjunto imobiliário Rio Ave - imagem 4" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/5.png" alt="Conjunto imobiliário Rio Ave - imagem 5" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/6.png" alt="Conjunto imobiliário Rio Ave - imagem 6" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/7.png" alt="Conjunto imobiliário Rio Ave - imagem 7" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/8.png" alt="Conjunto imobiliário Rio Ave - imagem 8" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/9.png" alt="Conjunto imobiliário Rio Ave - imagem 9" style="width:100%; border-radius:12px;"></div>
+      <div class="property-gallery">
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg" alt="Foto geral da casa principal do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/vista-cima-casa.jpg" alt="Vista aérea do conjunto imobiliário junto ao rio"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/vista-cima-casa-1.jpg" alt="Vista aérea superior do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/garagem.jpg" alt="Garagem ou armazém do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/terraco.jpg" alt="Terraço com vista rio"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/terraco-1.jpg" alt="Outro terraço com vista rio"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/sala.jpg" alt="Sala da casa do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/sala-jantar.jpg" alt="Sala de jantar do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/cozinha.jpg" alt="Cozinha do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/cozinha-1.jpg" alt="Outra vista da cozinha do conjunto imobiliário"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/quarto-avos.jpg" alt="Quarto do conjunto imobiliário"></div>
       </div>
     </div>
   </section>
