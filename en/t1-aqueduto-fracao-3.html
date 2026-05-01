@@ -1,44 +1,104 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T1 em condomínio privado junto ao Aqueduto | Fração 126981026-3</title>
-  <meta name="description" content="Apartamento T1 de rés do chão em condomínio privado junto ao Aqueduto de Vila do Conde, com lugar de garagem, elevador e zonas comuns premium.">
+  <title>One-Bedroom Apartment in Private Condominium next to the Aqueduct | Fraction 126981026-3</title>
+  <meta name="description" content="Ground-floor one-bedroom apartment in a private condominium next to the Aqueduct of Vila do Conde, with garage space, lift and premium shared amenities.">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .property-top-grid{
+      display:grid;
+      grid-template-columns:1.08fr 1fr;
+      gap:32px;
+      align-items:start;
+    }
+
+    .property-cover{
+      display:block;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:12px;
+    }
+
+    .property-cover img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:18px;
+    }
+
+    .property-gallery{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:24px;
+    }
+
+    .property-gallery-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:10px;
+    }
+
+    .property-gallery-item img{
+      width:100%;
+      aspect-ratio:4/3;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+
+    @media (max-width: 980px){
+      .property-top-grid{
+        grid-template-columns:1fr;
+      }
+
+      .property-gallery{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+      }
+    }
+
+    @media (max-width: 640px){
+      .property-gallery{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="../index.html" aria-label="Hugo Silva">
+    <a class="brand" href="index.html" aria-label="Hugo Silva">
       <img class="brand-balloon" src="../public/remax-balao-preto.svg" alt="RE/MAX">
       <div class="brand-copy">
         <strong>Hugo Silva</strong>
-        <small>Consultor Imobiliário</small>
+        <small>Real Estate Advisor</small>
         <span>RE/MAX Elegance</span>
       </div>
     </a>
 
-    <nav class="main-nav" aria-label="Menu principal">
-      <a href="../index.html">Início</a>
-      <a href="../imoveis.html">Imóveis</a>
-      <a href="../servicos.html">Serviços</a>
-      <a href="../analise-imovel.html">Análise ao Imóvel</a>
-      <a href="../comprar-em-portugal.html">Comprar em Portugal</a>
-      <a href="../viver-em-vila-do-conde.html">Viver em Vila do Conde</a>
-      <a href="../investimento.html">Investimento</a>
-      <a href="../sobre.html">Sobre Mim</a>
-      <a href="../contactos.html">Contactos</a>
+    <nav class="main-nav" aria-label="Main menu">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="services.html">Services</a>
+      <a href="property-review.html">Property Review</a>
+      <a href="buying-in-portugal.html">Buying in Portugal</a>
+      <a href="living-in-vila-do-conde.html">Living in Vila do Conde</a>
+      <a href="investment.html">Investment</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
     <div class="header-right">
-      <div class="lang-switch" aria-label="Idiomas">
-        <a href="t1-aqueduto-fracao-3.html" aria-current="page">PT</a>
-        <a href="../en/t1-aqueduto-fracao-3.html">EN</a>
+      <div class="lang-switch" aria-label="Languages">
+        <a href="../imoveis/t1-aqueduto-fracao-3.html">PT</a>
+        <a href="t1-aqueduto-fracao-3.html" aria-current="page">EN</a>
         <a href="../fr/biens.html">FR</a>
       </div>
-      <a class="btn btn-header" href="../contactos.html">Agendar conversa</a>
+      <a class="btn btn-header" href="contact.html">Book a call</a>
     </div>
   </div>
 </header>
@@ -47,46 +107,46 @@
   <section class="hero">
     <div class="container">
       <div class="hero-copy">
-        <span class="kicker">Apartamento T1</span>
-        <h1>T1 em condomínio privado junto ao Aqueduto de Vila do Conde</h1>
+        <span class="kicker">One-bedroom apartment</span>
+        <h1>One-bedroom apartment in a private condominium next to the Aqueduct of Vila do Conde</h1>
         <p class="lead">
-          Apartamento T1 de rés do chão, inserido em condomínio fechado de arquitetura contemporânea,
-          com lugar de garagem, elevador, zonas comuns premium e uma localização rara no centro de Vila do Conde,
-          junto ao Aqueduto.
+          Ground-floor one-bedroom apartment in a gated contemporary condominium,
+          with garage space, lift, premium shared amenities and a rare central location in Vila do Conde,
+          right next to the Aqueduct.
         </p>
 
         <div class="actions">
-          <a class="btn primary" href="../contactos.html">Pedir mais informações</a>
-          <a class="btn secondary" href="../contactos.html">Agendar visita</a>
+          <a class="btn primary" href="contact.html">Request information</a>
+          <a class="btn secondary" href="contact.html">Book a viewing</a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section section-soft">
-    <div class="container grid-2">
-      <div class="card">
-        <img src="../assets/images/imoveis/t1-aqueduto-fracao-3/1.jpg" alt="T1 Aqueduto fração 3" style="width:100%; border-radius:14px;">
+    <div class="container property-top-grid">
+      <div class="property-cover">
+        <img src="../assets/images/imoveis/t1-aqueduto-fracao-3/1.jpg" alt="Aqueduct one-bedroom apartment fraction 3">
       </div>
 
       <div>
         <div class="section-heading">
-          <span class="kicker">Dados principais</span>
-          <h2>Informação essencial</h2>
+          <span class="kicker">Key facts</span>
+          <h2>Essential information</h2>
         </div>
 
-        <p><strong>Preço:</strong> 300.000 €</p>
-        <p><strong>Referência:</strong> 126981026-3</p>
-        <p><strong>Localização:</strong> Vila do Conde, Vila do Conde</p>
-        <p><strong>Tipologia:</strong> T1</p>
-        <p><strong>Área útil:</strong> 62 m²</p>
-        <p><strong>Área bruta:</strong> 98 m²</p>
-        <p><strong>Piso:</strong> Rés do chão</p>
-        <p><strong>Estacionamento:</strong> 1 lugar</p>
-        <p><strong>Elevador:</strong> Sim</p>
-        <p><strong>Ano de construção:</strong> 2027</p>
-        <p><strong>Casas de banho:</strong> Não indicado na brochura</p>
-        <p><strong>Certificação energética:</strong> N/A na brochura</p>
+        <p><strong>Price:</strong> €300,000</p>
+        <p><strong>Reference:</strong> 126981026-3</p>
+        <p><strong>Location:</strong> Vila do Conde, Vila do Conde</p>
+        <p><strong>Type:</strong> T1</p>
+        <p><strong>Usable area:</strong> 62 sqm</p>
+        <p><strong>Gross area:</strong> 98 sqm</p>
+        <p><strong>Floor:</strong> Ground floor</p>
+        <p><strong>Parking:</strong> 1 space</p>
+        <p><strong>Lift:</strong> Yes</p>
+        <p><strong>Year built:</strong> 2027</p>
+        <p><strong>Bathrooms:</strong> Not specified in the brochure</p>
+        <p><strong>Energy rating:</strong> N/A in the brochure</p>
       </div>
     </div>
   </section>
@@ -94,26 +154,26 @@
   <section class="section">
     <div class="container">
       <div class="section-heading section-heading-wide">
-        <span class="kicker">Descrição</span>
-        <h2>Património histórico e arquitetura contemporânea no mesmo enquadramento</h2>
+        <span class="kicker">Description</span>
+        <h2>Historic heritage and contemporary architecture in the same setting</h2>
       </div>
 
       <p class="muted narrow">
-        Em Vila do Conde, há localizações que não se limitam a existir no mapa. Vivem-se. Neste empreendimento,
-        o Aqueduto de Vila do Conde integra-se no quotidiano do edifício e confere ao imóvel uma identidade rara,
-        diferenciadora e com forte valor patrimonial.
+        In Vila do Conde, some locations are not merely points on a map. They are lived.
+        In this development, the Aqueduct becomes part of the daily setting and gives the property
+        a rare identity with strong patrimonial appeal.
       </p>
 
       <p class="muted narrow">
-        Esta fração T1 de rés do chão está inserida em condomínio privado de arquitetura contemporânea,
-        no centro da cidade, combinando acessibilidade, conforto e qualidade construtiva. A proximidade imediata
-        ao aqueduto reforça o caráter singular do imóvel e o seu potencial de valorização futura.
+        This ground-floor one-bedroom unit is part of a private contemporary condominium in the city centre,
+        combining accessibility, comfort and construction quality. The immediate proximity to the Aqueduct
+        reinforces the property’s singular character and future appreciation potential.
       </p>
 
       <p class="muted narrow">
-        A distribuição interior é funcional e equilibrada, com sala e cozinha em conceito moderno, quarto com boas áreas
-        e acabamentos atuais. A localização no rés do chão garante acessos facilitados, maior comodidade no dia a dia
-        e forte atratividade para habitação própria ou mercado de arrendamento.
+        The interior layout is functional and balanced, with a modern living and kitchen concept,
+        a well-sized bedroom and contemporary finishes. The ground-floor position adds convenience,
+        easier access and strong appeal for owner-occupation or rental demand.
       </p>
     </div>
   </section>
@@ -121,50 +181,50 @@
   <section class="section section-soft">
     <div class="container">
       <div class="section-heading">
-        <span class="kicker">Pontos fortes</span>
-        <h2>Porque esta fração se destaca</h2>
+        <span class="kicker">Highlights</span>
+        <h2>Why this unit stands out</h2>
       </div>
 
       <div class="grid-3">
         <article class="card">
-          <h3>Rés do chão</h3>
+          <h3>Ground-floor convenience</h3>
           <p class="muted">
-            Mais comodidade no dia a dia, acessos facilitados e maior atratividade para determinados perfis de procura.
+            Easier day-to-day access and a format that appeals to several buyer profiles.
           </p>
         </article>
 
         <article class="card">
-          <h3>Condomínio privado</h3>
+          <h3>Private condominium</h3>
           <p class="muted">
-            Um enquadramento residencial mais reservado, com imagem cuidada e zonas comuns pensadas para bem-estar.
+            A more protected residential setting, with a refined image and common areas designed for well-being.
           </p>
         </article>
 
         <article class="card">
-          <h3>Junto ao Aqueduto</h3>
+          <h3>Next to the Aqueduct</h3>
           <p class="muted">
-            Uma localização rara, onde o património histórico convive diretamente com a arquitetura contemporânea.
+            A rare location where historic heritage and contemporary architecture coexist directly.
           </p>
         </article>
 
         <article class="card">
-          <h3>Cozinha equipada</h3>
+          <h3>Equipped kitchen</h3>
           <p class="muted">
-            Fração prevista com eletrodomésticos encastrados e organização coerente com uma vivência atual.
+            Planned with built-in appliances and an internal organisation suited to contemporary living.
           </p>
         </article>
 
         <article class="card">
-          <h3>Climatização e eficiência</h3>
+          <h3>Climate comfort and efficiency</h3>
           <p class="muted">
-            Um imóvel pensado para conforto, funcionalidade e melhor desempenho energético.
+            A property designed for comfort, functionality and stronger energy performance.
           </p>
         </article>
 
         <article class="card">
-          <h3>Garagem e arrumo</h3>
+          <h3>Garage space and storage</h3>
           <p class="muted">
-            Lugar de estacionamento privativo e arrumo, acrescentando utilidade real e valor de mercado.
+            Private parking and storage, adding real usefulness and market value.
           </p>
         </article>
       </div>
@@ -175,28 +235,28 @@
     <div class="container grid-2">
       <div>
         <div class="section-heading">
-          <span class="kicker">Condomínio</span>
-          <h2>Zonas comuns que reforçam a experiência de utilização</h2>
+          <span class="kicker">Condominium</span>
+          <h2>Shared amenities that reinforce the residential experience</h2>
         </div>
 
         <p class="muted">
-          O condomínio disponibiliza piscina coberta, sauna, parque infantil e amplos espaços verdes,
-          criando um ambiente que equilibra vida urbana, bem-estar e tranquilidade.
+          The condominium offers an indoor pool, sauna, children’s playground and large green areas,
+          creating an environment that balances urban life, well-being and calm.
         </p>
 
         <p class="muted">
-          Trata-se de um produto particularmente apelativo para quem procura viver no centro de Vila do Conde
-          com conforto e imagem diferenciada, mas também para quem procura um ativo com forte capacidade de valorização.
+          This makes the product particularly attractive for those looking to live in the centre of Vila do Conde
+          with comfort and a differentiated image, but also for those seeking an asset with strong appreciation potential.
         </p>
       </div>
 
       <div class="card method-card">
-        <h3>Ideal para</h3>
+        <h3>Ideal for</h3>
         <ul class="list-clean">
-          <li>Habitação própria com centralidade e conforto</li>
-          <li>Investimento com potencial de valorização</li>
-          <li>Mercado de arrendamento qualificado</li>
-          <li>Quem valoriza condomínio com amenities</li>
+          <li>Owner-occupation with centrality and comfort</li>
+          <li>Investment with appreciation potential</li>
+          <li>Qualified rental market</li>
+          <li>Buyers who value condominium amenities</li>
         </ul>
       </div>
     </div>
@@ -205,15 +265,14 @@
   <section class="section section-soft">
     <div class="container">
       <div class="section-heading">
-        <span class="kicker">Nota importante</span>
-        <h2>Condição comercial a considerar</h2>
+        <span class="kicker">Important note</span>
+        <h2>Commercial structure to consider</h2>
       </div>
 
       <div class="card">
         <p class="muted">
-          Este negócio é apresentado em regime de <strong>cedência de posição contratual</strong>.
-          Para enquadramento completo do processo, documentação e implicações práticas,
-          o ideal é falar diretamente comigo.
+          This transaction is presented under an <strong>assignment of contractual position</strong> structure.
+          For full context, documentation and practical implications, the best step is to speak with me directly.
         </p>
       </div>
     </div>
@@ -222,20 +281,20 @@
   <section class="section">
     <div class="container">
       <div class="section-heading">
-        <span class="kicker">Galeria</span>
-        <h2>Galeria do imóvel</h2>
+        <span class="kicker">Gallery</span>
+        <h2>Property gallery</h2>
       </div>
 
-      <div class="grid-3">
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/1.jpg" alt="T1 Aqueduto fração 3 - imagem 1" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/2.jpg" alt="T1 Aqueduto fração 3 - imagem 2" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/3.jpg" alt="T1 Aqueduto fração 3 - imagem 3" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/4.jpg" alt="T1 Aqueduto fração 3 - imagem 4" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/5.jpg" alt="T1 Aqueduto fração 3 - imagem 5" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/6.jpg" alt="T1 Aqueduto fração 3 - imagem 6" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/7.jpg" alt="T1 Aqueduto fração 3 - imagem 7" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/8.jpg" alt="T1 Aqueduto fração 3 - imagem 8" style="width:100%; border-radius:12px;"></div>
-        <div class="card"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/9.jpg" alt="T1 Aqueduto fração 3 - imagem 9" style="width:100%; border-radius:12px;"></div>
+      <div class="property-gallery">
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/1.jpg" alt="Image 1"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/2.jpg" alt="Image 2"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/3.jpg" alt="Image 3"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/4.jpg" alt="Image 4"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/5.jpg" alt="Image 5"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/6.jpg" alt="Image 6"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/7.jpg" alt="Image 7"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/8.jpg" alt="Image 8"></div>
+        <div class="property-gallery-item"><img src="../assets/images/imoveis/t1-aqueduto-fracao-3/9.jpg" alt="Image 9"></div>
       </div>
     </div>
   </section>
@@ -243,16 +302,16 @@
   <section class="final-cta-band">
     <div class="container final-cta-grid">
       <div class="final-cta-copy">
-        <h2>Quer saber mais sobre esta fração?</h2>
+        <h2>Would you like to know more about this unit?</h2>
         <p>
-          Fale comigo para aprofundar este imóvel, perceber o enquadramento do negócio
-          e avaliar se esta oportunidade faz sentido para si.
+          Speak with me to explore this property further, understand the deal structure
+          and assess whether this opportunity makes sense for you.
         </p>
       </div>
 
       <div class="final-cta-actions">
-        <a class="btn btn-light-solid" href="../contactos.html">Pedir mais informações</a>
-        <a class="btn btn-outline-light" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">Falar por WhatsApp</a>
+        <a class="btn btn-light-solid" href="contact.html">Request information</a>
+        <a class="btn btn-outline-light" href="https://wa.me/351926691685" target="_blank" rel="noopener noreferrer">Talk on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -262,25 +321,25 @@
   <div class="container final-footer-grid">
     <div class="final-footer-col">
       <h3>Hugo Silva</h3>
-      <p>Consultor Imobiliário</p>
+      <p>Real Estate Advisor</p>
       <p>RE/MAX Elegance</p>
-      <p>Licença AMI 23852</p>
+      <p>AMI Licence 23852</p>
     </div>
 
     <div class="final-footer-col">
-      <h4>Telefone</h4>
+      <h4>Phone</h4>
       <p>+351 926 691 685</p>
       <h4>Email</h4>
       <p>hugocgsilva@remax.pt</p>
     </div>
 
     <div class="final-footer-col">
-      <h4>Morada</h4>
+      <h4>Address</h4>
       <p>Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>4480-668 Vila do Conde</p>
     </div>
 
     <div class="final-footer-col">
-      <h4>Redes</h4>
+      <h4>Social</h4>
       <p>
         <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
         <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a> ·
