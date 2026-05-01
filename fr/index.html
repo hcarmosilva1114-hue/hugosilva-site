@@ -1,22 +1,261 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accueil | Hugo Silva</title>
-<meta name="description" content="Accueil | Hugo Silva">
-<link rel="stylesheet" href="/hugosilva-site/assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hugo Silva | Conseiller Immobilier</title>
+  <meta name="description" content="Conseil immobilier stratégique à Vila do Conde, Póvoa de Varzim et dans le Grand Porto.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .property-card{
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    }
+    .property-card-image{
+      margin-bottom:14px;
+      overflow:hidden;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#ffffff;
+      padding:10px;
+    }
+    .property-card-image img{
+      width:100%;
+      aspect-ratio:5/4;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    .property-card .actions{
+      margin-top:auto;
+    }
+  </style>
 </head>
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="/hugosilva-site/"><span class="brand-mark">HS</span><span><strong>Hugo Silva</strong><small>Consultoria Imobiliária</small></span></a><nav class="main-nav"><a href="/hugosilva-site/fr/">Accueil</a><a href="/hugosilva-site/fr/biens.html">Biens</a><a href="/hugosilva-site/fr/services.html">Services</a><a href="/hugosilva-site/fr/analyse-du-bien.html">Analyse du bien</a><a href="/hugosilva-site/fr/acheter-au-portugal.html">Acheter au Portugal</a><a href="/hugosilva-site/fr/investissement.html">Investissement</a><a href="/hugosilva-site/fr/a-propos.html">À propos</a><a href="/hugosilva-site/fr/contact.html">Contact</a></nav><div class="lang-switch"><a href="/hugosilva-site/">PT</a><a href="/hugosilva-site/en/">EN</a><a href="/hugosilva-site/fr/">FR</a></div></div></header>
-<main><section class='hero'><div class='container'><span class='kicker'>Conseil Immobilier</span><h1>Conseil immobilier stratégique à Vila do Conde, Póvoa de Varzim et dans le Grand Porto</h1><p class='lead'>J’accompagne propriétaires, acheteurs et investisseurs avec une lecture du marché, un bon positionnement commercial et un suivi personnalisé à chaque étape.</p><div class='actions'><a class='btn primary' href='/hugosilva-site/fr/biens.html'>Voir les biens</a><a class='btn secondary' href='/hugosilva-site/fr/analyse-du-bien.html'>Demander une analyse du bien</a><a class='btn secondary' href='/hugosilva-site/fr/contact.html'>Prendre un premier rendez-vous</a></div></div></section></main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div><h3>Hugo Silva</h3><p>Consultor Imobiliário · RE/MAX Elegance</p><p>Licença AMI 23852</p></div>
-    <div><p><strong>Telefone</strong><br>+351 926 691 685</p><p><strong>Email</strong><br>hugocgsilva@remax.pt</p></div>
-    <div><p><strong>Morada</strong><br>Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>4480-668 Vila do Conde</p></div>
-    <div><p><strong>Redes</strong><br>Instagram · Facebook · LinkedIn</p><p class="tagline">Choose Your Dream | Live in it</p></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Hugo Silva">
+      <img class="brand-balloon" src="../public/remax-balao-preto.svg" alt="RE/MAX">
+      <div class="brand-copy">
+        <strong>Hugo Silva</strong>
+        <small>Conseiller Immobilier</small>
+        <span>RE/MAX Elegance</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="index.html">Accueil</a>
+      <a href="biens.html">Biens</a>
+      <a href="services.html">Services</a>
+      <a href="analyse-du-bien.html">Analyse du bien</a>
+      <a href="acheter-au-portugal.html">Acheter au Portugal</a>
+      <a href="vivre-a-vila-do-conde.html">Vivre à Vila do Conde</a>
+      <a href="investissement.html">Investissement</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switch" aria-label="Langues">
+        <a href="../index.html">PT</a>
+        <a href="../en/index.html">EN</a>
+        <a href="index.html" aria-current="page">FR</a>
+      </div>
+      <a class="btn btn-header" href="contact.html">Planifier un échange</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="kicker">Conseil Immobilier</span>
+        <h1>Conseil immobilier stratégique à Vila do Conde, Póvoa de Varzim et dans le Grand Porto</h1>
+        <p class="lead">
+          J’accompagne propriétaires, acquéreurs et investisseurs avec une lecture du marché,
+          un positionnement commercial cohérent et un suivi personnalisé à chaque étape de la décision immobilière.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="biens.html">Voir les biens</a>
+          <a class="btn secondary" href="analyse-du-bien.html">Demander une analyse</a>
+          <a class="btn secondary" href="contact.html">Planifier un premier échange</a>
+        </div>
+
+        <div class="signature-block">
+          <div class="signature-line"></div>
+          <p class="signature-text">Choose Your Dream | Live in it</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img class="hero-photo" src="../public/HugoSilva.png" alt="Hugo Silva">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <p class="quote">Moins de bruit. Plus de contexte. De meilleures décisions.</p>
+      <p class="muted narrow">
+        En immobilier, plus de visibilité ne veut pas toujours dire un meilleur résultat.
+        Mon approche repose sur la lecture du marché, le positionnement stratégique
+        et un accompagnement sérieux tout au long du processus.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading section-heading-wide">
+        <span class="kicker">Pour qui je travaille</span>
+        <h2>Clarté, structure et accompagnement réel</h2>
+      </div>
+
+      <div class="grid-4">
+        <article class="card card-target">
+          <h3>Propriétaires</h3>
+          <p>Pour ceux qui souhaitent vendre avec un meilleur positionnement, davantage de contrôle et une stratégie cohérente d’entrée sur le marché.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>Acquéreurs</h3>
+          <p>Pour ceux qui recherchent un accompagnement dans le tri des options, la lecture du contexte et une décision d’achat plus sûre.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>Investisseurs</h3>
+          <p>Pour ceux qui considèrent l’immobilier comme un actif, avec attention portée au contexte, à la liquidité, au potentiel et au risque.</p>
+        </article>
+
+        <article class="card card-target">
+          <h3>Clients internationaux</h3>
+          <p>Pour ceux qui ont besoin d’un appui local fiable pour acheter au Portugal avec plus de contexte, plus de clarté et moins d’incertitude.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <span class="kicker">Biens en avant</span>
+        <h2>Une vitrine simple des opportunités actuelles</h2>
+      </div>
+
+      <div class="grid-3">
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/t2-arvore/8.png" alt="Appartement T2 avec terrasse à Árvore">
+          </div>
+          <h3>Appartement T2 avec terrasse à Árvore</h3>
+          <p class="muted">Un appartement fonctionnel avec espace extérieur et belle luminosité.</p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/t2-arvore.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/moradia-t5-caxinas/4.png" alt="Maison à Caxinas">
+          </div>
+          <h3>Maison à Caxinas</h3>
+          <p class="muted">Un bien avec potentiel résidentiel et fort intérêt patrimonial.</p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/moradia-t5-caxinas.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg" alt="Ensemble immobilier avec vue sur le fleuve">
+          </div>
+          <h3>Ensemble immobilier avec vue sur le fleuve</h3>
+          <p class="muted">Un actif rare avec échelle, emplacement et fort potentiel de repositionnement.</p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/conjunto-imobiliario-rio-ave.html">Voir le bien</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <div class="section-heading">
+          <span class="kicker">Services</span>
+          <h2>Des services guidés par la stratégie, le contexte et le résultat</h2>
+        </div>
+
+        <p class="muted">
+          Plus que la simple mise en marché d’un bien, le travail consiste à analyser,
+          positionner, préparer, négocier et conduire le processus avec clarté et méthode.
+        </p>
+
+        <a class="btn primary" href="services.html">Découvrir les services</a>
+      </div>
+
+      <div class="card method-card">
+        <h3>Ma méthode</h3>
+        <ul class="list-clean">
+          <li>Analyse et cadrage</li>
+          <li>Préparation et valorisation</li>
+          <li>Positionnement commercial orienté marché</li>
+          <li>Négociation et concrétisation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta-band">
+    <div class="container final-cta-grid">
+      <div class="final-cta-copy">
+        <h2>Vous souhaitez vendre, acheter ou investir au Portugal ?</h2>
+        <p>
+          Parlons-en afin d’analyser votre objectif et de définir l’étape suivante la plus adaptée à votre situation.
+        </p>
+      </div>
+      <div class="final-cta-actions">
+        <a class="btn btn-light-solid" href="analyse-du-bien.html">Demander une analyse</a>
+        <a class="btn btn-outline-light" href="contact.html">Planifier un premier échange</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="final-footer">
+  <div class="container final-footer-grid">
+    <div class="final-footer-col">
+      <h3>Hugo Silva</h3>
+      <p>Conseiller Immobilier</p>
+      <p>RE/MAX Elegance</p>
+      <p>Licence AMI 23852</p>
+    </div>
+    <div class="final-footer-col">
+      <h4>Téléphone</h4>
+      <p>+351 926 691 685</p>
+      <h4>Email</h4>
+      <p>hugocgsilva@remax.pt</p>
+    </div>
+    <div class="final-footer-col">
+      <h4>Adresse</h4>
+      <p>Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>4480-668 Vila do Conde</p>
+    </div>
+    <div class="final-footer-col">
+      <h4>Réseaux</h4>
+      <p>
+        <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+        <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a> ·
+        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <p class="footer-tagline">Choose Your Dream | Live in it</p>
+    </div>
   </div>
 </footer>
 

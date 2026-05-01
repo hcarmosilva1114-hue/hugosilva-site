@@ -1,22 +1,256 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biens | Hugo Silva</title>
-<meta name="description" content="Biens | Hugo Silva">
-<link rel="stylesheet" href="/hugosilva-site/assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biens | Hugo Silva</title>
+  <meta name="description" content="Découvrez les biens actuellement commercialisés par Hugo Silva à Vila do Conde et dans les zones environnantes.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .property-card{
+      display:flex;
+      flex-direction:column;
+    }
+    .property-card-image{
+      margin-bottom:14px;
+      overflow:hidden;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#ffffff;
+      padding:10px;
+    }
+    .property-card-image img{
+      width:100%;
+      aspect-ratio:5/4;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    .property-card .actions{
+      margin-top:auto;
+    }
+  </style>
 </head>
 <body>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="/hugosilva-site/"><span class="brand-mark">HS</span><span><strong>Hugo Silva</strong><small>Consultoria Imobiliária</small></span></a><nav class="main-nav"><a href="/hugosilva-site/fr/">Accueil</a><a href="/hugosilva-site/fr/biens.html">Biens</a><a href="/hugosilva-site/fr/services.html">Services</a><a href="/hugosilva-site/fr/analyse-du-bien.html">Analyse du bien</a><a href="/hugosilva-site/fr/acheter-au-portugal.html">Acheter au Portugal</a><a href="/hugosilva-site/fr/investissement.html">Investissement</a><a href="/hugosilva-site/fr/a-propos.html">À propos</a><a href="/hugosilva-site/fr/contact.html">Contact</a></nav><div class="lang-switch"><a href="/hugosilva-site/">PT</a><a href="/hugosilva-site/en/">EN</a><a href="/hugosilva-site/fr/">FR</a></div></div></header>
-<main><section class='simple-hero'><div class='container'><span class='kicker'>Biens</span><h1>Biens sélectionnés</h1><p class='muted'>Remplacez ces espaces par vos biens réels.</p></div></section><section class='section alt'><div class='container grid-3 property-list'><article class='card'><div class='placeholder'>Image du bien</div><h3>Appartement T2</h3><a class='btn secondary' href='/hugosilva-site/fr/contact.html'>Demander des informations</a></article></div></section></main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div><h3>Hugo Silva</h3><p>Consultor Imobiliário · RE/MAX Elegance</p><p>Licença AMI 23852</p></div>
-    <div><p><strong>Telefone</strong><br>+351 926 691 685</p><p><strong>Email</strong><br>hugocgsilva@remax.pt</p></div>
-    <div><p><strong>Morada</strong><br>Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>4480-668 Vila do Conde</p></div>
-    <div><p><strong>Redes</strong><br>Instagram · Facebook · LinkedIn</p><p class="tagline">Choose Your Dream | Live in it</p></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Hugo Silva">
+      <img class="brand-balloon" src="../public/remax-balao-preto.svg" alt="RE/MAX">
+      <div class="brand-copy">
+        <strong>Hugo Silva</strong>
+        <small>Conseiller Immobilier</small>
+        <span>RE/MAX Elegance</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="index.html">Accueil</a>
+      <a href="biens.html">Biens</a>
+      <a href="services.html">Services</a>
+      <a href="analyse-du-bien.html">Analyse du bien</a>
+      <a href="acheter-au-portugal.html">Acheter au Portugal</a>
+      <a href="vivre-a-vila-do-conde.html">Vivre à Vila do Conde</a>
+      <a href="investissement.html">Investissement</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-switch" aria-label="Langues">
+        <a href="../imoveis.html">PT</a>
+        <a href="../en/properties.html">EN</a>
+        <a href="biens.html" aria-current="page">FR</a>
+      </div>
+      <a class="btn btn-header" href="contact.html">Planifier un échange</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="kicker">Biens</span>
+        <h1>Biens actuellement commercialisés</h1>
+        <p class="lead">
+          Découvrez les biens actuellement commercialisés. Pour plus d’informations,
+          une visite ou une meilleure lecture du contexte, contactez-moi directement.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Demander des informations</a>
+          <a class="btn secondary" href="contact.html">Planifier un premier échange</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-heading section-heading-wide">
+        <span class="kicker">Sélection actuelle</span>
+        <h2>Un portefeuille de biens avec des profils différents et des arguments de marché clairs</h2>
+      </div>
+
+      <div class="grid-3">
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/t2-arvore/8.png" alt="Appartement T2 avec grande terrasse privée à Árvore">
+          </div>
+          <h3>Appartement T2 avec grande terrasse privée à Árvore</h3>
+          <p class="muted">
+            Appartement T2 en rez-de-chaussée avec 102 m², grande terrasse avec barbecue,
+            garage box fermé et excellente fonctionnalité au quotidien, à Árvore, Vila do Conde.
+          </p>
+          <p><strong>290.000 €</strong></p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/t2-arvore.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/moradia-t5-caxinas/4.png" alt="Maison T5 avec T1 indépendant à Caxinas">
+          </div>
+          <h3>Maison T5 avec T1 indépendant à Caxinas</h3>
+          <p class="muted">
+            Maison avec 252 m² de surface brute de construction, garage fermé et fort potentiel
+            pour résidence principale avec rendement complémentaire.
+          </p>
+          <p><strong>500.000 €</strong></p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/moradia-t5-caxinas.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg" alt="Ensemble immobilier avec vue sur le fleuve à Vila do Conde">
+          </div>
+          <h3>Ensemble immobilier avec vue sur le fleuve à Vila do Conde</h3>
+          <p class="muted">
+            Un actif rare avec maison principale, seconde maison et entrepôt,
+            offrant 446 m² de surface brute et un fort potentiel de repositionnement.
+          </p>
+          <p><strong>750.000 €</strong></p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/conjunto-imobiliario-rio-ave.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/t1-aqueduto-fracao-3/1.jpg" alt="Appartement T1 dans un condominium privé à côté de l’Aqueduc">
+          </div>
+          <h3>Appartement T1 à côté de l’Aqueduc – Fraction 126981026-3</h3>
+          <p class="muted">
+            Appartement T1 en rez-de-chaussée avec place de parking, ascenseur, espaces verts
+            et piscine intérieure, dans un emplacement central fort à Vila do Conde.
+          </p>
+          <p><strong>300.000 €</strong></p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/t1-aqueduto-fracao-3.html">Voir le bien</a>
+          </div>
+        </article>
+
+        <article class="card property-card">
+          <div class="property-card-image">
+            <img src="../assets/images/imoveis/t1-aqueduto-fracao-4/1.jpg" alt="Appartement T1 contemporain à côté de l’Aqueduc">
+          </div>
+          <h3>Appartement T1 à côté de l’Aqueduc – Fraction 126981026-4</h3>
+          <p class="muted">
+            Appartement contemporain en rez-de-chaussée avec garage, ascenseur
+            et fort potentiel pour y vivre ou investir avec cohérence.
+          </p>
+          <p><strong>300.000 €</strong></p>
+          <div class="actions">
+            <a class="btn secondary" href="../imoveis/t1-aqueduto-fracao-4.html">Voir le bien</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <div class="section-heading">
+          <span class="kicker">Ma présentation des biens</span>
+          <h2>Au-delà de l’exposition : positionnement et contexte</h2>
+        </div>
+
+        <p class="muted">
+          Chaque bien exige son propre cadrage. L’objectif n’est pas seulement de montrer un stock.
+          Il s’agit de présenter chaque opportunité avec clarté, cohérence commerciale
+          et assez de contexte pour générer un intérêt qualifié.
+        </p>
+      </div>
+
+      <div class="card method-card">
+        <h3>Ce que vous pouvez attendre</h3>
+        <ul class="list-clean">
+          <li>Présentation claire et objective du bien</li>
+          <li>Lecture de l’emplacement et du marché</li>
+          <li>Accompagnement direct pour visite, achat ou investissement</li>
+          <li>Réponse rapide pour plus d’informations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta-band">
+    <div class="container final-cta-grid">
+      <div class="final-cta-copy">
+        <h2>Souhaitez-vous plus d’informations sur l’un de ces biens ?</h2>
+        <p>
+          Parlons-en pour explorer une opportunité spécifique, organiser une visite
+          ou mieux définir le type de bien que vous recherchez.
+        </p>
+      </div>
+
+      <div class="final-cta-actions">
+        <a class="btn btn-light-solid" href="contact.html">Demander des informations</a>
+        <a class="btn btn-outline-light" href="contact.html">Planifier un premier échange</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="final-footer">
+  <div class="container final-footer-grid">
+    <div class="final-footer-col">
+      <h3>Hugo Silva</h3>
+      <p>Conseiller Immobilier</p>
+      <p>RE/MAX Elegance</p>
+      <p>Licence AMI 23852</p>
+    </div>
+
+    <div class="final-footer-col">
+      <h4>Téléphone</h4>
+      <p>+351 926 691 685</p>
+
+      <h4>Email</h4>
+      <p>hugocgsilva@remax.pt</p>
+    </div>
+
+    <div class="final-footer-col">
+      <h4>Adresse</h4>
+      <p>
+        Centro Comercial Alameda, Av. Dr. João Canavarro 303, Loja 7,<br>
+        4480-668 Vila do Conde
+      </p>
+    </div>
+
+    <div class="final-footer-col">
+      <h4>Réseaux</h4>
+      <p>
+        <a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+        <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a> ·
+        <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+      <p class="footer-tagline">Choose Your Dream | Live in it</p>
+    </div>
   </div>
 </footer>
 
