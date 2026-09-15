@@ -765,3 +765,81 @@ p{
     line-height:1.03;
   }
 }
+
+/* IAD PORTUGAL BRAND SYSTEM */
+:root{
+  --iad-coral:#f15a43;
+  --iad-ink:#1d2430;
+}
+
+/* Mantém o ambiente bege/navy do site e introduz a marca iad apenas nos pontos de identidade. */
+.brand-balloon{
+  content:url("../images/brand/iad-portugal.svg");
+  width:70px;
+  height:54px;
+  object-fit:contain;
+}
+
+.brand-copy span{
+  font-size:0;
+  color:var(--iad-coral);
+}
+
+.brand-copy span::after{
+  content:"iad Portugal";
+  font-size:.86rem;
+  font-weight:700;
+  letter-spacing:.02em;
+  color:var(--iad-coral);
+}
+
+/* Compatibilidade com a homepage, onde a marca é desenhada diretamente no HTML. */
+.iad-mark strong,
+.hero-iad-mark strong{
+  color:var(--iad-coral);
+}
+
+/* Dados corporativos atualizados no rodapé de todas as páginas que usam o rodapé final. */
+.final-footer-col:first-child p:nth-of-type(2){
+  font-size:0;
+}
+
+.final-footer-col:first-child p:nth-of-type(2)::after{
+  content:"iad Portugal";
+  font-size:1rem;
+  font-weight:700;
+  color:var(--iad-coral);
+}
+
+.final-footer-col:first-child p:nth-of-type(3){
+  font-size:0;
+}
+
+.final-footer-col:first-child p:nth-of-type(3)::after{
+  content:"AMI 11220";
+  font-size:1rem;
+  color:rgba(255,255,255,.88);
+}
+
+.final-footer-col:nth-child(2) p:nth-of-type(2){
+  font-size:0;
+}
+
+.final-footer-col:nth-child(2) p:nth-of-type(2)::after{
+  content:"silva.hugo@iadportugal.pt";
+  font-size:1rem;
+  color:rgba(255,255,255,.88);
+}
+
+.final-footer-col:nth-child(3) p:first-of-type{
+  font-size:0;
+  white-space:pre-line;
+}
+
+.final-footer-col:nth-child(3) p:first-of-type::after{
+  content:"Avenida da Boavista, 934,\A4100-112 Porto";
+  font-size:1rem;
+  line-height:1.65;
+  color:rgba(255,255,255,.88);
+  white-space:pre-line;
+}
