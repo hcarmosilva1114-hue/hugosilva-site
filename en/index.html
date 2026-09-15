@@ -3,45 +3,1012 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Hugo Silva | Independent Real Estate Advisor | iad Portugal</title>
-  <meta name="description" content="Hugo Silva, independent real estate advisor with iad Portugal. Strategic real estate guidance for owners, buyers and investors in Vila do Conde, Póvoa de Varzim and Greater Porto.">
+
+  <meta
+    name="description"
+    content="Hugo Silva, independent real estate advisor with iad Portugal. Strategic real estate guidance for owners, buyers and investors in Vila do Conde, Póvoa de Varzim and Greater Porto.">
+
   <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    :root {
+      --iad-blue: #12afe0;
+      --iad-beige: #f7f4ee;
+      --iad-text: #1d2430;
+      --iad-muted: #5e6673;
+      --iad-footer-bg: #0b1d36;
+    }
+
+    /* ======================================================
+       PROPERTY CARDS
+       ====================================================== */
+
+    .property-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .property-card-image {
+      margin-bottom: 14px;
+      overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      padding: 10px;
+    }
+
+    .property-card-image img {
+      width: 100%;
+      aspect-ratio: 5 / 4;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .property-card .actions {
+      margin-top: auto;
+    }
+
+
+    /* ======================================================
+       IAD HEADER
+       ====================================================== */
+
+    .brand-iad {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 290px;
+      text-decoration: none;
+    }
+
+    .brand-iad-logo-box {
+      width: 78px;
+      height: 62px;
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: transparent;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .brand-iad-logo-box img {
+      display: block;
+      width: 78px;
+      height: 62px;
+      object-fit: contain;
+      border-radius: 8px;
+
+      /* IMPORTANT:
+         No filter or recolouring.
+         The official logo is displayed exactly as supplied. */
+      filter: none;
+    }
+
+    .brand-iad-copy strong {
+      display: block;
+      font-size: 1.08rem;
+      line-height: 1.1;
+      color: var(--iad-text);
+    }
+
+    .brand-iad-copy small {
+      display: block;
+      margin-top: 4px;
+      color: var(--iad-muted);
+      font-size: .88rem;
+      line-height: 1.25;
+    }
+
+    .brand-iad-copy span {
+      display: block;
+      margin-top: 4px;
+      color: var(--iad-blue);
+      font-size: .86rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+
+    /* ======================================================
+       HERO
+       ====================================================== */
+
+    .hero-photo-frame {
+      position: relative;
+    }
+
+    .hero-iad-corner {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      z-index: 5;
+
+      width: 112px;
+      padding: 0;
+
+      background: transparent;
+      border-radius: 12px;
+
+      box-shadow: 0 8px 22px rgba(20, 35, 59, .08);
+      overflow: hidden;
+    }
+
+    .hero-iad-corner img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      filter: none;
+    }
+
+    .iad-hero-signature {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .iad-hero-signature span {
+      display: inline-block;
+      color: var(--iad-blue);
+      font-size: 1.02rem;
+      font-weight: 700;
+      letter-spacing: .01em;
+    }
+
+
+    /* ======================================================
+       IAD FOOTER
+       ====================================================== */
+
+    .footer-iad-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .footer-iad-main {
+      width: 142px;
+      padding: 0;
+      background: transparent;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .footer-iad-main img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      filter: none;
+    }
+
+    .footer-iad-web {
+      color: var(--iad-blue);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .footer-brand-name {
+      color: var(--iad-blue) !important;
+      font-weight: 700;
+    }
+
+    .final-footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .final-footer a:hover {
+      text-decoration: underline;
+    }
+
+
+    /* ======================================================
+       MOBILE
+       ====================================================== */
+
+    @media (max-width: 720px) {
+
+      .brand-iad {
+        min-width: 0;
+      }
+
+      .brand-iad-logo-box {
+        width: 67px;
+        height: 55px;
+      }
+
+      .brand-iad-logo-box img {
+        width: 67px;
+        height: 55px;
+      }
+
+      .brand-iad-copy strong {
+        font-size: 1rem;
+      }
+
+      .brand-iad-copy small {
+        font-size: .79rem;
+      }
+
+      .brand-iad-copy span {
+        font-size: .80rem;
+      }
+
+      .hero-iad-corner {
+        width: 92px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
 <header class="site-header">
+
   <div class="container header-inner">
-    <a class="brand-iad" href="index.html" aria-label="Hugo Silva">
-      <div class="brand-iad-logo-box"><img src="../assets/images/brand/iad-real-estate-blue.png" alt="iad Real Estate"></div>
-      <div class="brand-iad-copy"><strong>Hugo Silva</strong><small>Independent Real Estate Advisor</small><span>iad Portugal</span></div>
+
+    <a
+      class="brand-iad"
+      href="index.html"
+      aria-label="Hugo Silva">
+
+      <div class="brand-iad-logo-box">
+
+        <img
+          src="../assets/images/brand/iad-real-estate-blue.png"
+          alt="iad Real Estate">
+
+      </div>
+
+      <div class="brand-iad-copy">
+
+        <strong>
+          Hugo Silva
+        </strong>
+
+        <small>
+          Independent Real Estate Advisor
+        </small>
+
+        <span>
+          iad Portugal
+        </span>
+
+      </div>
+
     </a>
-    <nav class="main-nav" aria-label="Main menu">
-      <a href="index.html">Home</a><a href="properties.html">Properties</a><a href="services.html">Services</a><a href="property-review.html">Property Review</a><a href="buying-in-portugal.html">Buying in Portugal</a><a href="living-in-vila-do-conde.html">Living in Vila do Conde</a><a href="investment.html">Investment</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+
+
+    <nav
+      class="main-nav"
+      aria-label="Main menu">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="properties.html">
+        Properties
+      </a>
+
+      <a href="services.html">
+        Services
+      </a>
+
+      <a href="property-review.html">
+        Property Review
+      </a>
+
+      <a href="buying-in-portugal.html">
+        Buying in Portugal
+      </a>
+
+      <a href="living-in-vila-do-conde.html">
+        Living in Vila do Conde
+      </a>
+
+      <a href="investment.html">
+        Investment
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </nav>
-    <div class="header-right"><div class="lang-switch" aria-label="Languages"><a href="../index.html">PT</a><a href="index.html" aria-current="page">EN</a><a href="../fr/index.html">FR</a></div><a class="btn btn-header" href="contact.html">Book a call</a></div>
+
+
+    <div class="header-right">
+
+      <div
+        class="lang-switch"
+        aria-label="Languages">
+
+        <a href="../index.html">
+          PT
+        </a>
+
+        <a
+          href="index.html"
+          aria-current="page">
+          EN
+        </a>
+
+        <a href="../fr/index.html">
+          FR
+        </a>
+
+      </div>
+
+      <a
+        class="btn btn-header"
+        href="contact.html">
+
+        Book a call
+
+      </a>
+
+    </div>
+
   </div>
+
 </header>
+
+
 <main>
-  <section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="kicker">Real Estate Advisory</span><h1>Strategic real estate guidance in Vila do Conde, Póvoa de Varzim and Greater Porto</h1><p class="lead">Independent real estate advisor with iad Portugal. I support owners, buyers and investors with market analysis, strategy, commercial positioning and personalised guidance, with a customer-centric approach.</p><div class="actions"><a class="btn primary" href="properties.html">View properties</a><a class="btn secondary" href="property-review.html">Request a property review</a><a class="btn secondary" href="contact.html">Book an initial call</a></div><div class="iad-hero-signature">iad Portugal</div><div class="signature-block"><div class="signature-line"></div><p class="signature-text">Choose Your Dream | Live in it</p></div></div><div class="hero-visual"><div class="hero-photo-frame"><div class="hero-iad-corner"><img src="../assets/images/brand/iad-real-estate-blue.png" alt="iad Real Estate"></div><img class="hero-photo" src="../public/HugoSilva.png" alt="Hugo Silva - Independent Real Estate Advisor with iad Portugal"></div></div></div></section>
-  <section class="section section-soft"><div class="container"><p class="quote">Less noise. More context. Better decisions.</p><p class="muted narrow">In real estate, more exposure does not always mean a better result. My approach is based on market knowledge, strategy, transparency and close guidance, keeping the client’s needs at the centre of every decision.</p></div></section>
-  <section class="section"><div class="container"><div class="section-heading section-heading-wide"><span class="kicker">Who I work with</span><h2>Clarity, structure and real guidance</h2></div><div class="grid-4">
-    <article class="card card-target"><h3>Owners</h3><p>For those who want to sell with coherent positioning, a defined strategy and greater control throughout the process.</p></article>
-    <article class="card card-target"><h3>Buyers</h3><p>For those looking for support in filtering options, understanding the context and making a more confident decision.</p></article>
-    <article class="card card-target"><h3>Investors</h3><p>For those who view property as an asset, considering location, liquidity, appreciation potential and risk.</p></article>
-    <article class="card card-target"><h3>International clients</h3><p>For those who need reliable local support to buy in Portugal with better market knowledge, close guidance and greater clarity at each stage.</p></article>
-  </div></div></section>
-  <section class="section section-soft"><div class="container"><div class="section-heading"><span class="kicker">Featured properties</span><h2>Current opportunities on the market</h2></div><div class="grid-3">
-    <article class="card property-card"><div class="property-card-image"><img src="../assets/images/imoveis/t2-arvore/8.png" alt="T2 apartment with terrace in Árvore"></div><h3>T2 apartment with terrace in Árvore</h3><p class="muted">A practical apartment with a large outdoor area and good natural light.</p><div class="actions"><a class="btn secondary" href="t2-arvore.html">View property</a></div></article>
-    <article class="card property-card"><div class="property-card-image"><img src="../assets/images/imoveis/moradia-t5-caxinas/4.png" alt="T5 house with independent T1 in Caxinas"></div><h3>T5 house with independent T1 in Caxinas</h3><p class="muted">A versatile residential property with generous areas and income potential.</p><div class="actions"><a class="btn secondary" href="moradia-t5-caxinas.html">View property</a></div></article>
-    <article class="card property-card"><div class="property-card-image"><img src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg" alt="Property complex with views over the Rio Ave"></div><h3>Property complex with views over the Rio Ave</h3><p class="muted">A rare asset with scale, identity and strong repositioning potential.</p><div class="actions"><a class="btn secondary" href="conjunto-imobiliario-rio-ave.html">View property</a></div></article>
-  </div></div></section>
-  <section class="section"><div class="container grid-2"><div><div class="section-heading"><span class="kicker">Services</span><h2>Strategy, context and guidance</h2></div><p class="muted">More than simply marketing property, the work involves analysing, preparing, positioning, negotiating and guiding each transaction with method and clarity.</p><a class="btn primary" href="services.html">Explore services</a></div><div class="card method-card"><h3>How I work</h3><ul class="list-clean"><li>Market analysis and framing</li><li>Property preparation and value presentation</li><li>Positioning and marketing strategy</li><li>Negotiation and support through completion</li><li>Transparent, customer-centric guidance</li></ul></div></div></section>
-  <section class="final-cta-band"><div class="container final-cta-grid"><div class="final-cta-copy"><h2>Do you want to sell, buy or invest in Portugal?</h2><p>Speak with me to assess your objective, frame the market and understand the most suitable next step for your situation.</p></div><div class="final-cta-actions"><a class="btn btn-light-solid" href="property-review.html">Request a property review</a><a class="btn btn-outline-light" href="contact.html">Book an initial call</a></div></div></section>
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+
+        <span class="kicker">
+          Real Estate Advisory
+        </span>
+
+        <h1>
+          Strategic real estate guidance
+          in Vila do Conde, Póvoa de Varzim and Greater Porto
+        </h1>
+
+        <p class="lead">
+          Independent real estate advisor with iad Portugal.
+          I support owners, buyers and investors
+          through market analysis, strategy,
+          commercial positioning and personalised guidance,
+          with a customer-centric approach.
+        </p>
+
+
+        <div class="actions">
+
+          <a
+            class="btn primary"
+            href="properties.html">
+
+            View properties
+
+          </a>
+
+
+          <a
+            class="btn secondary"
+            href="property-review.html">
+
+            Request a property review
+
+          </a>
+
+
+          <a
+            class="btn secondary"
+            href="contact.html">
+
+            Book an initial call
+
+          </a>
+
+        </div>
+
+
+        <div class="iad-hero-signature">
+
+          <span>
+            iad Portugal
+          </span>
+
+        </div>
+
+
+        <div class="signature-block">
+
+          <div class="signature-line"></div>
+
+          <p class="signature-text">
+            Choose Your Dream | Live in it
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="hero-photo-frame">
+
+          <div class="hero-iad-corner">
+
+            <img
+              src="../assets/images/brand/iad-real-estate-blue.png"
+              alt="iad Real Estate">
+
+          </div>
+
+
+          <img
+            class="hero-photo"
+            src="../public/HugoSilva.png"
+            alt="Hugo Silva - Independent Real Estate Advisor with iad Portugal">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       POSITIONING
+       ===================================================== -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+      <p class="quote">
+        Less noise. More context. Better decisions.
+      </p>
+
+      <p class="muted narrow">
+        In real estate, more exposure does not always mean
+        a better result.
+
+        My approach is based on market knowledge,
+        strategy, transparency and close guidance,
+        placing the client's needs at the centre of every decision.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CLIENTS
+       ===================================================== -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-heading section-heading-wide">
+
+        <span class="kicker">
+          Who I work with
+        </span>
+
+        <h2>
+          Clarity, structure and real guidance
+        </h2>
+
+      </div>
+
+
+      <div class="grid-4">
+
+
+        <article class="card card-target">
+
+          <h3>
+            Owners
+          </h3>
+
+          <p>
+            For owners who want to sell with coherent positioning,
+            a defined strategy and greater control
+            throughout the entire process.
+          </p>
+
+        </article>
+
+
+        <article class="card card-target">
+
+          <h3>
+            Buyers
+          </h3>
+
+          <p>
+            For buyers looking for support in filtering opportunities,
+            understanding the market context
+            and making more confident decisions.
+          </p>
+
+        </article>
+
+
+        <article class="card card-target">
+
+          <h3>
+            Investors
+          </h3>
+
+          <p>
+            For investors who view property as an asset,
+            considering location, liquidity,
+            appreciation potential and risk.
+          </p>
+
+        </article>
+
+
+        <article class="card card-target">
+
+          <h3>
+            International clients
+          </h3>
+
+          <p>
+            For clients who need reliable local support
+            to buy property in Portugal with better market knowledge,
+            close guidance and greater clarity at every stage.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FEATURED PROPERTIES
+       ===================================================== -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="kicker">
+          Featured properties
+        </span>
+
+        <h2>
+          Current opportunities on the market
+        </h2>
+
+      </div>
+
+
+      <div class="grid-3">
+
+
+        <!-- T2 ÁRVORE -->
+
+        <article class="card property-card">
+
+          <div class="property-card-image">
+
+            <img
+              src="../assets/images/imoveis/t2-arvore/8.png"
+              alt="T2 apartment with terrace in Árvore">
+
+          </div>
+
+          <h3>
+            T2 apartment with terrace in Árvore
+          </h3>
+
+          <p class="muted">
+            A practical apartment with a large outdoor area
+            and good natural light.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="btn secondary"
+              href="t2-arvore.html">
+
+              View property
+
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- CAXINAS -->
+
+        <article class="card property-card">
+
+          <div class="property-card-image">
+
+            <img
+              src="../assets/images/imoveis/moradia-t5-caxinas/4.png"
+              alt="T5 house with independent T1 in Caxinas">
+
+          </div>
+
+          <h3>
+            T5 house with independent T1 in Caxinas
+          </h3>
+
+          <p class="muted">
+            A versatile residential property
+            with generous areas and income potential.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="btn secondary"
+              href="moradia-t5-caxinas.html">
+
+              View property
+
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- RIO AVE -->
+
+        <article class="card property-card">
+
+          <div class="property-card-image">
+
+            <img
+              src="../assets/images/imoveis/conjunto-imobiliario-rio-ave/foto-geral-casa-2.jpg"
+              alt="Property complex with views over the Rio Ave">
+
+          </div>
+
+          <h3>
+            Property complex with views over the Rio Ave
+          </h3>
+
+          <p class="muted">
+            A rare asset with scale,
+            strong identity and significant repositioning potential.
+          </p>
+
+          <div class="actions">
+
+            <a
+              class="btn secondary"
+              href="conjunto-imobiliario-rio-ave.html">
+
+              View property
+
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       SERVICES
+       ===================================================== -->
+
+  <section class="section">
+
+    <div class="container grid-2">
+
+      <div>
+
+        <div class="section-heading">
+
+          <span class="kicker">
+            Services
+          </span>
+
+          <h2>
+            Strategy, context and guidance
+          </h2>
+
+        </div>
+
+
+        <p class="muted">
+          More than simply advertising property,
+          the work involves analysing,
+          preparing, positioning, negotiating
+          and guiding each transaction
+          with method and clarity.
+        </p>
+
+
+        <a
+          class="btn primary"
+          href="services.html">
+
+          Explore services
+
+        </a>
+
+      </div>
+
+
+      <div class="card method-card">
+
+        <h3>
+          How I work
+        </h3>
+
+        <ul class="list-clean">
+
+          <li>
+            Market analysis and strategic framing
+          </li>
+
+          <li>
+            Property preparation and value presentation
+          </li>
+
+          <li>
+            Positioning and marketing strategy
+          </li>
+
+          <li>
+            Negotiation and support through completion
+          </li>
+
+          <li>
+            Transparent, customer-centric guidance
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FINAL CTA
+       ===================================================== -->
+
+  <section class="final-cta-band">
+
+    <div class="container final-cta-grid">
+
+      <div class="final-cta-copy">
+
+        <h2>
+          Are you looking to sell,
+          buy or invest in Portugal?
+        </h2>
+
+        <p>
+          Speak with me to assess your objective,
+          understand the market context
+          and identify the most suitable next step
+          for your situation.
+        </p>
+
+      </div>
+
+
+      <div class="final-cta-actions">
+
+        <a
+          class="btn btn-light-solid"
+          href="property-review.html">
+
+          Request a property review
+
+        </a>
+
+
+        <a
+          class="btn btn-outline-light"
+          href="contact.html">
+
+          Book an initial call
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
 </main>
-<footer class="final-footer clean-iad-footer"><div class="container final-footer-grid">
-  <div class="final-footer-col"><div class="footer-iad-brand"><div class="footer-iad-main"><img src="../assets/images/brand/iad-real-estate-blue.png" alt="iad Real Estate"></div><div class="footer-iad-web">iad Portugal</div></div><h3>Hugo Silva</h3><p>Independent Real Estate Advisor</p><p class="footer-brand-name">iad Portugal</p><p>AMI Licence 11220</p></div>
-  <div class="final-footer-col"><h4>Phone</h4><p><a href="tel:+351926691685">+351 926 691 685</a></p><h4>Email</h4><p><a href="mailto:silva.hugo@iadportugal.pt">silva.hugo@iadportugal.pt</a></p></div>
-  <div class="final-footer-col"><h4>iad Portugal Head Office</h4><p>Avenida da Boavista, 934<br>4100-112 Porto, Portugal</p></div>
-  <div class="final-footer-col"><h4>Social</h4><p><a href="https://www.instagram.com/hugocgsilva_realestate_advisor/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=61569159142853" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.linkedin.com/in/hugo-silva-72b35031/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p><p class="footer-tagline">Choose Your Dream | Live in it</p></div>
-</div></footer>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="final-footer">
+
+  <div class="container final-footer-grid">
+
+
+    <div class="final-footer-col">
+
+      <div class="footer-iad-brand">
+
+        <div class="footer-iad-main">
+
+          <img
+            src="../assets/images/brand/iad-real-estate-blue.png"
+            alt="iad Real Estate">
+
+        </div>
+
+        <div class="footer-iad-web">
+          iad Portugal
+        </div>
+
+      </div>
+
+
+      <h3>
+        Hugo Silva
+      </h3>
+
+      <p>
+        Independent Real Estate Advisor
+      </p>
+
+      <p class="footer-brand-name">
+        iad Portugal
+      </p>
+
+      <p>
+        AMI Licence 11220
+      </p>
+
+    </div>
+
+
+    <div class="final-footer-col">
+
+      <h4>
+        Phone
+      </h4>
+
+      <p>
+        <a href="tel:+351926691685">
+          +351 926 691 685
+        </a>
+      </p>
+
+
+      <h4>
+        Email
+      </h4>
+
+      <p>
+        <a href="mailto:silva.hugo@iadportugal.pt">
+          silva.hugo@iadportugal.pt
+        </a>
+      </p>
+
+    </div>
+
+
+    <div class="final-footer-col">
+
+      <h4>
+        iad Portugal Head Office
+      </h4>
+
+      <p>
+        Avenida da Boavista, 934<br>
+        4100-112 Porto<br>
+        Portugal
+      </p>
+
+    </div>
+
+
+    <div class="final-footer-col">
+
+      <h4>
+        Social
+      </h4>
+
+      <p>
+
+        <a
+          href="https://www.instagram.com/hugocgsilva_realestate_advisor/"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Instagram
+
+        </a>
+
+        ·
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61569159142853"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Facebook
+
+        </a>
+
+        ·
+
+        <a
+          href="https://www.linkedin.com/in/hugo-silva-72b35031/"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          LinkedIn
+
+        </a>
+
+      </p>
+
+
+      <p class="footer-tagline">
+        Choose Your Dream | Live in it
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
 </body>
 </html>
