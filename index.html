@@ -6,15 +6,20 @@
 
   <title>Hugo Silva | Consultor Imobiliário Independente iad Portugal</title>
 
-  <meta name="description" content="Hugo Silva, consultor imobiliário independente iad Portugal. Apoio proprietários, compradores e investidores em Vila do Conde, Póvoa de Varzim e Grande Porto com análise de mercado, estratégia e acompanhamento personalizado.">
+  <meta
+    name="description"
+    content="Hugo Silva, consultor imobiliário independente iad Portugal. Apoio proprietários, compradores e investidores em Vila do Conde, Póvoa de Varzim e Grande Porto com análise de mercado, estratégia e acompanhamento personalizado.">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    /* =========================================================
-       HOMEPAGE — IAD BRAND INTEGRATION
-       ========================================================= */
+    :root {
+      --iad-blue: #12afe0;
+      --iad-beige: #f7f4ee;
+      --iad-text: #1d2430;
+    }
 
+    /* IMÓVEIS */
     .property-card {
       display: flex;
       flex-direction: column;
@@ -42,79 +47,69 @@
       margin-top: auto;
     }
 
-
-    /* =========================================================
-       HEADER BRAND
-       ========================================================= */
+    /* ======================================================
+       CABEÇALHO IAD
+       ====================================================== */
 
     .brand-iad {
       display: flex;
       align-items: center;
       gap: 14px;
       min-width: 290px;
+      text-decoration: none;
     }
 
     .brand-iad-logo-box {
-      width: 82px;
-      height: 58px;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #07111f;
+      width: 78px;
+      height: 62px;
+      flex-shrink: 0;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
-      padding: 5px 8px;
+
+      background: var(--iad-beige);
+      border-radius: 10px;
+      overflow: hidden;
     }
 
     .brand-iad-logo-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
       display: block;
+      width: 72px;
+      height: 56px;
+      object-fit: contain;
+      border-radius: 7px;
     }
 
     .brand-iad-copy strong {
       display: block;
       font-size: 1.08rem;
       line-height: 1.1;
-      color: #1d2430;
+      color: var(--iad-text);
     }
 
     .brand-iad-copy small {
       display: block;
+      margin-top: 4px;
+
       color: #5e6673;
       font-size: .88rem;
-      margin-top: 4px;
       line-height: 1.25;
     }
 
     .brand-iad-copy span {
       display: block;
-      color: #f15f50;
-      font-size: .85rem;
-      font-weight: 700;
       margin-top: 4px;
+
+      color: var(--iad-blue);
+      font-size: .86rem;
+      font-weight: 700;
       letter-spacing: .02em;
     }
 
-
-    /* =========================================================
+    /* ======================================================
        HERO
-       ========================================================= */
-
-    .iad-hero-signature {
-      margin-top: 24px;
-      display: inline-flex;
-      align-items: center;
-    }
-
-    .iad-hero-signature img {
-      width: 205px;
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
+       ====================================================== */
 
     .hero-photo-frame {
       position: relative;
@@ -122,48 +117,66 @@
 
     .hero-iad-corner {
       position: absolute;
-      top: 24px;
-      right: 24px;
+      top: 22px;
+      right: 22px;
       z-index: 5;
 
-      width: 108px;
-      padding: 8px;
+      width: 112px;
+      padding: 7px;
 
-      background: #07111f;
+      background: var(--iad-beige);
       border-radius: 12px;
 
-      box-shadow: 0 8px 22px rgba(20, 35, 59, .10);
+      box-shadow: 0 8px 22px rgba(20, 35, 59, .08);
     }
 
     .hero-iad-corner img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
+      border-radius: 8px;
     }
 
+    .iad-hero-signature {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 24px;
+    }
 
-    /* =========================================================
-       FOOTER BRAND
-       ========================================================= */
+    .iad-hero-signature img {
+      display: block;
+      width: 205px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ======================================================
+       RODAPÉ IAD
+       ====================================================== */
 
     .footer-iad-brand {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
-      margin-bottom: 18px;
+
+      margin-bottom: 20px;
     }
 
     .footer-iad-main {
-      width: 135px;
-      padding: 8px 10px;
-      background: #07111f;
+      width: 142px;
+
+      padding: 7px;
+
+      background: var(--iad-beige);
       border-radius: 10px;
     }
 
     .footer-iad-main img {
-      width: 100%;
       display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
     }
 
     .footer-iad-web {
@@ -171,24 +184,28 @@
     }
 
     .footer-iad-web img {
-      width: 100%;
       display: block;
+      width: 100%;
+      height: auto;
     }
 
-
-    /* =========================================================
+    /* ======================================================
        MOBILE
-       ========================================================= */
+       ====================================================== */
 
     @media (max-width: 720px) {
-
       .brand-iad {
         min-width: 0;
       }
 
       .brand-iad-logo-box {
-        width: 70px;
-        height: 52px;
+        width: 67px;
+        height: 55px;
+      }
+
+      .brand-iad-logo-box img {
+        width: 62px;
+        height: 49px;
       }
 
       .brand-iad-copy strong {
@@ -196,13 +213,17 @@
       }
 
       .brand-iad-copy small {
+        font-size: .79rem;
+      }
+
+      .brand-iad-copy span {
         font-size: .80rem;
       }
 
       .hero-iad-corner {
-        width: 90px;
-        top: 16px;
-        right: 16px;
+        width: 92px;
+        top: 15px;
+        right: 15px;
       }
 
       .iad-hero-signature img {
@@ -215,26 +236,44 @@
 <body>
 
 <header class="site-header">
+
   <div class="container header-inner">
 
-    <a class="brand-iad" href="index.html" aria-label="Hugo Silva">
+    <a
+      class="brand-iad"
+      href="index.html"
+      aria-label="Hugo Silva">
 
       <div class="brand-iad-logo-box">
+
         <img
-          src="assets/images/brand/iad-real-estate.png"
+          src="assets/images/brand/iad-real-estate-blue.png"
           alt="iAD Real Estate">
+
       </div>
 
       <div class="brand-iad-copy">
-        <strong>Hugo Silva</strong>
-        <small>Consultor Imobiliário Independente</small>
-        <span>iad Portugal</span>
+
+        <strong>
+          Hugo Silva
+        </strong>
+
+        <small>
+          Consultor Imobiliário Independente
+        </small>
+
+        <span>
+          iad Portugal
+        </span>
+
       </div>
 
     </a>
 
 
-    <nav class="main-nav" aria-label="Menu principal">
+    <nav
+      class="main-nav"
+      aria-label="Menu principal">
 
       <a href="index.html">
         Início
@@ -277,9 +316,13 @@
 
     <div class="header-right">
 
-      <div class="lang-switch" aria-label="Idiomas">
+      <div
+        class="lang-switch"
+        aria-label="Idiomas">
 
-        <a href="index.html" aria-current="page">
+        <a
+          href="index.html"
+          aria-current="page">
           PT
         </a>
 
@@ -296,20 +339,23 @@
       <a
         class="btn btn-header"
         href="contactos.html">
+
         Agendar conversa
+
       </a>
 
     </div>
 
   </div>
+
 </header>
 
 
 <main>
 
-  <!-- =======================================================
+  <!-- =====================================================
        HERO
-       ======================================================= -->
+       ===================================================== -->
 
   <section class="hero">
 
@@ -322,14 +368,15 @@
         </span>
 
         <h1>
-          Consultoria imobiliária com visão estratégica em Vila do Conde,
-          Póvoa de Varzim e Grande Porto
+          Consultoria imobiliária com visão estratégica
+          em Vila do Conde, Póvoa de Varzim e Grande Porto
         </h1>
 
         <p class="lead">
           Consultor imobiliário independente iad Portugal.
-          Apoio proprietários, compradores e investidores com análise de mercado,
-          estratégia, posicionamento comercial e acompanhamento personalizado,
+          Apoio proprietários, compradores e investidores
+          com análise de mercado, estratégia,
+          posicionamento comercial e acompanhamento personalizado,
           numa abordagem centrada no cliente.
         </p>
 
@@ -339,19 +386,27 @@
           <a
             class="btn primary"
             href="imoveis.html">
+
             Ver imóveis
+
           </a>
+
 
           <a
             class="btn secondary"
             href="analise-imovel.html">
+
             Pedir análise ao seu imóvel
+
           </a>
+
 
           <a
             class="btn secondary"
             href="contactos.html">
+
             Agendar uma conversa inicial
+
           </a>
 
         </div>
@@ -386,15 +441,16 @@
           <div class="hero-iad-corner">
 
             <img
-              src="assets/images/brand/iad-real-estate.png"
+              src="assets/images/brand/iad-real-estate-blue.png"
               alt="iAD Real Estate">
 
           </div>
 
+
           <img
             class="hero-photo"
             src="public/HugoSilva.png"
-            alt="Hugo Silva - Consultor Imobiliário iad Portugal">
+            alt="Hugo Silva - Consultor Imobiliário Independente iad Portugal">
 
         </div>
 
@@ -405,9 +461,9 @@
   </section>
 
 
-  <!-- =======================================================
-       POSITIONING
-       ======================================================= -->
+  <!-- =====================================================
+       POSICIONAMENTO
+       ===================================================== -->
 
   <section class="section section-soft">
 
@@ -418,13 +474,12 @@
       </p>
 
       <p class="muted narrow">
-
-        No imobiliário, mais divulgação nem sempre significa melhor resultado.
+        No imobiliário, mais divulgação nem sempre significa
+        melhor resultado.
 
         A minha abordagem assenta em conhecimento do mercado,
         estratégia, transparência e acompanhamento próximo,
-        procurando colocar as necessidades do cliente no centro de cada decisão.
-
+        colocando as necessidades do cliente no centro de cada decisão.
       </p>
 
     </div>
@@ -432,9 +487,9 @@
   </section>
 
 
-  <!-- =======================================================
-       AUDIENCES
-       ======================================================= -->
+  <!-- =====================================================
+       PÚBLICOS
+       ===================================================== -->
 
   <section class="section">
 
@@ -455,6 +510,7 @@
 
       <div class="grid-4">
 
+
         <article class="card card-target">
 
           <h3>
@@ -462,8 +518,9 @@
           </h3>
 
           <p>
-            Para quem pretende vender com um posicionamento coerente,
-            uma estratégia definida e maior controlo sobre todo o processo.
+            Para quem pretende vender com um posicionamento
+            coerente, uma estratégia definida
+            e maior controlo sobre todo o processo.
           </p>
 
         </article>
@@ -477,7 +534,8 @@
 
           <p>
             Para quem procura apoio na filtragem das opções,
-            análise do contexto e tomada de decisão com maior segurança.
+            análise do contexto e tomada de decisão
+            com maior segurança.
           </p>
 
         </article>
@@ -491,8 +549,8 @@
 
           <p>
             Para quem olha para o imobiliário como ativo,
-            considerando localização, liquidez, potencial de valorização
-            e risco.
+            considerando localização, liquidez,
+            potencial de valorização e risco.
           </p>
 
         </article>
@@ -505,9 +563,10 @@
           </h3>
 
           <p>
-            Para quem procura apoio local para comprar em Portugal
-            com melhor conhecimento do mercado,
-            acompanhamento próximo e maior clareza em cada etapa.
+            Para quem procura apoio local para comprar
+            em Portugal com melhor conhecimento do mercado,
+            acompanhamento próximo e maior clareza
+            em cada etapa.
           </p>
 
         </article>
@@ -519,9 +578,9 @@
   </section>
 
 
-  <!-- =======================================================
-       PROPERTIES
-       ======================================================= -->
+  <!-- =====================================================
+       IMÓVEIS
+       ===================================================== -->
 
   <section class="section section-soft">
 
@@ -543,7 +602,7 @@
       <div class="grid-3">
 
 
-        <!-- T2 ARVORE -->
+        <!-- T2 ÁRVORE -->
 
         <article class="card property-card">
 
@@ -561,7 +620,8 @@
 
           <p class="muted">
             Apartamento com funcionalidade,
-            amplo espaço exterior e boa luminosidade.
+            amplo espaço exterior
+            e boa luminosidade.
           </p>
 
           <div class="actions">
@@ -569,7 +629,9 @@
             <a
               class="btn secondary"
               href="imoveis/t2-arvore.html">
+
               Ver imóvel
+
             </a>
 
           </div>
@@ -595,7 +657,8 @@
 
           <p class="muted">
             Imóvel com boas áreas,
-            versatilidade residencial e potencial de rendimento.
+            versatilidade residencial
+            e potencial de rendimento.
           </p>
 
           <div class="actions">
@@ -603,7 +666,9 @@
             <a
               class="btn secondary"
               href="imoveis/moradia-t5-caxinas.html">
+
               Ver imóvel
+
             </a>
 
           </div>
@@ -629,7 +694,8 @@
 
           <p class="muted">
             Ativo raro com diferentes volumes,
-            forte identidade e elevado potencial de reposicionamento.
+            forte identidade
+            e elevado potencial de reposicionamento.
           </p>
 
           <div class="actions">
@@ -637,7 +703,9 @@
             <a
               class="btn secondary"
               href="imoveis/conjunto-imobiliario-rio-ave.html">
+
               Ver imóvel
+
             </a>
 
           </div>
@@ -651,9 +719,9 @@
   </section>
 
 
-  <!-- =======================================================
-       SERVICES
-       ======================================================= -->
+  <!-- =====================================================
+       SERVIÇOS
+       ===================================================== -->
 
   <section class="section">
 
@@ -675,21 +743,20 @@
 
 
         <p class="muted">
-
           Mais do que divulgar imóveis,
           o trabalho passa por analisar,
-          preparar,
-          posicionar,
-          negociar
-          e acompanhar cada operação com método e clareza.
-
+          preparar, posicionar, negociar
+          e acompanhar cada operação
+          com método e clareza.
         </p>
 
 
         <a
           class="btn primary"
           href="servicos.html">
+
           Conhecer os serviços
+
         </a>
 
       </div>
@@ -732,9 +799,9 @@
   </section>
 
 
-  <!-- =======================================================
-       FINAL CTA
-       ======================================================= -->
+  <!-- =====================================================
+       CTA FINAL
+       ===================================================== -->
 
   <section class="final-cta-band">
 
@@ -743,12 +810,14 @@
       <div class="final-cta-copy">
 
         <h2>
-          Tem um imóvel para vender, procura comprar ou pretende investir?
+          Tem um imóvel para vender,
+          procura comprar ou pretende investir?
         </h2>
 
         <p>
           Fale comigo para analisar o seu objetivo,
-          enquadrar o mercado e perceber qual o próximo passo
+          enquadrar o mercado
+          e perceber qual o próximo passo
           mais adequado à sua situação.
         </p>
 
@@ -760,13 +829,18 @@
         <a
           class="btn btn-light-solid"
           href="analise-imovel.html">
+
           Pedir análise ao imóvel
+
         </a>
+
 
         <a
           class="btn btn-outline-light"
           href="contactos.html">
+
           Agendar uma conversa inicial
+
         </a>
 
       </div>
@@ -779,7 +853,7 @@
 
 
 <!-- =========================================================
-     FOOTER
+     RODAPÉ
      ========================================================= -->
 
 <footer class="final-footer">
@@ -791,13 +865,15 @@
 
       <div class="footer-iad-brand">
 
+
         <div class="footer-iad-main">
 
           <img
-            src="assets/images/brand/iad-real-estate.png"
+            src="assets/images/brand/iad-real-estate-blue.png"
             alt="iAD Real Estate">
 
         </div>
+
 
         <div class="footer-iad-web">
 
@@ -806,6 +882,7 @@
             alt="iadportugal.pt">
 
         </div>
+
 
       </div>
 
@@ -881,7 +958,9 @@
           href="https://www.instagram.com/hugocgsilva_realestate_advisor/"
           target="_blank"
           rel="noopener noreferrer">
+
           Instagram
+
         </a>
 
         ·
@@ -890,7 +969,9 @@
           href="https://www.facebook.com/profile.php?id=61569159142853"
           target="_blank"
           rel="noopener noreferrer">
+
           Facebook
+
         </a>
 
         ·
@@ -899,7 +980,9 @@
           href="https://www.linkedin.com/in/hugo-silva-72b35031/"
           target="_blank"
           rel="noopener noreferrer">
+
           LinkedIn
+
         </a>
 
       </p>
